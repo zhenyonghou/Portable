@@ -63,6 +63,8 @@
 		5688DEA01A067D5C00F65FE9 /* UIView+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE9B1A067D5C00F65FE9 /* UIView+BAAdditions.m */; };
 		5688DEA11A067D5C00F65FE9 /* UIView+Bounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */; };
 		5688DEA41A067ED200F65FE9 /* UIViewController+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */; };
+		5688DEA71A06856600F65FE9 /* BATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA61A06856600F65FE9 /* BATableViewController.m */; };
+		5688DEAA1A068AFA00F65FE9 /* DETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA91A068AFA00F65FE9 /* DETableViewController.m */; };
 		568A55FD1A0614C200163FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A55FC1A0614C200163FA3 /* main.m */; };
 		568A56021A0614C200163FA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568A56011A0614C200163FA3 /* Images.xcassets */; };
 		568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A56031A0614C200163FA3 /* LaunchScreen.xib */; };
@@ -209,6 +211,10 @@
 		5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Bounce.m"; sourceTree = "<group>"; };
 		5688DEA21A067ED200F65FE9 /* UIViewController+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BAAdditions.h"; sourceTree = "<group>"; };
 		5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BAAdditions.m"; sourceTree = "<group>"; };
+		5688DEA51A06856600F65FE9 /* BATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewController.h; sourceTree = "<group>"; };
+		5688DEA61A06856600F65FE9 /* BATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewController.m; sourceTree = "<group>"; };
+		5688DEA81A068AFA00F65FE9 /* DETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETableViewController.h; sourceTree = "<group>"; };
+		5688DEA91A068AFA00F65FE9 /* DETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETableViewController.m; sourceTree = "<group>"; };
 		568A55F71A0614C200163FA3 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A55FB1A0614C200163FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568A55FC1A0614C200163FA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -277,10 +283,10 @@
 				5688DE941A067D5C00F65FE9 /* View */,
 				5688DDEE1A067B8400F65FE9 /* Controllers */,
 				5688DDF31A067B8400F65FE9 /* File */,
+				5688DE071A067B8400F65FE9 /* Utilities */,
 				5688DE001A067B8400F65FE9 /* Location */,
 				5688DE031A067B8400F65FE9 /* ProtableCore.h */,
 				5688DE041A067B8400F65FE9 /* ProtableDefines.h */,
-				5688DE071A067B8400F65FE9 /* Utilities */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -323,12 +329,14 @@
 		5688DDEE1A067B8400F65FE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5688DEA21A067ED200F65FE9 /* UIViewController+BAAdditions.h */,
+				5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */,
 				5688DDEF1A067B8400F65FE9 /* BATabBarController.h */,
 				5688DDF01A067B8400F65FE9 /* BATabBarController.m */,
 				5688DDF11A067B8400F65FE9 /* BAViewController.h */,
 				5688DDF21A067B8400F65FE9 /* BAViewController.m */,
-				5688DEA21A067ED200F65FE9 /* UIViewController+BAAdditions.h */,
-				5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */,
+				5688DEA51A06856600F65FE9 /* BATableViewController.h */,
+				5688DEA61A06856600F65FE9 /* BATableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -610,6 +618,8 @@
 			children = (
 				568A58151A062FAE00163FA3 /* FirstViewController.h */,
 				568A58161A062FAE00163FA3 /* FirstViewController.m */,
+				5688DEA81A068AFA00F65FE9 /* DETableViewController.h */,
+				5688DEA91A068AFA00F65FE9 /* DETableViewController.m */,
 			);
 			path = FirstTab;
 			sourceTree = "<group>";
@@ -749,6 +759,7 @@
 				5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
+				5688DEAA1A068AFA00F65FE9 /* DETableViewController.m in Sources */,
 				568A58221A062FAE00163FA3 /* SecondViewController.m in Sources */,
 				5688DE641A067B8400F65FE9 /* BAFile.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BALeftImageViewCell.m in Sources */,
@@ -795,6 +806,7 @@
 				5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */,
 				5688DE6C1A067B8400F65FE9 /* BAUncaughtExceptionHandler.m in Sources */,
 				5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */,
+				5688DEA71A06856600F65FE9 /* BATableViewController.m in Sources */,
 				5688DE7A1A067B8400F65FE9 /* BAEnableTouchImageView.m in Sources */,
 				5688DE841A067B8400F65FE9 /* BABlankCell.m in Sources */,
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,

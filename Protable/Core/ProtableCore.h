@@ -42,6 +42,7 @@
 // Controllers
 #import "UIViewController+BAAdditions.h"
 #import "BAViewController.h"
+#import "BATableViewController.h"
 
 // Utilities
 #import "BAUtility.h"

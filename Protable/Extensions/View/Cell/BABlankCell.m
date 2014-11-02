@@ -53,13 +53,14 @@
         self.backgroundColor = [UIColor clearColor];
         [self setSelectionStyle:UITableViewCellSelectionStyleNone];
         
-        _separatorLineLeftMargin = 0.f;
+        _separatorLineLeftMargin = 15.f;
         _topSeparatorLine = [[BASeparatorLineview alloc] initWithFrame:CGRectZero];
         _bottomSeparatorLine = [[BASeparatorLineview alloc] initWithFrame:CGRectZero];
 
         _topSeparatorLine.hidden = YES;
         _topSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
         _bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
+//        _bottomSeparatorLine.hidden = NO;
 
         _backgroundImageView = [[UIImageView alloc] init];
         _backgroundImageView.contentMode = UIViewContentModeScaleToFill;

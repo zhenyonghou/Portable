@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "DETableViewController.h"
 
 @interface FirstViewController ()
 
@@ -26,11 +27,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNewTitle:@"FirstViewController"];
+    [self setRightItemWithAction:@selector(onTouchRightButton) title:@"push"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onTouchRightButton
+{
+    DETableViewController *vc = [[DETableViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
