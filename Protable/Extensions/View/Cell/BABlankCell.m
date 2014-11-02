@@ -60,7 +60,7 @@
         _topSeparatorLine.hidden = YES;
         _topSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
         _bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
-//        _bottomSeparatorLine.hidden = NO;
+        [self setShowBottomSeparatorLine:YES];
 
         _backgroundImageView = [[UIImageView alloc] init];
         _backgroundImageView.contentMode = UIViewContentModeScaleToFill;

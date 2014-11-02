@@ -14,6 +14,9 @@ Portable分两部分：Core和Extended
 在Core之外的扩展，可选择使用里面的类和组件。
 
 
+##使用
+1. 将Protable目录拷贝到本地，引入工程中，如果多个工程使用它，建议不要选中Copy items if needed选项。
+2. 在Build Settings -> Search Paths-> Header Search Paths 中加入：../Protable/Core路径和../Protable/extensions路径
 
 ##TODO
 
