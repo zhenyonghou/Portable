@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-static CGFloat degreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;}
+static float degreesToRadians(float degrees) {return degrees * M_PI / 180;}
 
-static CGFloat radiansToDegrees(CGFloat radians) {return radians * 180/M_PI;}
+static float radiansToDegrees(float radians) {return radians * 180/M_PI;}
 
 @interface BAUtility : NSObject
 
