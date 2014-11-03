@@ -22,9 +22,9 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [BAUtility printRect:self.view.frame mark:@"didAppear view"];
-    [BAUtility printRect:self.tableView.frame mark:@"didAppear tableView"];
-    NSLog(@"%f", self.tableView.contentInset.top);
+    [BAUtility printRect:self.view.frame mark:@"2 didAppear view"];
+    [BAUtility printRect:self.tableView.frame mark:@"2 didAppear tableView"];
+    NSLog(@"%f %f", self.tableView.contentInset.top, self.tableView.contentInset.bottom);;
 }
 
 - (void)didReceiveMemoryWarning {

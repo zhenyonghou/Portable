@@ -5,6 +5,11 @@
 //  Created by houzhenyong on 14/11/2.
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
+/**
+ * 在loadView里将tableView直接赋值给self.view的话，如果在tableView上addSubView。。。
+ * 如果将子View add到tableView的SuperView上，也会有问题。
+ * 所以，改为将tableView add到self.view上，省去不必要的麻烦。
+ */
 
 #import "BATableViewController.h"
 
@@ -22,21 +27,10 @@
     return self;
 }
 
-- (void)loadView
-{
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
-    tableView.backgroundColor = [UIColor clearColor];
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.view = tableView;
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    self.tableView = tableView;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self buildTableView];
+
     if (IOS_VERSION >= 7.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
         UIEdgeInsets edgeInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
@@ -44,6 +38,20 @@
                                                    _bottomBarHeight,
                                                    0);
         self.tableView.contentInset = edgeInsets;
+    }
+}
+
+- (void)buildTableView
+{
+    if (!self.tableView) {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
+        tableView.backgroundColor = [UIColor clearColor];
+        tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [self.view addSubview:tableView];
+        tableView.dataSource = self;
+        tableView.delegate = self;
+        self.tableView = tableView;
     }
 }
 

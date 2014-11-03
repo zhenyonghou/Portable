@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "DETableViewController.h"
 
 @interface FirstViewController ()
 
@@ -27,18 +28,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView reloadData];
+    [self setRightItemWithAction:@selector(onTouchRightButton) title:@"rightbutton"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [BAUtility printRect:self.view.frame mark:@"didAppear view"];
     [BAUtility printRect:self.tableView.frame mark:@"didAppear tableView"];
-    NSLog(@"%f", self.tableView.contentInset.top);
+    NSLog(@"%f %f", self.tableView.contentInset.top, self.tableView.contentInset.bottom);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onTouchRightButton
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 100, 30)];
+    label.font = [UIFont systemFontOfSize:17];
+    static int k = 0;
+    label.text = [NSString stringWithFormat:@"Button%d", k++];
+    label.textColor = [UIColor blackColor];
+    [label sizeToFit];
+    
+    [self.view addSubview:label];
 }
 
 #pragma mark- UITableViewDataSource
@@ -58,6 +71,14 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
     return cell;
+}
+
+#pragma mark- UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DETableViewController *vc = [[DETableViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
