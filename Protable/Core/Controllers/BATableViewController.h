@@ -10,7 +10,7 @@
 
 @interface BATableViewController : BAViewController <UITableViewDataSource, UITableViewDelegate>{
 @protected
-    BOOL _hasToolBar;
+    CGFloat _bottomBarHeight;
 }
 
 @property (nonatomic, strong) UITableView *tableView;

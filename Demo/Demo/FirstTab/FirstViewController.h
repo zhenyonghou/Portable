@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BAViewController.h"
+#import "BATableViewController.h"
 
-@interface FirstViewController : BAViewController
+@interface FirstViewController : BATableViewController
 
 @end

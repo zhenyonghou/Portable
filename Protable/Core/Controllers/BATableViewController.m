@@ -17,7 +17,7 @@
 - (id)init
 {
     if (self = [super init]) {
-        _hasToolBar = NO;
+        _bottomBarHeight = 0.f;
     }
     return self;
 }
@@ -41,8 +41,8 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
         UIEdgeInsets edgeInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
                                                    0,
-                                                   0,
-                                                   _hasToolBar ? PHONE_TOOLBAR_HEIGHT : 0);
+                                                   _bottomBarHeight,
+                                                   0);
         self.tableView.contentInset = edgeInsets;
     }
 }

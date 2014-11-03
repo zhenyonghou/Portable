@@ -7,7 +7,6 @@
 //
 
 #import "FirstViewController.h"
-#import "DETableViewController.h"
 
 @interface FirstViewController ()
 
@@ -20,14 +19,21 @@
     self = [super init];
     if (self) {
         self.hidesBottomBarWhenPushed = NO;
+        _bottomBarHeight = PHONE_TABBAR_HEIGHT;
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNewTitle:@"FirstViewController"];
-    [self setRightItemWithAction:@selector(onTouchRightButton) title:@"push"];
+    [self.tableView reloadData];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [BAUtility printRect:self.view.frame mark:@"didAppear view"];
+    [BAUtility printRect:self.tableView.frame mark:@"didAppear tableView"];
+    NSLog(@"%f", self.tableView.contentInset.top);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,21 +41,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)onTouchRightButton
+#pragma mark- UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    DETableViewController *vc = [[DETableViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-//    self.navigationController.navigationBar.backItem.title = @"TEXT";
+    return 20;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* cellId = @"blankCellId;laks";
+    BABlankCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (!cell) {
+        cell = [[BABlankCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell.backgroundColor = [UIColor orangeColor];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
+    return cell;
 }
-*/
 
 @end
