@@ -39,6 +39,7 @@
 {
     DETableViewController *vc = [[DETableViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+//    self.navigationController.navigationBar.backItem.title = @"TEXT";
 }
 
 /*
