@@ -36,15 +36,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     if (IOS_VERSION >= 7.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
+        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
+                                                   0,
+                                                   0,
+                                                   _hasToolBar ? PHONE_TOOLBAR_HEIGHT : 0);
+        self.tableView.contentInset = edgeInsets;
     }
-
-    UIEdgeInsets edgeInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
-                                               0,
-                                               0,
-                                               _hasToolBar ? PHONE_TOOLBAR_HEIGHT : 0);
-    self.tableView.contentInset = edgeInsets;
 }
 
 

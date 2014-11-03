@@ -10,5 +10,9 @@
 
 @implementation BAUtility
 
++ (void)printRect:(CGRect)rect mark:(NSString*)mark
+{
+    NSLog(@"%@ [%d, %d, %d, %d]", mark, (int32_t)rect.origin.x, (int32_t)rect.origin.y, (int32_t)rect.size.width, (int32_t)rect.size.height);
+}
 
 @end

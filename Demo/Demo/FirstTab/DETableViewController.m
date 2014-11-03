@@ -20,6 +20,13 @@
     [self.tableView reloadData];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [BAUtility printRect:self.view.frame mark:@"didAppear view"];
+    [BAUtility printRect:self.tableView.frame mark:@"didAppear tableView"];
+    NSLog(@"%f", self.tableView.contentInset.top);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

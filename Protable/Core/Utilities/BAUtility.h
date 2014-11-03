@@ -14,4 +14,6 @@ static float radiansToDegrees(float radians) {return radians * 180/M_PI;}
 
 @interface BAUtility : NSObject
 
++ (void)printRect:(CGRect)rect mark:(NSString*)mark;
+
 @end

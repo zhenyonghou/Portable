@@ -34,6 +34,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = SKIN_COLOR(@"view_bg_color");
     
+    if (IOS_VERSION < 7.0) {
+        self.wantsFullScreenLayout = YES;
+        self.navigationController.navigationBar.translucent = YES;
+    }
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onChangeSkin:) name:kSkinChangeNotification object:nil];
 }
 
