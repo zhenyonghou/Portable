@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self buildTableView];
+    [self __buildTableView];
 
     if (IOS_VERSION >= 7.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
@@ -41,7 +41,7 @@
     }
 }
 
-- (void)buildTableView
+- (void)__buildTableView
 {
     if (!self.tableView) {
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
