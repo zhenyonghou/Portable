@@ -19,4 +19,6 @@ Portable分两部分：Core和Extended
 2. 在Build Settings -> Search Paths-> Header Search Paths 中加入：../Protable/Core路径和../Protable/extensions路径
 
 ##TODO
-
+1. Demo里增加换肤例子
+2. 增加第三方登录、分享、统计等普遍使用的功能模块。
+3. 做成项目模板。
