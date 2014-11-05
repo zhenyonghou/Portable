@@ -67,18 +67,6 @@
         [item setFinishedSelectedImage:barItem.selectedImage withFinishedUnselectedImage:barItem.unselectedImage];
     }
     
-    [item setTitlePositionAdjustment:UIOffsetMake(0, -1)];
-    
-    NSDictionary* normalAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
-                                     NSForegroundColorAttributeName : [UIColor lightGrayColor],
-                                     NSKernAttributeName : @(1.2)};
-    [item setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
-    
-    NSDictionary* selectedAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
-                                       NSForegroundColorAttributeName : SKIN_COLOR(@"navibar_bg_color"),
-                                       NSKernAttributeName : @(1.2)};
-    [item setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
-    
     return item;
 }
 

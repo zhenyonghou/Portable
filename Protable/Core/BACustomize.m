@@ -60,8 +60,17 @@
         [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]];
         [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:[UIColor whiteColor]]];
         
-//        NSDictionary *dic = @{UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeTextColor:tabBarTintColor};
-//        [[UITabBarItem appearance] setTitleTextAttributes:dic forState:UIControlStateSelected];
+        [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
+
+        NSDictionary* normalAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
+                                           UITextAttributeTextColor : [UIColor blackColor],
+                                           NSKernAttributeName : @(1.2)};
+        [[UITabBarItem appearance] setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
+        
+        NSDictionary* selectedAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
+                                             UITextAttributeTextColor : [UIColor blackColor],
+                                             NSKernAttributeName : @(1.2)};
+        [[UITabBarItem appearance] setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
     }
 }
 
