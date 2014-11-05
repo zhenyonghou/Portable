@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "DETableViewController.h"
+#import "BAWebViewController.h"
 
 @interface FirstViewController ()
 
@@ -44,14 +45,8 @@
 
 - (void)onTouchRightButton
 {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 100, 30)];
-    label.font = [UIFont systemFontOfSize:17];
-    static int k = 0;
-    label.text = [NSString stringWithFormat:@"Button%d", k++];
-    label.textColor = [UIColor blackColor];
-    [label sizeToFit];
-    
-    [self.view addSubview:label];
+    BAWebViewController *vc = [[BAWebViewController alloc] initWithURL:[NSURL URLWithString:@"http://www.lagou.com"]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark- UITableViewDataSource

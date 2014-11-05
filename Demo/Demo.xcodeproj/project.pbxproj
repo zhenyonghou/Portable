@@ -81,6 +81,7 @@
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
 		568A58221A062FAE00163FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581C1A062FAE00163FA3 /* SecondViewController.m */; };
 		568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581F1A062FAE00163FA3 /* ThirdViewController.m */; };
+		ED16DA1D1A09BCB7006C0278 /* BAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +244,8 @@
 		568A581C1A062FAE00163FA3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		568A581E1A062FAE00163FA3 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		568A581F1A062FAE00163FA3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		ED16DA1B1A09BCB7006C0278 /* BAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAWebViewController.h; sourceTree = "<group>"; };
+		ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +340,8 @@
 				5688DDF21A067B8400F65FE9 /* BAViewController.m */,
 				5688DEA51A06856600F65FE9 /* BATableViewController.h */,
 				5688DEA61A06856600F65FE9 /* BATableViewController.m */,
+				ED16DA1B1A09BCB7006C0278 /* BAWebViewController.h */,
+				ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -801,6 +806,7 @@
 				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
 				5688DE631A067B8400F65FE9 /* BADiskCache.m in Sources */,
 				5688DEA11A067D5C00F65FE9 /* UIView+Bounce.m in Sources */,
+				ED16DA1D1A09BCB7006C0278 /* BAWebViewController.m in Sources */,
 				5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */,
 				5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */,
 				5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */,
