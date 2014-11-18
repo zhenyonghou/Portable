@@ -1,5 +1,5 @@
-//  Created by renren-inc on 13-7-25.
-//  Copyright (c) 2013年 RenRen.com. All rights reserved.
+//  Created by Hou zhenyong on 13-7-25.
+//  Copyright (c) 2013年 Hou zhenyong. All rights reserved.
 
 #import <UIKit/UIKit.h>
 

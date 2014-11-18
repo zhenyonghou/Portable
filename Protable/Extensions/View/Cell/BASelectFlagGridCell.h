@@ -3,7 +3,7 @@
 //  shuidi2
 //
 //  Created by houzhenyong on 14-3-4.
-//  Copyright (c) 2014年 shuidi. All rights reserved.
+//  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

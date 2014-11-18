@@ -1,6 +1,6 @@
 //
 //  Created by hou zhenyong on 14-2-9.
-//  Copyright (c) 2014年 sfbest. All rights reserved.
+//  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
 #import "BASwitchButton.h"

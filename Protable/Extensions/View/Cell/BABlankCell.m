@@ -1,8 +1,8 @@
 //
 //  RRSpring
 //
-//  Created by renren-inc on 13-7-25.
-//  Copyright (c) 2013年 RenRen.com. All rights reserved.
+//  Created by houzhenyong on 13-7-25.
+//  Copyright (c) 2013年 houzhenyong. All rights reserved.
 //
 
 #import "BABlankCell.h"
