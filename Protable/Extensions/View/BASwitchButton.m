@@ -63,7 +63,7 @@
         if (self.bounceAnimate && self.stateOn) {
             [self.imageView bounce:0.3];
         }
-        SuppressPerformSelectorLeakWarning([_target performSelector:_touchedSelector withObject:@(self.stateOn)]);
+        SuppressPerformSelectorLeakWarning([_target performSelector:_touchedSelector withObject:self]);
     }
 }
 

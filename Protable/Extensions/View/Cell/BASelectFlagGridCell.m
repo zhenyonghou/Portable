@@ -45,10 +45,10 @@
     _iconSize = selectedIcon.size;
 }
 
-- (void)onTouchedWithSelectedState:(NSNumber*)selectedState
+- (void)onTouchedWithSelectedState:(BASwitchButton*)switchButton
 {
-    BOOL isSelected = [selectedState boolValue];
-    
+    BOOL isSelected = switchButton.stateOn;
+
     if (self.delegate && [self.delegate respondsToSelector:@selector(selectFlagGridCell:stateChanged:)]) {
         [self.delegate selectFlagGridCell:self stateChanged:isSelected];
     }
