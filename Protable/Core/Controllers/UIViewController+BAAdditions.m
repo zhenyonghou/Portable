@@ -88,47 +88,23 @@
     return buttonItem;
 }
 
-- (UIBarButtonItem*)customizeBarButtonItemWithCustomView:(UIView*)customView
-{
-    return [[UIBarButtonItem alloc] initWithCustomView:customView];
-}
-
-- (NSArray*)buttonItemArrayForFitSystemWithItem:(UIBarButtonItem*)barButtonItem
-{
-    NSArray *buttonItems;
-    
-    if (IOS_VERSION >= 7.0) {
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                                        target:nil action:nil];
-        negativeSpacer.width = -10;     // 偏移只适用于view? 当设置barbuttonitem为text时候偏移导致显示位置不正确
-        buttonItems = @[negativeSpacer, barButtonItem];
-    } else {
-        buttonItems = @[barButtonItem];
-    }
-    return buttonItems;
-}
-
 - (void)setLeftItemWithAction:(SEL)action
                         image:(UIImage*)image
 {
     UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action image:image];
-    NSArray *buttonItems = [self buttonItemArrayForFitSystemWithItem:customizeButtonItem];
-    [self.navigationItem setLeftBarButtonItems:buttonItems];
+    self.navigationItem.leftBarButtonItem = customizeButtonItem;
 }
 
 - (void)setLeftItemWithCustomView:(UIView *)customView
 {
-    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithCustomView:customView];
-    NSArray *buttonItems = [self buttonItemArrayForFitSystemWithItem:customizeButtonItem];
-    [self.navigationItem setLeftBarButtonItems:buttonItems];
+    UIBarButtonItem *customizeButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
+    self.navigationItem.leftBarButtonItem = customizeButtonItem;
 }
 
 - (void)setRightItemWithAction:(SEL)action
                          title:(NSString*)title
 {
     UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action title:title];
-    // 设置为文字时候不需要矫正位置
-//    NSArray *buttonItems = [self buttonItemArrayForFitSystemWithItem:customizeButtonItem];
     self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
@@ -136,23 +112,57 @@
                          image:(UIImage*)image
 {
     UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action image:image];
-    NSArray *buttonItems = [self buttonItemArrayForFitSystemWithItem:customizeButtonItem];
-    [self.navigationItem setRightBarButtonItems:buttonItems];
+    self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
 - (void)setRightItemWithCustomView:(UIView *)customView
 {
-    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithCustomView:customView];
-    NSArray *buttonItems = [self buttonItemArrayForFitSystemWithItem:customizeButtonItem];
-    [self.navigationItem setRightBarButtonItems:buttonItems];
+    UIBarButtonItem *customizeButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
+    self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
 // 经验证，backBarButtonItem设置image不可取，但是这样在IOS6上又难看了点
-- (void)setBackItemWithAction:(SEL)action
-                        title:(NSString*)title
+//- (void)setBackItemWithAction:(SEL)action
+//                        title:(NSString*)title
+//{
+//    UIBarButtonItem* buttonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
+//    self.navigationItem.backBarButtonItem = buttonItem;
+//}
+
+- (void)setBackItemWithNormalImage:(UIImage*)normalImage highlightedImage:(UIImage*)highlightedImage tintColor:(UIColor*)tintColor action:(SEL)action
 {
-    UIBarButtonItem* buttonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
-    self.navigationItem.backBarButtonItem = buttonItem;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:normalImage forState:UIControlStateNormal];
+    [button setImage:highlightedImage forState:UIControlStateHighlighted];
+    [button setTitle:@"返回" forState:UIControlStateNormal];
+    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    [button.titleLabel setFont:[UIFont systemFontOfSize:18.0f]];
+    [button setTitleColor:tintColor forState:UIControlStateNormal];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    if (IOS_VERSION >= 7) {
+        [button setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
+        [button setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 0.0f, -1.0f, 0.0f)];
+        [button sizeToFit];
+        button.width = button.width + 7.f;
+        
+        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        [negativeSpacer setWidth:-8.0f];
+        UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        backBarButtonItem.tintColor = tintColor;
+        self.navigationItem.leftBarButtonItems = @[negativeSpacer, backBarButtonItem];
+    } else {
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+        
+        [button setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
+        [button setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 3.0f, -1.0f, -3.0f)];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:18.0f]];
+        [button sizeToFit];
+        button.width = button.width + 7.f;
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationItem.leftBarButtonItem = barButtonItem;
+    }
 }
 
 @end

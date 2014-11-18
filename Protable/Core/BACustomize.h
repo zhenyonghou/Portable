@@ -10,6 +10,18 @@
 
 @interface BACustomize : NSObject
 
-+ (void)customizeBars;
++ (void)customize;
+
++ (void)customizeNavigationBar;
+
++ (void)customizeBackButton;
+
++ (void)customizeTabBar;
+
++ (void)customizeStatusBar;
+
++ (void)customizeSegmented;
+
++ (void)onSkinChanged;
 
 @end

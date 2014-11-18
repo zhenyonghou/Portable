@@ -10,70 +10,164 @@
 
 @implementation BACustomize
 
-+ (void)customizeBars
++ (void)customize
 {
-    // 设置导航栏背景色，IOS6中，设置tintColor只能设置颜色，不能扁平，所以得设置图片
+    [[self class] customizeNavigationBar];
+    
+    [[self class] customizeButtonItem];
+    
+    [[self class] customizeBackButton];
+    
+    [[self class] customizeStatusBar];
+    
+    [[self class] customizeTabBar];
+    
+    [[self class] customizeSegmented];
+    
+    [[self class] customizeToolBar];
+}
+
++ (void)onSkinChanged
+{
+    [[self class] customizeButtonItem];
+    [[self class] customizeBackButton];
+    [[self class] customizeSegmented];
+}
+
++ (void)customizeNavigationBar
+{
     if (IOS_VERSION >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:SKIN_COLOR(@"navibar_bg_color")];
-        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"navibar_text_color")];    // 设置返回按钮及文字颜色
+        // 改变左右按钮颜色
+        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"color_nav_title")];
+        UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd_ios7")];
+        [[UINavigationBar appearance] setBackgroundImage:naviBarImage forBarMetrics:UIBarMetricsDefault];
     } else {
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"navibar_bg_color")] forBarMetrics:UIBarMetricsDefault];
+        // 设置tintColor只能设置颜色，不能扁平，所以得设置图片
+        UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd")];
+        [[UINavigationBar appearance] setBackgroundImage:naviBarImage forBarMetrics:UIBarMetricsDefault];;
     }
-    
-    // 去掉iOS6中讨厌的 border
-    if (IOS_VERSION < 7.0) {
-        [[UIBarButtonItem appearance] setBackgroundImage:[[UIImage alloc] init]
-                                                forState:UIControlStateNormal
-                                              barMetrics:UIBarMetricsDefault];
-    }
-    
-    //    if (IOS_VERSION >= 7.0) {
-    //        // 注释掉，还是使用默认的<形吧，知道有这个方法就行
-    //        [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back_btn.png"]];
-    //        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back_btn.png"]];
-    //    }
-    
-    // 设置导航栏的返回按钮
+}
+
+// 导航栏的返回按钮
++ (void)customizeBackButton
+{
     if (IOS_VERSION < 7.0) {
         UIImage *naviBackImage = [SKIN_IMAGE(@"BackArrowWhite") resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 0)];
         [[UIBarButtonItem appearance] setBackButtonBackgroundImage:naviBackImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
         [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(5, 0) forBarMetrics:UIBarMetricsDefault];
         
-        NSDictionary *dic = @{UITextAttributeFont: [UIFont systemFontOfSize:17], UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero]};
+        NSDictionary *dic = @{UITextAttributeFont: [UIFont systemFontOfSize:18], UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero]};
         [[UIBarButtonItem appearance] setTitleTextAttributes:dic forState:UIControlStateNormal];
     }
-    
-    // status bar
+}
+
++ (void)customizeToolBar
+{
+    if (IOS_VERSION < 7.0) {
+        [[UIToolbar appearance] setBackgroundImage:SKIN_IMAGE(@"ToolBarBkgnd") forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+        [[UIToolbar appearance] setShadowImage:SKIN_IMAGE(@"transparent") forToolbarPosition:UIBarPositionAny];
+    }
+}
+
++ (void)customizeTabBar
+{
+    if (IOS_VERSION >= 7.0) {
+        [UITabBar appearance].tintColor = SKIN_COLOR(@"color_tabbar_tint");
+        //        [UITabBar appearance].barTintColor = SKIN_COLOR(@"color_bar_background");
+        
+        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+    } else {
+        // 设置背景
+        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+        
+        [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
+        
+        NSDictionary* normalAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
+                                           UITextAttributeTextColor : SKIN_COLOR(@"font_color_c"),
+                                           NSKernAttributeName : @(1.2)};
+        [[UITabBarItem appearance] setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
+        
+        NSDictionary* selectedAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
+                                             UITextAttributeTextColor : SKIN_COLOR(@"color_segment"),
+                                             NSKernAttributeName : @(1.2)};
+        [[UITabBarItem appearance] setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
+    }
+}
+
++ (void)customizeStatusBar
+{
     // 必须在XXX-info.plist中设置：View controller-based status bar appearance 为 NO
     if (IOS_VERSION >= 7.0) {
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     } else {
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     }
+}
 
-    // tabbar
-    if (IOS_VERSION >= 7.0) {
-        [UITabBar appearance].tintColor = SKIN_COLOR(@"navibar_bg_color");
-        [UITabBar appearance].barTintColor = [UIColor whiteColor];
-    } else {
-        // iOS6中给 TabBar 设置 tintColor 也不够扁平，还是老老实实设置背景图片，并去掉 Tab 选中时的高光效果
-        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]];
-        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:[UIColor whiteColor]]];
-        
-        [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
-
-        NSDictionary* normalAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
-                                           UITextAttributeTextColor : [UIColor blackColor],
-                                           NSKernAttributeName : @(1.2)};
-        [[UITabBarItem appearance] setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
-        
-        NSDictionary* selectedAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
-                                             UITextAttributeTextColor : [UIColor blackColor],
-                                             NSKernAttributeName : @(1.2)};
-        [[UITabBarItem appearance] setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
++ (void)customizeButtonItem
+{
+    // 去掉iOS6中讨厌的 border
+    if (IOS_VERSION < 7.0) {
+        [[UIBarButtonItem appearance] setBackgroundImage:[[UIImage alloc] init]
+                                                forState:UIControlStateNormal
+                                              barMetrics:UIBarMetricsDefault];
     }
 }
 
++ (void)customizeSegmented
+{
+    if (IOS_VERSION >= 7.0) {
+        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment"),
+                                              UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
+                                              UITextAttributeTextShadowColor: [UIColor clearColor]
+                                              };
+        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: SKIN_COLOR(@"color_bar_background"),
+                                                      UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
+                                                      UITextAttributeTextShadowColor: [UIColor clearColor]
+                                                      };
+        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
+        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributesSelected forState:UIControlStateSelected];
+        [[UISegmentedControl appearance] setTintColor:SKIN_COLOR(@"color_segment")];
+        
+    } else {
+//        
+//        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f);
+//        UIImage *bkgndImage = [SKIN_IMAGE(@"segment_bkgnd") resizableImageWithCapInsets:edgeInsets];
+//        UIImage *bkgndImage_highlighted = [SKIN_IMAGE(@"segment_bkgnd_highlighted") resizableImageWithCapInsets:edgeInsets];
+//        UIImage *bkgndImage_selected = [SKIN_IMAGE(@"segment_bkgnd_selected") resizableImageWithCapInsets:edgeInsets];
+//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage_highlighted forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage_selected forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+//        
+//        UIEdgeInsets edgeInsetsDiv = UIEdgeInsetsMake(5.0f, 0.0f, 5.0f, 0.0f);
+//        UIImage *divImage_normal_normal = [SKIN_IMAGE(@"segment_div_normal_normal") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_normal_highlighted = [SKIN_IMAGE(@"segment_div_normal_highlighted") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_normal_selected = [SKIN_IMAGE(@"segment_div_normal_selected") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_highlighted_normal = [SKIN_IMAGE(@"segment_div_highlighted_normal") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_highlighted_selected = [SKIN_IMAGE(@"segment_div_highlighted_selected") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_selected_normal = [SKIN_IMAGE(@"segment_div_selected_normal") resizableImageWithCapInsets:edgeInsetsDiv];
+//        UIImage *divImage_selected_highlighted = [SKIN_IMAGE(@"segment_div_selected_highlighted") resizableImageWithCapInsets:edgeInsetsDiv];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_normal forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_highlighted forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_selected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_highlighted_normal forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_highlighted_selected forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_selected_normal forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UISegmentedControl appearance] setDividerImage:divImage_selected_highlighted forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+//        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment"),
+//                                              UITextAttributeFont: [UIFont boldSystemFontOfSize:14.0f],
+//                                              UITextAttributeTextShadowColor: [UIColor clearColor]
+//                                              };
+//        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: [UIColor whiteColor],
+//                                                      UITextAttributeFont: [UIFont boldSystemFontOfSize:14.0f],
+//                                                      UITextAttributeTextShadowColor: [UIColor clearColor]
+//                                                      };
+//        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
+//        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributesSelected forState:UIControlStateSelected];
+    }
+}
 
 
 

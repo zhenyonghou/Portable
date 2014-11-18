@@ -23,8 +23,10 @@
 - (void)setRightItemWithAction:(SEL)action
                          image:(UIImage*)image;
 
-- (void)setBackItemWithAction:(SEL)action
-                        title:(NSString*)title;
+- (void)setBackItemWithNormalImage:(UIImage*)normalImage
+                  highlightedImage:(UIImage*)highlightedImage
+                         tintColor:(UIColor*)tintColor
+                            action:(SEL)action;
 
 - (void)setRightItemWithCustomView:(UIView *)customView;
 
