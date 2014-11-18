@@ -10,7 +10,7 @@
 #define kAccessoryViewRightMargin   10
 #define kAccessoryViewLeftSpacing   5
 
-@implementation BASeparatorLineview
+@implementation BASeparatorLineVew
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -19,24 +19,6 @@
         _lineColor = SKIN_COLOR(@"cell_separator");
     }
     return self;
-}
-
-- (void)drawRect:(CGRect)rect
-{
-    [_lineColor set];
-    
-    // 获取图像环境上下文
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    // 设置线宽
-    CGContextSetLineWidth(context, _lineWidth);
-
-    CGContextMoveToPoint(context, 0, 0);
-
-    CGContextAddLineToPoint(context, self.frame.size.width, 0);
-    
-    // 绘制
-    CGContextStrokePath(context);
 }
 
 @end
@@ -54,13 +36,10 @@
         [self setSelectionStyle:UITableViewCellSelectionStyleNone];
         
         _separatorLineLeftMargin = 15.f;
-        _topSeparatorLine = [[BASeparatorLineview alloc] initWithFrame:CGRectZero];
-        _bottomSeparatorLine = [[BASeparatorLineview alloc] initWithFrame:CGRectZero];
+        _topSeparatorLine = [[BASeparatorLineVew alloc] initWithFrame:CGRectZero];
+        _bottomSeparatorLine = [[BASeparatorLineVew alloc] initWithFrame:CGRectZero];
 
         _topSeparatorLine.hidden = YES;
-        _topSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
-        _bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"cell_separator");
-        [self setShowBottomSeparatorLine:YES];
 
         _backgroundImageView = [[UIImageView alloc] init];
         _backgroundImageView.contentMode = UIViewContentModeScaleToFill;
@@ -74,6 +53,13 @@
 - (void)setCellPositionType:(BACustomCellPositionType)cellPositionType
 {
     _cellPositionType = cellPositionType;
+    
+    if (kCustomCellPositionTypeTail == cellPositionType
+        || kCustomCellPositionTypeOnlyOne == cellPositionType) {
+        self.showBottomSeparatorLine = NO;
+    } else {
+        self.showBottomSeparatorLine = YES;
+    }
 }
 
 - (void)layoutSubviews
@@ -89,6 +75,9 @@
     self.topSeparatorLine.frame = CGRectMake(0, 0, self.frame.size.width, 1);
     self.bottomSeparatorLine.frame = CGRectMake(_separatorLineLeftMargin,
                                                 self.frame.size.height - 1, self.frame.size.width, 0.5);
+    
+    self.topSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
+    self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
 
     // accessory image view
     if (self.accessoryImageView.image) {
@@ -107,13 +96,21 @@
 
 - (void)setShowTopSeparatorLine:(BOOL)showTopSeparatorLine
 {
-    [self addSubview:_topSeparatorLine];
+    if (showTopSeparatorLine) {
+        [self addSubview:_topSeparatorLine];
+    } else {
+        [_topSeparatorLine removeFromSuperview];
+    }
     _topSeparatorLine.hidden = !showTopSeparatorLine;
 }
 
 - (void)setShowBottomSeparatorLine:(BOOL)showBottomSeparatorLine
 {
-    [self addSubview:_bottomSeparatorLine];
+    if (showBottomSeparatorLine) {
+        [self addSubview:_bottomSeparatorLine];
+    } else {
+        [_bottomSeparatorLine removeFromSuperview];
+    }
     _bottomSeparatorLine.hidden = !showBottomSeparatorLine;
 }
 
@@ -121,6 +118,11 @@
 {
     _topSeparatorLine.backgroundColor = aColor;
     _bottomSeparatorLine.backgroundColor = aColor;
+}
+
+- (void)onChangeSkin:(NSNotification *)notification
+{
+
 }
 
 @end
