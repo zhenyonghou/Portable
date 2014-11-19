@@ -19,20 +19,20 @@
 {
     [self removeObserverForSwitchButton];
     self.switchButton = switchButton;
-    [self.switchButton addObserver:self forKeyPath:@"stateOn" options:NSKeyValueObservingOptionNew context:NULL];
+    [self.switchButton addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
 - (void)removeObserverForSwitchButton
 {
     if (self.switchButton) {
-        [self.switchButton removeObserver:self forKeyPath:@"stateOn"];
+        [self.switchButton removeObserver:self forKeyPath:@"selected"];
     }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if ([keyPath isEqualToString:@"stateOn"] && [object isEqual:self.switchButton]) {
-        [self show:self.switchButton.stateOn];
+    if ([keyPath isEqualToString:@"selected"] && [object isEqual:self.switchButton]) {
+        [self show:self.switchButton.isSelected];
     }
 }
 

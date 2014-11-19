@@ -15,8 +15,6 @@
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        _lineWidth = 0.5f;
-        _lineColor = SKIN_COLOR(@"cell_separator");
     }
     return self;
 }

@@ -23,7 +23,7 @@
         _imageView.layer.masksToBounds = YES;
         [self.contentView addSubview:_imageView];
 
-        _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero offImage:nil onImage:nil target:self selector:@selector(onTouchedWithSelectedState:)];
+        _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero normalImage:nil selectedImage:nil target:self switchAction:@selector(onTouchedWithSelectedState:)];
         _selectIconButton.backgroundColor = [UIColor clearColor];
         _selectIconButton.bounceAnimate = YES;
         [self.contentView addSubview:_selectIconButton];
@@ -41,16 +41,16 @@
 
 - (void)setUnselectedIcon:(UIImage *)unselectedIcon selectedIcon:(UIImage*)selectedIcon
 {
-    [_selectIconButton setOffImage:unselectedIcon onImage:selectedIcon];
+    [_selectIconButton setNormalImage:unselectedIcon selectedImage:selectedIcon];
     _iconSize = selectedIcon.size;
 }
 
-- (void)onTouchedWithSelectedState:(BASwitchButton*)switchButton
+- (void)onTouchedWithSelectedState:(id)sender
 {
-    BOOL isSelected = switchButton.stateOn;
+    BASwitchButton *button = sender;
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(selectFlagGridCell:stateChanged:)]) {
-        [self.delegate selectFlagGridCell:self stateChanged:isSelected];
+        [self.delegate selectFlagGridCell:self stateChanged:button.isSelected];
     }
 }
 

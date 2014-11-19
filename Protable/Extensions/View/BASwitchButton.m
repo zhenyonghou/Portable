@@ -8,62 +8,51 @@
 
 @implementation BASwitchButton
 
-- (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage
+- (id)initWithFrame:(CGRect)frame
+        normalImage:(UIImage*)normalImage
+      selectedImage:(UIImage*)selectedImage
+             target:(id)target
+       switchAction:(SEL)action
+{
+    self = [self initWithFrame:frame normalImage:normalImage selectedImage:selectedImage];
+    if (self) {
+        [self addTarget:target switchAction:action];
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage
 {
     if (self = [super initWithFrame:frame]) {
-        _offImage = offImage;
-        _onImage = onImage;
         _bounceAnimate = NO;
-        [self setOffImage:_offImage onImage:_onImage];
+        [self setNormalImage:normalImage selectedImage:selectedImage];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame
-           offImage:(UIImage*)offImage
-            onImage:(UIImage*)onImage
-             target:(id)target
-           selector:(SEL)selector
+- (void)setNormalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage
 {
-    self = [self initWithFrame:frame offImage:offImage onImage:onImage];
-    if (self) {
-        [self addTarget:target switchSelector:selector];
-    }
-    return self;
+    _normalImage = normalImage;
+    _selectedImage = selectedImage;
+    [self setImage:normalImage forState:UIControlStateNormal];
+    [self setImage:selectedImage forState:UIControlStateSelected];
 }
 
-- (void)setOffImage:(UIImage*)offImage onImage:(UIImage*)onImage
-{
-    [self setImage:offImage forState:UIControlStateNormal];
-    [self setImage:onImage forState:UIControlStateSelected];
-}
-
-- (void)addTarget:(id)target switchSelector:(SEL)selector
+- (void)addTarget:(id)target switchAction:(SEL)action
 {
     _target = target;
-    _touchedSelector = selector;
-    [self addTarget:self action:@selector(touchAction) forControlEvents:UIControlEventTouchUpInside];
+    _switchAction = action;
+    [self addTarget:self action:@selector(touchUpInsideAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)setStateOn:(BOOL)stateOn
+- (void)touchUpInsideAction
 {
-    if (stateOn == _stateOn) {
-        return;
-    }
-
-    _stateOn = stateOn;
-    self.selected = _stateOn;
-}
-
-- (void)touchAction
-{
-    self.stateOn = !self.stateOn;
-
     if (_target) {
-        if (self.bounceAnimate && self.stateOn) {
-            [self.imageView bounce:0.3];
-        }
-        SuppressPerformSelectorLeakWarning([_target performSelector:_touchedSelector withObject:self]);
+        //        if (self.bounceAnimate && self.stateOn) {
+        //            [self.imageView bounce:0.3];
+        //        }
+        self.selected = !self.isSelected;
+        SuppressPerformSelectorLeakWarning([_target performSelector:_switchAction withObject:self]);
     }
 }
 

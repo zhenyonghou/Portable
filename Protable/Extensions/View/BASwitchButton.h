@@ -11,26 +11,24 @@
 @interface BASwitchButton : UIButton {
 @protected
     __weak id _target;
-    SEL _touchedSelector;
-
-    UIImage *_offImage;
-    UIImage *_onImage;
+    SEL _switchAction;
+    
+    UIImage *_normalImage;
+    UIImage *_selectedImage;
 }
-
-@property (nonatomic, assign) BOOL stateOn;
 
 @property (nonatomic, assign) BOOL bounceAnimate;       // default is NO
 
-- (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage;
-
 - (id)initWithFrame:(CGRect)frame
-           offImage:(UIImage*)offImage
-            onImage:(UIImage*)onImage
+        normalImage:(UIImage*)normalImage
+      selectedImage:(UIImage*)selectedImage
              target:(id)target
-           selector:(SEL)selector;
+       switchAction:(SEL)action;
 
-- (void)setOffImage:(UIImage*)offImage onImage:(UIImage*)onImage;
+- (id)initWithFrame:(CGRect)frame normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage;
 
-- (void)addTarget:(id)target switchSelector:(SEL)selector;
+- (void)setNormalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage;
+
+- (void)addTarget:(id)target switchAction:(SEL)action;
 
 @end

@@ -12,9 +12,6 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
 
 @interface BASeparatorLineVew : UIView
 
-@property (nonatomic, assign) CGFloat lineWidth;        // 粗细程度
-@property (nonatomic, strong) UIColor *lineColor;
-
 @end
 
 
