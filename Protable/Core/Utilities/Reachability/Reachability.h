@@ -22,39 +22,23 @@
  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE. 
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+ houzhenyong 修改：
+ 做成了单例模式，并且去除了一组函数：
+ +(Reachability*)reachabilityWithHostname:(NSString*)hostname;
+ +(Reachability*)reachabilityWithHostName:(NSString*)hostname;
+ +(Reachability*)reachabilityForInternetConnection;
+ +(Reachability*)reachabilityWithAddress:(void *)hostAddress;
+ +(Reachability*)reachabilityForLocalWiFi;
+ 
+ -(Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
+
  */
 
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
-#import <sys/socket.h>
-#import <netinet/in.h>
-#import <netinet6/in6.h>
-#import <arpa/inet.h>
-#import <ifaddrs.h>
-#import <netdb.h>
-
-/**
- * Does ARC support GCD objects?
- * It does if the minimum deployment target is iOS 6+ or Mac OS X 8+
- * 
- * @see http://opensource.apple.com/source/libdispatch/libdispatch-228.18/os/object.h
- **/
-#if OS_OBJECT_USE_OBJC
-#define NEEDS_DISPATCH_RETAIN_RELEASE 0
-#else
-#define NEEDS_DISPATCH_RETAIN_RELEASE 1
-#endif
-
-/** 
- * Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.
- *
- * @see http://nshipster.com/ns_enum-ns_options/
- **/
-#ifndef NS_ENUM
-#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
-#endif
 
 extern NSString *const kReachabilityChangedNotification;
 
@@ -71,23 +55,15 @@ typedef void (^NetworkReachable)(Reachability * reachability);
 typedef void (^NetworkUnreachable)(Reachability * reachability);
 
 
-
 @interface Reachability : NSObject
 
 @property (nonatomic, copy) NetworkReachable    reachableBlock;
 @property (nonatomic, copy) NetworkUnreachable  unreachableBlock;
 
-
 @property (nonatomic, assign) BOOL reachableOnWWAN;
 
-//+(Reachability*)reachabilityWithHostname:(NSString*)hostname;
-//+(Reachability*)reachabilityForInternetConnection;
-//+(Reachability*)reachabilityWithAddress:(const struct sockaddr_in*)hostAddress;
-//+(Reachability*)reachabilityForLocalWiFi;
-
+// zhenyong hou added
 + (Reachability *)defaultInstance;
-
-//-(Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
 
 -(BOOL)startNotifier;
 -(void)stopNotifier;

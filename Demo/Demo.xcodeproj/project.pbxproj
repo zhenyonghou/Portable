@@ -11,7 +11,6 @@
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
 		5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD51A067B8400F65FE9 /* NSDictionary+Json.m */; };
-		5688DE561A067B8400F65FE9 /* NSString+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD71A067B8400F65FE9 /* NSString+Height.m */; };
 		5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */; };
 		5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDDD1A067B8400F65FE9 /* UIDevice+BAAdditions.m */; };
 		5688DE5A1A067B8400F65FE9 /* UIImage+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDE01A067B8400F65FE9 /* UIImage+BAAdditions.m */; };
@@ -82,6 +81,7 @@
 		568A58221A062FAE00163FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581C1A062FAE00163FA3 /* SecondViewController.m */; };
 		568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581F1A062FAE00163FA3 /* ThirdViewController.m */; };
 		ED16DA1D1A09BCB7006C0278 /* BAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */; };
+		ED6B5C141A2DAAA3008CED69 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B5C131A2DAAA3008CED69 /* NSString+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +103,6 @@
 		5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BAAdditions.m"; sourceTree = "<group>"; };
 		5688DDD41A067B8400F65FE9 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
 		5688DDD51A067B8400F65FE9 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
-		5688DDD61A067B8400F65FE9 /* NSString+Height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Height.h"; sourceTree = "<group>"; };
-		5688DDD71A067B8400F65FE9 /* NSString+Height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Height.m"; sourceTree = "<group>"; };
 		5688DDDA1A067B8400F65FE9 /* UIColor+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BAAdditions.h"; sourceTree = "<group>"; };
 		5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BAAdditions.m"; sourceTree = "<group>"; };
 		5688DDDC1A067B8400F65FE9 /* UIDevice+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+BAAdditions.h"; sourceTree = "<group>"; };
@@ -246,6 +244,8 @@
 		568A581F1A062FAE00163FA3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		ED16DA1B1A09BCB7006C0278 /* BAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAWebViewController.h; sourceTree = "<group>"; };
 		ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAWebViewController.m; sourceTree = "<group>"; };
+		ED6B5C121A2DAAA3008CED69 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		ED6B5C131A2DAAA3008CED69 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,14 +297,14 @@
 		5688DDCF1A067B8400F65FE9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				ED6B5C121A2DAAA3008CED69 /* NSString+Additions.h */,
+				ED6B5C131A2DAAA3008CED69 /* NSString+Additions.m */,
 				5688DDD01A067B8400F65FE9 /* NSArray+Json.h */,
 				5688DDD11A067B8400F65FE9 /* NSArray+Json.m */,
 				5688DDD21A067B8400F65FE9 /* NSDate+BAAdditions.h */,
 				5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */,
 				5688DDD41A067B8400F65FE9 /* NSDictionary+Json.h */,
 				5688DDD51A067B8400F65FE9 /* NSDictionary+Json.m */,
-				5688DDD61A067B8400F65FE9 /* NSString+Height.h */,
-				5688DDD71A067B8400F65FE9 /* NSString+Height.m */,
 				5688DDDA1A067B8400F65FE9 /* UIColor+BAAdditions.h */,
 				5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */,
 				5688DDDC1A067B8400F65FE9 /* UIDevice+BAAdditions.h */,
@@ -789,7 +789,6 @@
 				5688DE651A067B8400F65FE9 /* BAFileDiskCache.m in Sources */,
 				5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */,
 				5688DE611A067B8400F65FE9 /* BATabBarController.m in Sources */,
-				5688DE561A067B8400F65FE9 /* NSString+Height.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
 				5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */,
 				5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */,
@@ -826,6 +825,7 @@
 				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,
 				5688DE701A067B8400F65FE9 /* BASkin.m in Sources */,
 				5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */,
+				ED6B5C141A2DAAA3008CED69 /* NSString+Additions.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,
 				5688DE5A1A067B8400F65FE9 /* UIImage+BAAdditions.m in Sources */,
 			);

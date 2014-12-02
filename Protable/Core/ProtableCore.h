@@ -14,7 +14,7 @@
 #import "NSArray+Json.h"
 #import "NSDate+BAAdditions.h"
 #import "NSDictionary+Json.h"
-#import "NSString+Height.h"
+#import "NSString+Additions.h"
 #import "UIColor+BAAdditions.h"
 #import "UIDevice+BAAdditions.h"
 

@@ -1,42 +1,39 @@
 //
-//  NSString+SDExtended.m
-//  shuidi2
-//
 //  Created by houzhenyong on 14-3-8.
-//  Copyright (c) 2014年 houzhenyong. All rights reserved.
+//  Copyright (c) 2014年 shuidi. All rights reserved.
 //
 
-#import "NSString+Height.h"
+#import "NSString+Additions.h"
 
-@implementation NSString (Height)
+@implementation NSString (Additions)
 
-- (CGFloat)calculateHeightWithFont:(UIFont*)font constantWidth:(CGFloat)width
+- (CGSize)calculateSizeWithFont:(UIFont*)font maximumWidth:(CGFloat)maximumWidth
 {
     CGSize size;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-        size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
+        size = [self boundingRectWithSize:CGSizeMake(maximumWidth, MAXFLOAT)
                                   options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                attributes:attribute context:nil].size;
     } else {
-        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(width, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
+        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(maximumWidth, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
     }
-    return size.height;
+    return size;
 }
 
-- (CGFloat)calculateHeightWithFont:(UIFont*)font constantWidth:(CGFloat)width numberOfLines:(NSUInteger)numberOfLines
+- (CGSize)calculateSizeWithFont:(UIFont*)font maximumWidth:(CGFloat)maximumWidth numberOfLines:(NSUInteger)numberOfLines
 {
     CGSize size;
     CGFloat height = numberOfLines == 0 ? CGFLOAT_MAX : numberOfLines * font.lineHeight;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-        size = [self boundingRectWithSize:CGSizeMake(width, height)
+        size = [self boundingRectWithSize:CGSizeMake(maximumWidth, height)
                                   options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                attributes:attribute context:nil].size;
     } else {
-        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(width, height) lineBreakMode:NSLineBreakByWordWrapping];
+        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(maximumWidth, height) lineBreakMode:NSLineBreakByWordWrapping];
     }
-    return size.height;
+    return size;
 }
 
 @end
