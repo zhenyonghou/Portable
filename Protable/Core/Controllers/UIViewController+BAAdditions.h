@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, BAViewControllerEntryType) {
+    BAViewControllerEntryTypePush       = 0,
+    BAViewControllerEntryTypePresent,
+};
+
 @interface UIViewController (BAAdditions)
+
+@property (nonatomic, assign) BAViewControllerEntryType entryType;
 
 - (void)setNewTitle:(NSString*)title;
 

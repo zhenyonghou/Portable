@@ -8,13 +8,14 @@
 
 #define TITLE_FONT_SIZE         18
 
+#import <objc/runtime.h>
 #import "UIViewController+BAAdditions.h"
 #import "ProtableDefines.h"
 #import "UIColor+BAAdditions.h"
 
 @implementation UIViewController (BAAdditions)
 
-
+static char BAViewControllerEntryTypeKey;
 
 - (void)setNewTitle:(NSString*)title
 {
@@ -162,6 +163,17 @@
         UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
         self.navigationItem.leftBarButtonItem = barButtonItem;
     }
+}
+
+- (void)setEntryType:(BAViewControllerEntryType)entryType
+{
+    objc_setAssociatedObject(self, &BAViewControllerEntryTypeKey, @(entryType), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BAViewControllerEntryType)entryType
+{
+    NSNumber *val = objc_getAssociatedObject(self, &BAViewControllerEntryTypeKey);
+    return [val integerValue];
 }
 
 @end
