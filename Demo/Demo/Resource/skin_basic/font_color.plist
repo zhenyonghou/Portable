@@ -2,10 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>color_nav_title</key>
-	<string>0xffffff</string>
+	<key>color_navibar_title</key>
+	<string>0xFFFFFF</string>
+	<key>color_navibar_bg</key>
+	<string>0xEC4E44</string>
+	<key>color_vc_view_bg</key>
+	<string>0xf0f0f0</string>
 	<key>color_small_title</key>
 	<string>0x222222</string>
+	<key>color_tabbar_tint</key>
+	<string>0xe55933</string>
+	<key>color_tabbar_bg</key>
+	<string>0xf8f8f8</string>
 	<key>color_smaller_title</key>
 	<string>0x929292</string>
 	<key>color_read_title</key>
@@ -24,11 +32,9 @@
 	<string>0xd43131</string>
 	<key>color_blue</key>
 	<string>0x33b5e5</string>
-	<key>color_view_background</key>
-	<string>0xf0f0f0</string>
-	<key>color_segment</key>
+	<key>color_segment_text_normal</key>
 	<string>0xe55933</string>
-	<key>color_bar_background</key>
+	<key>color_segment_text_selected</key>
 	<string>0xf8f8f8</string>
 	<key>color_cell_background</key>
 	<string>0xffffff</string>
@@ -38,67 +44,5 @@
 	<string>0xdcdcdc</string>
 	<key>color_list_update_tip_bg</key>
 	<string>0x33b5e5,50</string>
-	<key>-----------我是分割线-----------</key>
-	<string>----------------------------------------</string>
-	<key>color_tabbar_tint</key>
-	<string>0xe55933</string>
-	<key>color_article_detail_title</key>
-	<string>0x505050</string>
-	<key>font_normal_content_color</key>
-	<string>0x3A3B36</string>
-	<key>font_little</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<integer>11</integer>
-	</dict>
-	<key>font_middle</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<string>13</string>
-	</dict>
-	<key>font_big</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<string>17</string>
-	</dict>
-	<key>font_normal</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<string>14</string>
-	</dict>
-	<key>font_small</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<string>12</string>
-	</dict>
-	<key>font_time</key>
-	<dict>
-		<key>name</key>
-		<string>Helvetica</string>
-		<key>size</key>
-		<string>11</string>
-	</dict>
-	<key>font_color_b</key>
-	<string>0x808080</string>
-	<key>font_color_c</key>
-	<string>0xb2b2b2</string>
-	<key>color_orange</key>
-	<string>0xe55933</string>
-	<key>color_gray_a</key>
-	<string>0x222222</string>
-	<key>color_gray_b</key>
-	<string>0x808080</string>
-	<key>color_gray_c</key>
-	<string>0xb2b2b2</string>
 </dict>
 </plist>

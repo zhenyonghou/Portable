@@ -38,9 +38,9 @@
 {
     if (IOS_VERSION >= 7.0) {
         // 改变左右按钮颜色
-        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"color_navbar_title")];
+        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"color_navibar_title")];
         
-        
+        [UINavigationBar appearance].barTintColor = SKIN_COLOR(@"color_navibar_bg");
 //        UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd_ios7")];
 //        [[UINavigationBar appearance] setBackgroundImage:naviBarImage forBarMetrics:UIBarMetricsDefault];
     } else {
@@ -75,14 +75,14 @@
 {
     if (IOS_VERSION >= 7.0) {
         [UITabBar appearance].tintColor = SKIN_COLOR(@"color_tabbar_tint");
-        //        [UITabBar appearance].barTintColor = SKIN_COLOR(@"color_bar_background");
+        [UITabBar appearance].barTintColor = SKIN_COLOR(@"color_tabbar_bg");
         
-        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
-        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+//        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_tabbar_bg")]];
+//        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_tabbar_bg")]];
     } else {
         // 设置背景
-        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
-        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_bar_background")]];
+        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_tabbar_bg")]];
+        [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageWithColor:SKIN_COLOR(@"color_tabbar_bg")]];
         
         [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
         
@@ -92,7 +92,7 @@
         [[UITabBarItem appearance] setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
         
         NSDictionary* selectedAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:11],
-                                             UITextAttributeTextColor : SKIN_COLOR(@"color_segment"),
+                                             UITextAttributeTextColor : SKIN_COLOR(@"color_segment_text_normal"),
                                              NSKernAttributeName : @(1.2)};
         [[UITabBarItem appearance] setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
     }
@@ -121,17 +121,17 @@
 + (void)customizeSegmented
 {
     if (IOS_VERSION >= 7.0) {
-        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment"),
+        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment_text_normal"),
                                               UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
                                               UITextAttributeTextShadowColor: [UIColor clearColor]
                                               };
-        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: SKIN_COLOR(@"color_bar_background"),
+        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment_text_selected"),
                                                       UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
                                                       UITextAttributeTextShadowColor: [UIColor clearColor]
                                                       };
         [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
         [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributesSelected forState:UIControlStateSelected];
-        [[UISegmentedControl appearance] setTintColor:SKIN_COLOR(@"color_segment")];
+        [[UISegmentedControl appearance] setTintColor:SKIN_COLOR(@"color_segment_text_normal")];
         
     } else {
 //        

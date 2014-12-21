@@ -62,23 +62,23 @@ static AppNavigator * navigator = nil;
 - (void)setupTabBarViewControllers
 {
     BATabBarItem *barItem0 = [[BATabBarItem alloc] initWithTitle:@"第1页"
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_newest_icon_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_newest_icon")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_first_hl")
+                                                 unselectedImage:SKIN_IMAGE(@"tabbar_first")
                                                   viewController:[[FirstViewController alloc] init]];
     
     BATabBarItem *barItem1 = [[BATabBarItem alloc] initWithTitle:@"第2页"
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_hot_icon_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_hot_icon")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_second_hl")
+                                                 unselectedImage:SKIN_IMAGE(@"tabbar_second")
                                                   viewController:[[SecondViewController alloc] init]];
                               
     BATabBarItem *barItem2 = [[BATabBarItem alloc] initWithTitle:@"第3页"
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_message_icon_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_message_icon")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_third_hl")
+                                                 unselectedImage:SKIN_IMAGE(@"tabbar_third")
                                                   viewController:[[ThirdViewController alloc] init]];
     
     BATabBarItem *barItem3 = [[BATabBarItem alloc] initWithTitle:@"第4页"
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_me_icon_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_me_icon")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_forth_hl")
+                                                 unselectedImage:SKIN_IMAGE(@"tabbar_forth")
                                                   viewController:[[ForthViewController alloc] init]];
     
     self.tabBarController = [[BATabBarController alloc] init];
