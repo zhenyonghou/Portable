@@ -38,9 +38,11 @@
 {
     if (IOS_VERSION >= 7.0) {
         // 改变左右按钮颜色
-        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"color_nav_title")];
-        UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd_ios7")];
-        [[UINavigationBar appearance] setBackgroundImage:naviBarImage forBarMetrics:UIBarMetricsDefault];
+        [[UINavigationBar appearance] setTintColor:SKIN_COLOR(@"color_navbar_title")];
+        
+        
+//        UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd_ios7")];
+//        [[UINavigationBar appearance] setBackgroundImage:naviBarImage forBarMetrics:UIBarMetricsDefault];
     } else {
         // 设置tintColor只能设置颜色，不能扁平，所以得设置图片
         UIImage *naviBarImage = [UIImage resizeFromCenterWithImage:SKIN_IMAGE(@"navigationBarBkgnd")];
