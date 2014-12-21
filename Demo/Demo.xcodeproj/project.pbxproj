@@ -15,6 +15,7 @@
 		17285F141A4752120047A25A /* DECFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0B1A4752120047A25A /* DECFileViewController.m */; };
 		17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */; };
 		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
+		17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F181A47536E0047A25A /* UITableView+Additions.m */; };
 		5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BACustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
@@ -112,6 +113,8 @@
 		17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECUtilitiesViewController.m; sourceTree = "<group>"; };
 		17285F101A4752120047A25A /* DECViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECViewViewController.h; sourceTree = "<group>"; };
 		17285F111A4752120047A25A /* DECViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECViewViewController.m; sourceTree = "<group>"; };
+		17285F171A47536E0047A25A /* UITableView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Additions.h"; sourceTree = "<group>"; };
+		17285F181A47536E0047A25A /* UITableView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Additions.m"; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BACustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BACustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -592,6 +595,8 @@
 				5688DE9B1A067D5C00F65FE9 /* UIView+BAAdditions.m */,
 				5688DE9C1A067D5C00F65FE9 /* UIView+Bounce.h */,
 				5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */,
+				17285F171A47536E0047A25A /* UITableView+Additions.h */,
+				17285F181A47536E0047A25A /* UITableView+Additions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -825,6 +830,7 @@
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
 				5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */,
+				17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */,
 				5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */,

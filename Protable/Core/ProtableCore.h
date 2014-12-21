@@ -19,7 +19,7 @@
 #import "UIDevice+BAAdditions.h"
 
 #import "UIImage+BAAdditions.h"
-
+#import "UITableView+Additions.h"
 #import "UIButton+Protable.h"
 #import "UILabel+Protable.h"
 #import "UIView+BAAdditions.h"
