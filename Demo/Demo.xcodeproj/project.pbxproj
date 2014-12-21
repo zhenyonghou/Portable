@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 170659111A473AF600B58000 /* UIImage+BAAdditions.m */; };
 		5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BACustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
 		5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD51A067B8400F65FE9 /* NSDictionary+Json.m */; };
 		5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */; };
 		5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDDD1A067B8400F65FE9 /* UIDevice+BAAdditions.m */; };
-		5688DE5A1A067B8400F65FE9 /* UIImage+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDE01A067B8400F65FE9 /* UIImage+BAAdditions.m */; };
-		5688DE5B1A067B8400F65FE9 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDE21A067B8400F65FE9 /* UIImage+Blur.m */; };
-		5688DE5C1A067B8400F65FE9 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDE41A067B8400F65FE9 /* UIImage+ImageWithColor.m */; };
-		5688DE5D1A067B8400F65FE9 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDE61A067B8400F65FE9 /* UIImage+Screenshot.m */; };
 		5688DE611A067B8400F65FE9 /* BATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDF01A067B8400F65FE9 /* BATabBarController.m */; };
 		5688DE621A067B8400F65FE9 /* BAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDF21A067B8400F65FE9 /* BAViewController.m */; };
 		5688DE631A067B8400F65FE9 /* BADiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDF51A067B8400F65FE9 /* BADiskCache.m */; };
@@ -95,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170659101A473AF600B58000 /* UIImage+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BAAdditions.h"; sourceTree = "<group>"; };
+		170659111A473AF600B58000 /* UIImage+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BAAdditions.m"; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BACustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BACustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -107,14 +106,6 @@
 		5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BAAdditions.m"; sourceTree = "<group>"; };
 		5688DDDC1A067B8400F65FE9 /* UIDevice+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+BAAdditions.h"; sourceTree = "<group>"; };
 		5688DDDD1A067B8400F65FE9 /* UIDevice+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+BAAdditions.m"; sourceTree = "<group>"; };
-		5688DDDF1A067B8400F65FE9 /* UIImage+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BAAdditions.h"; sourceTree = "<group>"; };
-		5688DDE01A067B8400F65FE9 /* UIImage+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BAAdditions.m"; sourceTree = "<group>"; };
-		5688DDE11A067B8400F65FE9 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
-		5688DDE21A067B8400F65FE9 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
-		5688DDE31A067B8400F65FE9 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
-		5688DDE41A067B8400F65FE9 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
-		5688DDE51A067B8400F65FE9 /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
-		5688DDE61A067B8400F65FE9 /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
 		5688DDEF1A067B8400F65FE9 /* BATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATabBarController.h; sourceTree = "<group>"; };
 		5688DDF01A067B8400F65FE9 /* BATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATabBarController.m; sourceTree = "<group>"; };
 		5688DDF11A067B8400F65FE9 /* BAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewController.h; sourceTree = "<group>"; };
@@ -309,24 +300,10 @@
 				5688DDDB1A067B8400F65FE9 /* UIColor+BAAdditions.m */,
 				5688DDDC1A067B8400F65FE9 /* UIDevice+BAAdditions.h */,
 				5688DDDD1A067B8400F65FE9 /* UIDevice+BAAdditions.m */,
-				5688DDDE1A067B8400F65FE9 /* UIImage-Helpers */,
+				170659101A473AF600B58000 /* UIImage+BAAdditions.h */,
+				170659111A473AF600B58000 /* UIImage+BAAdditions.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		5688DDDE1A067B8400F65FE9 /* UIImage-Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				5688DDDF1A067B8400F65FE9 /* UIImage+BAAdditions.h */,
-				5688DDE01A067B8400F65FE9 /* UIImage+BAAdditions.m */,
-				5688DDE11A067B8400F65FE9 /* UIImage+Blur.h */,
-				5688DDE21A067B8400F65FE9 /* UIImage+Blur.m */,
-				5688DDE31A067B8400F65FE9 /* UIImage+ImageWithColor.h */,
-				5688DDE41A067B8400F65FE9 /* UIImage+ImageWithColor.m */,
-				5688DDE51A067B8400F65FE9 /* UIImage+Screenshot.h */,
-				5688DDE61A067B8400F65FE9 /* UIImage+Screenshot.m */,
-			);
-			path = "UIImage-Helpers";
 			sourceTree = "<group>";
 		};
 		5688DDEE1A067B8400F65FE9 /* Controllers */ = {
@@ -761,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5688DE5B1A067B8400F65FE9 /* UIImage+Blur.m in Sources */,
 				5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
@@ -774,7 +750,6 @@
 				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
 				568A58201A062FAE00163FA3 /* FirstViewController.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
-				5688DE5D1A067B8400F65FE9 /* UIImage+Screenshot.m in Sources */,
 				5688DE781A067B8400F65FE9 /* BABadgeNumberButton.m in Sources */,
 				5688DE6F1A067B8400F65FE9 /* Reachability.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
@@ -782,7 +757,6 @@
 				5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */,
 				5688DE881A067B8400F65FE9 /* BARightViewCell.m in Sources */,
 				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
-				5688DE5C1A067B8400F65FE9 /* UIImage+ImageWithColor.m in Sources */,
 				5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */,
 				5688DE661A067B8400F65FE9 /* BAImageFileHelper.m in Sources */,
 				5688DEA01A067D5C00F65FE9 /* UIView+BAAdditions.m in Sources */,
@@ -793,6 +767,7 @@
 				5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */,
 				5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
+				170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */,
 				5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */,
 				5688DE9E1A067D5C00F65FE9 /* UIButton+Protable.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
@@ -827,7 +802,6 @@
 				5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */,
 				ED6B5C141A2DAAA3008CED69 /* NSString+Additions.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,
-				5688DE5A1A067B8400F65FE9 /* UIImage+BAAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

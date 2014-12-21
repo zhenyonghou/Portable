@@ -9,7 +9,6 @@
 #import "BATabBarController.h"
 #import "ProtableDefines.h"
 #import "UIViewController+BAAdditions.h"
-#import "UIImage+ImageWithColor.h"
 
 @implementation BATabBarItem
 

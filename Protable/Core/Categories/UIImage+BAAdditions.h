@@ -16,6 +16,13 @@ extern const CGFloat kImageCompressionValue;    // 图片上传的压缩比例
 
 + (UIImage *)imageWithColor:(UIColor *)color;
 
++ (UIImage *)imageWithColor:(UIColor *)color imageSize:(CGSize)imageSize;
+
++ (UIImage*)resizeFromCenterWithImage:(UIImage*)image;
+
+
+- (UIImage*)blurredImage:(CGFloat)blurAmount;
+
 /**
  * @brief 获取图片大小
  * @param data ALAssetRepresentation的data数据
@@ -78,5 +85,7 @@ extern const CGFloat kImageCompressionValue;    // 图片上传的压缩比例
 
 
 + (UIImage *)scaleAndRotateImage:(UIImage *)image size:(NSInteger)size;
+
++ (UIImage *)screenshot;
 
 @end

@@ -5,6 +5,8 @@
 //
 #import <ImageIO/ImageIO.h>
 #import "UIImage+BAAdditions.h"
+#import <Accelerate/Accelerate.h>
+#import <QuartzCore/QuartzCore.h>
 
 const CGFloat kSuperImageRatio          = 2.9f;         // 超宽和超长图片的最大比例
 const CGFloat kHDImageMaxHeight         = 12040.0f;     // 高清图片最大的高度
@@ -14,8 +16,9 @@ const CGFloat kImageCompressionValue    = 0.8f;         // 图片上传的压缩
 
 @implementation UIImage (BAAdditions)
 
-+ (UIImage *)imageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
++ (UIImage *)imageWithColor:(UIColor *)color imageSize:(CGSize)imageSize
+{
+    CGRect rect = CGRectMake(0, 0, imageSize.width, imageSize.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -27,6 +30,84 @@ const CGFloat kImageCompressionValue    = 0.8f;         // 图片上传的压缩
     
     return image;
 }
+
++ (UIImage *)imageWithColor:(UIColor *)color {
+    return [[self class] imageWithColor:color imageSize:CGSizeMake(1, 1)];
+}
+
++ (UIImage*)resizeFromCenterWithImage:(UIImage*)image
+{
+    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(image.size.height/2, image.size.width/2, image.size.height/2, image.size.width/2)];
+}
+
+- (UIImage*)blurredImage:(CGFloat)blurAmount
+{
+    if (blurAmount < 0.0 || blurAmount > 1.0) {
+        blurAmount = 0.5;
+    }
+    
+    int boxSize = (int)(blurAmount * 40);
+    boxSize = boxSize - (boxSize % 2) + 1;
+    
+    CGImageRef img = self.CGImage;
+    
+    vImage_Buffer inBuffer, outBuffer;
+    vImage_Error error;
+    
+    void *pixelBuffer;
+    
+    CGDataProviderRef inProvider = CGImageGetDataProvider(img);
+    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);
+    
+    inBuffer.width = CGImageGetWidth(img);
+    inBuffer.height = CGImageGetHeight(img);
+    inBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    
+    pixelBuffer = malloc(CGImageGetBytesPerRow(img) * CGImageGetHeight(img));
+    
+    outBuffer.data = pixelBuffer;
+    outBuffer.width = CGImageGetWidth(img);
+    outBuffer.height = CGImageGetHeight(img);
+    outBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    
+    if (!error) {
+        error = vImageBoxConvolve_ARGB8888(&outBuffer, &inBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+        
+        if (!error) {
+            error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+        }
+    }
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    CGContextRef ctx = CGBitmapContextCreate(outBuffer.data,
+                                             outBuffer.width,
+                                             outBuffer.height,
+                                             8,
+                                             outBuffer.rowBytes,
+                                             colorSpace,
+                                             (CGBitmapInfo)kCGImageAlphaNoneSkipLast);
+    
+    CGImageRef imageRef = CGBitmapContextCreateImage (ctx);
+    
+    UIImage *returnImage = [UIImage imageWithCGImage:imageRef];
+    
+    CGContextRelease(ctx);
+    CGColorSpaceRelease(colorSpace);
+    
+    free(pixelBuffer);
+    CFRelease(inBitmapData);
+    
+    CGColorSpaceRelease(colorSpace);
+    CGImageRelease(imageRef);
+    
+    return returnImage;
+}
+
 
 // 从ALAssetRepresentation内获取图片大小
 + (CGSize)imageSizeWithData:(NSData *)data
@@ -559,5 +640,39 @@ const CGFloat kImageCompressionValue    = 0.8f;         // 图片上传的压缩
     
     return imageCopy;
 }
+
++ (UIImage *)screenshot
+{
+    CGSize imageSize = [[UIScreen mainScreen] bounds].size;
+    
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+        if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen]) {
+            CGContextSaveGState(context);
+            
+            CGContextTranslateCTM(context, [window center].x, [window center].y);
+            
+            CGContextConcatCTM(context, [window transform]);
+            
+            CGContextTranslateCTM(context,
+                                  -[window bounds].size.width * [[window layer] anchorPoint].x,
+                                  -[window bounds].size.height * [[window layer] anchorPoint].y);
+            
+            [[window layer] renderInContext:context];
+            
+            CGContextRestoreGState(context);
+        }
+    }
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 
 @end

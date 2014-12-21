@@ -18,9 +18,6 @@
 #import "UIColor+BAAdditions.h"
 #import "UIDevice+BAAdditions.h"
 
-#import "UIImage+Blur.h"
-#import "UIImage+ImageWithColor.h"
-#import "UIImage+Screenshot.h"
 #import "UIImage+BAAdditions.h"
 
 #import "UIButton+Protable.h"

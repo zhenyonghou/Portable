@@ -11,7 +11,6 @@
 #import "UIViewController+BAAdditions.h"
 #import "ProtableDefines.h"
 #import "UIColor+BAAdditions.h"
-#import "UIImage+ImageWithColor.h"
 
 @implementation UIViewController (BAAdditions)
 
