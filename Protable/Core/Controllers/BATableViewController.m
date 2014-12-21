@@ -33,11 +33,12 @@
 
     if (IOS_VERSION >= 7.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
-        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
+        UIEdgeInsets contentInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
                                                    0,
                                                    _bottomBarHeight,
                                                    0);
-        self.tableView.contentInset = edgeInsets;
+        self.tableView.contentInset = contentInsets;
+        self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(contentInsets.top, 0, contentInsets.bottom, 0);
     }
 }
 

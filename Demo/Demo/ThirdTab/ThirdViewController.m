@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNewTitle:@"ThirdViewController"];
+    [self setNewTitle:NSStringFromClass([self class])];
 }
 
 - (void)didReceiveMemoryWarning {

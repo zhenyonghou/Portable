@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 170659111A473AF600B58000 /* UIImage+BAAdditions.m */; };
+		17285EFE1A474E620047A25A /* DECoreExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFA1A474E620047A25A /* DECoreExamplesViewController.m */; };
+		17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFD1A474E620047A25A /* DEExtensionsExamplesViewController.m */; };
+		17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F051A4752120047A25A /* DECCategoriesViewController.m */; };
+		17285F131A4752120047A25A /* DECControllersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F081A4752120047A25A /* DECControllersViewController.m */; };
+		17285F141A4752120047A25A /* DECFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0B1A4752120047A25A /* DECFileViewController.m */; };
+		17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */; };
+		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
 		5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BACustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
@@ -60,7 +67,6 @@
 		5688DEA11A067D5C00F65FE9 /* UIView+Bounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */; };
 		5688DEA41A067ED200F65FE9 /* UIViewController+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */; };
 		5688DEA71A06856600F65FE9 /* BATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA61A06856600F65FE9 /* BATableViewController.m */; };
-		5688DEAA1A068AFA00F65FE9 /* DETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DEA91A068AFA00F65FE9 /* DETableViewController.m */; };
 		568A55FD1A0614C200163FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A55FC1A0614C200163FA3 /* main.m */; };
 		568A56021A0614C200163FA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568A56011A0614C200163FA3 /* Images.xcassets */; };
 		568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A56031A0614C200163FA3 /* LaunchScreen.xib */; };
@@ -73,9 +79,7 @@
 		568A58021A061BE400163FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FD1A061BE400163FA3 /* AppDelegate.m */; };
 		568A58031A061BE400163FA3 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FF1A061BE400163FA3 /* AppNavigator.m */; };
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
-		568A58201A062FAE00163FA3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58161A062FAE00163FA3 /* FirstViewController.m */; };
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
-		568A58221A062FAE00163FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581C1A062FAE00163FA3 /* SecondViewController.m */; };
 		568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581F1A062FAE00163FA3 /* ThirdViewController.m */; };
 		ED16DA1D1A09BCB7006C0278 /* BAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */; };
 		ED6B5C141A2DAAA3008CED69 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B5C131A2DAAA3008CED69 /* NSString+Additions.m */; };
@@ -94,6 +98,20 @@
 /* Begin PBXFileReference section */
 		170659101A473AF600B58000 /* UIImage+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BAAdditions.h"; sourceTree = "<group>"; };
 		170659111A473AF600B58000 /* UIImage+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BAAdditions.m"; sourceTree = "<group>"; };
+		17285EF91A474E620047A25A /* DECoreExamplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECoreExamplesViewController.h; sourceTree = "<group>"; };
+		17285EFA1A474E620047A25A /* DECoreExamplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECoreExamplesViewController.m; sourceTree = "<group>"; };
+		17285EFC1A474E620047A25A /* DEExtensionsExamplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEExtensionsExamplesViewController.h; sourceTree = "<group>"; };
+		17285EFD1A474E620047A25A /* DEExtensionsExamplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEExtensionsExamplesViewController.m; sourceTree = "<group>"; };
+		17285F041A4752120047A25A /* DECCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECCategoriesViewController.h; sourceTree = "<group>"; };
+		17285F051A4752120047A25A /* DECCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECCategoriesViewController.m; sourceTree = "<group>"; };
+		17285F071A4752120047A25A /* DECControllersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECControllersViewController.h; sourceTree = "<group>"; };
+		17285F081A4752120047A25A /* DECControllersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECControllersViewController.m; sourceTree = "<group>"; };
+		17285F0A1A4752120047A25A /* DECFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECFileViewController.h; sourceTree = "<group>"; };
+		17285F0B1A4752120047A25A /* DECFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECFileViewController.m; sourceTree = "<group>"; };
+		17285F0D1A4752120047A25A /* DECUtilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECUtilitiesViewController.h; sourceTree = "<group>"; };
+		17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECUtilitiesViewController.m; sourceTree = "<group>"; };
+		17285F101A4752120047A25A /* DECViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECViewViewController.h; sourceTree = "<group>"; };
+		17285F111A4752120047A25A /* DECViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECViewViewController.m; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BACustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BACustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -203,8 +221,6 @@
 		5688DEA31A067ED200F65FE9 /* UIViewController+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BAAdditions.m"; sourceTree = "<group>"; };
 		5688DEA51A06856600F65FE9 /* BATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewController.h; sourceTree = "<group>"; };
 		5688DEA61A06856600F65FE9 /* BATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewController.m; sourceTree = "<group>"; };
-		5688DEA81A068AFA00F65FE9 /* DETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETableViewController.h; sourceTree = "<group>"; };
-		5688DEA91A068AFA00F65FE9 /* DETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETableViewController.m; sourceTree = "<group>"; };
 		568A55F71A0614C200163FA3 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A55FB1A0614C200163FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568A55FC1A0614C200163FA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -225,12 +241,8 @@
 		568A57FF1A061BE400163FA3 /* AppNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavigator.m; sourceTree = "<group>"; };
 		568A58001A061BE400163FA3 /* AppStartup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStartup.h; sourceTree = "<group>"; };
 		568A58011A061BE400163FA3 /* AppStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStartup.m; sourceTree = "<group>"; };
-		568A58151A062FAE00163FA3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		568A58161A062FAE00163FA3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		568A58181A062FAE00163FA3 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		568A58191A062FAE00163FA3 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
-		568A581B1A062FAE00163FA3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		568A581C1A062FAE00163FA3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		568A581E1A062FAE00163FA3 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		568A581F1A062FAE00163FA3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		ED16DA1B1A09BCB7006C0278 /* BAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAWebViewController.h; sourceTree = "<group>"; };
@@ -257,6 +269,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17285EF81A474E620047A25A /* CoreExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285EF91A474E620047A25A /* DECoreExamplesViewController.h */,
+				17285EFA1A474E620047A25A /* DECoreExamplesViewController.m */,
+				17285F031A4752120047A25A /* CategoriesExamples */,
+				17285F061A4752120047A25A /* ControllersExamples */,
+				17285F091A4752120047A25A /* FileExamples */,
+				17285F0C1A4752120047A25A /* UtilitiesExamples */,
+				17285F0F1A4752120047A25A /* ViewExamples */,
+			);
+			path = CoreExamples;
+			sourceTree = "<group>";
+		};
+		17285EFB1A474E620047A25A /* ExtensionsExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285EFC1A474E620047A25A /* DEExtensionsExamplesViewController.h */,
+				17285EFD1A474E620047A25A /* DEExtensionsExamplesViewController.m */,
+			);
+			path = ExtensionsExamples;
+			sourceTree = "<group>";
+		};
+		17285F031A4752120047A25A /* CategoriesExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285F041A4752120047A25A /* DECCategoriesViewController.h */,
+				17285F051A4752120047A25A /* DECCategoriesViewController.m */,
+			);
+			path = CategoriesExamples;
+			sourceTree = "<group>";
+		};
+		17285F061A4752120047A25A /* ControllersExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285F071A4752120047A25A /* DECControllersViewController.h */,
+				17285F081A4752120047A25A /* DECControllersViewController.m */,
+			);
+			path = ControllersExamples;
+			sourceTree = "<group>";
+		};
+		17285F091A4752120047A25A /* FileExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285F0A1A4752120047A25A /* DECFileViewController.h */,
+				17285F0B1A4752120047A25A /* DECFileViewController.m */,
+			);
+			path = FileExamples;
+			sourceTree = "<group>";
+		};
+		17285F0C1A4752120047A25A /* UtilitiesExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285F0D1A4752120047A25A /* DECUtilitiesViewController.h */,
+				17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */,
+			);
+			path = UtilitiesExamples;
+			sourceTree = "<group>";
+		};
+		17285F0F1A4752120047A25A /* ViewExamples */ = {
+			isa = PBXGroup;
+			children = (
+				17285F101A4752120047A25A /* DECViewViewController.h */,
+				17285F111A4752120047A25A /* DECViewViewController.m */,
+			);
+			path = ViewExamples;
+			sourceTree = "<group>";
+		};
 		5688DDCB1A067B8400F65FE9 /* Protable */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,8 +624,8 @@
 				568A57FF1A061BE400163FA3 /* AppNavigator.m */,
 				568A58001A061BE400163FA3 /* AppStartup.h */,
 				568A58011A061BE400163FA3 /* AppStartup.m */,
-				568A58141A062FAE00163FA3 /* FirstTab */,
-				568A581A1A062FAE00163FA3 /* SecondTab */,
+				17285EF81A474E620047A25A /* CoreExamples */,
+				17285EFB1A474E620047A25A /* ExtensionsExamples */,
 				568A581D1A062FAE00163FA3 /* ThirdTab */,
 				568A58171A062FAE00163FA3 /* ForthTab */,
 				568A56011A0614C200163FA3 /* Images.xcassets */,
@@ -595,17 +675,6 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		568A58141A062FAE00163FA3 /* FirstTab */ = {
-			isa = PBXGroup;
-			children = (
-				568A58151A062FAE00163FA3 /* FirstViewController.h */,
-				568A58161A062FAE00163FA3 /* FirstViewController.m */,
-				5688DEA81A068AFA00F65FE9 /* DETableViewController.h */,
-				5688DEA91A068AFA00F65FE9 /* DETableViewController.m */,
-			);
-			path = FirstTab;
-			sourceTree = "<group>";
-		};
 		568A58171A062FAE00163FA3 /* ForthTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,15 +682,6 @@
 				568A58191A062FAE00163FA3 /* ForthViewController.m */,
 			);
 			path = ForthTab;
-			sourceTree = "<group>";
-		};
-		568A581A1A062FAE00163FA3 /* SecondTab */ = {
-			isa = PBXGroup;
-			children = (
-				568A581B1A062FAE00163FA3 /* SecondViewController.h */,
-				568A581C1A062FAE00163FA3 /* SecondViewController.m */,
-			);
-			path = SecondTab;
 			sourceTree = "<group>";
 		};
 		568A581D1A062FAE00163FA3 /* ThirdTab */ = {
@@ -741,28 +801,28 @@
 				5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
-				5688DEAA1A068AFA00F65FE9 /* DETableViewController.m in Sources */,
-				568A58221A062FAE00163FA3 /* SecondViewController.m in Sources */,
 				5688DE641A067B8400F65FE9 /* BAFile.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BALeftImageViewCell.m in Sources */,
 				5688DE671A067B8400F65FE9 /* BAJsonFileHelper.m in Sources */,
 				5688DE711A067B8400F65FE9 /* BASkinResourceManager.m in Sources */,
 				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
-				568A58201A062FAE00163FA3 /* FirstViewController.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
 				5688DE781A067B8400F65FE9 /* BABadgeNumberButton.m in Sources */,
 				5688DE6F1A067B8400F65FE9 /* Reachability.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
 				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
+				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */,
 				5688DE881A067B8400F65FE9 /* BARightViewCell.m in Sources */,
 				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
 				5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */,
 				5688DE661A067B8400F65FE9 /* BAImageFileHelper.m in Sources */,
 				5688DEA01A067D5C00F65FE9 /* UIView+BAAdditions.m in Sources */,
+				17285F161A4752120047A25A /* DECViewViewController.m in Sources */,
 				5688DE651A067B8400F65FE9 /* BAFileDiskCache.m in Sources */,
 				5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */,
 				5688DE611A067B8400F65FE9 /* BATabBarController.m in Sources */,
+				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
 				5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */,
 				5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */,
@@ -786,8 +846,11 @@
 				5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */,
 				5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */,
 				5688DE6C1A067B8400F65FE9 /* BAUncaughtExceptionHandler.m in Sources */,
+				17285EFE1A474E620047A25A /* DECoreExamplesViewController.m in Sources */,
+				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
 				5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */,
 				5688DEA71A06856600F65FE9 /* BATableViewController.m in Sources */,
+				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
 				5688DE7A1A067B8400F65FE9 /* BAEnableTouchImageView.m in Sources */,
 				5688DE841A067B8400F65FE9 /* BABlankCell.m in Sources */,
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
@@ -796,6 +859,7 @@
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
+				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
 				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,
 				5688DE701A067B8400F65FE9 /* BASkin.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import "BATableViewController.h"
 
-@interface DETableViewController : BATableViewController
+@interface DEExtensionsExamplesViewController : BATableViewController
 
 @end

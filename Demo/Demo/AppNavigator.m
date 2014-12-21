@@ -9,8 +9,8 @@
 #import "AppNavigator.h"
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
-#import "SecondViewController.h"
+#import "DECoreExamplesViewController.h"
+#import "DEExtensionsExamplesViewController.h"
 #import "ThirdViewController.h"
 #import "ForthViewController.h"
 
@@ -61,15 +61,15 @@ static AppNavigator * navigator = nil;
 
 - (void)setupTabBarViewControllers
 {
-    BATabBarItem *barItem0 = [[BATabBarItem alloc] initWithTitle:@"第1页"
+    BATabBarItem *barItem0 = [[BATabBarItem alloc] initWithTitle:@"Core Examples"
                                                    selectedImage:SKIN_IMAGE(@"tabbar_first_hl")
                                                  unselectedImage:SKIN_IMAGE(@"tabbar_first")
-                                                  viewController:[[FirstViewController alloc] init]];
+                                                  viewController:[[DECoreExamplesViewController alloc] init]];
     
-    BATabBarItem *barItem1 = [[BATabBarItem alloc] initWithTitle:@"第2页"
+    BATabBarItem *barItem1 = [[BATabBarItem alloc] initWithTitle:@"Extensions Examples"
                                                    selectedImage:SKIN_IMAGE(@"tabbar_second_hl")
                                                  unselectedImage:SKIN_IMAGE(@"tabbar_second")
-                                                  viewController:[[SecondViewController alloc] init]];
+                                                  viewController:[[DEExtensionsExamplesViewController alloc] init]];
                               
     BATabBarItem *barItem2 = [[BATabBarItem alloc] initWithTitle:@"第3页"
                                                    selectedImage:SKIN_IMAGE(@"tabbar_third_hl")

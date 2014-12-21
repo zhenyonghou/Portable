@@ -36,9 +36,9 @@
 	<string>0x89351f</string>
 	<key>color_segment_text_selected</key>
 	<string>0x252525</string>
-	<key>color_cell_background</key>
+	<key>color_cell_bg_normal</key>
 	<string>0x252525</string>
-	<key>color_cell_highlighted</key>
+	<key>color_cell_bg_hl</key>
 	<string>0x2b2b2b</string>
 	<key>color_cell_separator</key>
 	<string>0x333333</string>
