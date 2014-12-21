@@ -34,10 +34,7 @@
         [self setSelectionStyle:UITableViewCellSelectionStyleNone];
         
         _separatorLineLeftMargin = 15.f;
-        _topSeparatorLine = [[BASeparatorLineVew alloc] initWithFrame:CGRectZero];
         _bottomSeparatorLine = [[BASeparatorLineVew alloc] initWithFrame:CGRectZero];
-
-        _topSeparatorLine.hidden = YES;
 
         _backgroundImageView = [[UIImageView alloc] init];
         _backgroundImageView.contentMode = UIViewContentModeScaleToFill;
@@ -70,11 +67,9 @@
 //    }
     
     // separator line
-    self.topSeparatorLine.frame = CGRectMake(0, 0, self.frame.size.width, 1);
     self.bottomSeparatorLine.frame = CGRectMake(_separatorLineLeftMargin,
                                                 self.frame.size.height - 1, self.frame.size.width, 0.5);
     
-    self.topSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
     self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
 
     // accessory image view
@@ -92,16 +87,6 @@
     }
 }
 
-- (void)setShowTopSeparatorLine:(BOOL)showTopSeparatorLine
-{
-    if (showTopSeparatorLine) {
-        [self addSubview:_topSeparatorLine];
-    } else {
-        [_topSeparatorLine removeFromSuperview];
-    }
-    _topSeparatorLine.hidden = !showTopSeparatorLine;
-}
-
 - (void)setShowBottomSeparatorLine:(BOOL)showBottomSeparatorLine
 {
     if (showBottomSeparatorLine) {
@@ -110,17 +95,6 @@
         [_bottomSeparatorLine removeFromSuperview];
     }
     _bottomSeparatorLine.hidden = !showBottomSeparatorLine;
-}
-
-- (void)setSeparatorColor:(UIColor*)aColor
-{
-    _topSeparatorLine.backgroundColor = aColor;
-    _bottomSeparatorLine.backgroundColor = aColor;
-}
-
-- (void)onChangeSkin:(NSNotification *)notification
-{
-
 }
 
 @end

@@ -17,7 +17,6 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
 
 @interface BABlankCell : UITableViewCell
 
-@property (nonatomic, assign) BOOL showTopSeparatorLine;
 @property (nonatomic, assign) BOOL showBottomSeparatorLine;
 
 
@@ -29,7 +28,6 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
 @property (nonatomic, assign) BACustomCellPositionType cellPositionType;
 
 // cell separator
-@property (nonatomic, strong, readonly) BASeparatorLineVew *topSeparatorLine;
 @property (nonatomic, strong, readonly) BASeparatorLineVew *bottomSeparatorLine;
 @property (nonatomic, assign) CGFloat separatorLineLeftMargin;  // 只对bottom separator line有效
 
@@ -43,6 +41,5 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
  */
 @property (nonatomic, strong, readonly) UIImageView *accessoryImageView;
 
-- (void)onChangeSkin:(NSNotification *)notification;
 
 @end
