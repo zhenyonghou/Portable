@@ -19,7 +19,7 @@
     self.numberOfLines = numberOfLines;
     CGSize fitSize = [self sizeThatFits:CGSizeMake(width, 0)];
     CGPoint originalPoint = self.frame.origin;
-    self.frame = CGRectMake(originalPoint.x, originalPoint.y, fitSize.width, fitSize.height);
+    self.frame = CGRectMake(originalPoint.x, originalPoint.y, width, fitSize.height);
 }
 
 /**

@@ -7,6 +7,7 @@
 //
 
 #import "DECViewViewController.h"
+#import "DECTestLabelViewController.h"
 
 @interface DECViewViewController ()
 
@@ -21,7 +22,7 @@
     
     [self setNewTitle:NSStringFromClass([self class])];
     
-    self.model = @[];
+    self.model = @[@"UILabel+Protable"];
     
     [self.tableView reloadData];
 }
@@ -57,15 +58,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *name = self.model[indexPath.row];
-    
-    Class cls = NSClassFromString([NSString stringWithFormat:@"DEC%@ViewController", name]);
-    UIViewController *vc = [[cls alloc] init];
-    if (!vc) {
-        NSLog(@"Error %s", __func__);
-        return;
+    if (indexPath.row == 0) {
+        DECTestLabelViewController *vc = [[DECTestLabelViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
-    [self.navigationController pushViewController:vc animated:YES];
+//    NSString *name = self.model[indexPath.row];
+    
+//    Class cls = NSClassFromString([NSString stringWithFormat:@"DEC%@ViewController", name]);
+//    UIViewController *vc = [[cls alloc] init];
+//    if (!vc) {
+//        NSLog(@"Error %s", __func__);
+//        return;
+//    }
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

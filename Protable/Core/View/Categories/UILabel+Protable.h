@@ -16,6 +16,7 @@
  */
 - (void)fitSizeWithConstantWidth:(CGFloat)width limitedLines:(NSUInteger)numberOfLines;
 
+
 /**
  给定宽度，自适应高度，有高度限制
  注意，前提是已经设置好了font,text
