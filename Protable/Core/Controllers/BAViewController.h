@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+BAAdditions.h"
-//#import "SVProgressHUD.h"
 
 @interface BAViewController : UIViewController
 
-// 子类重写该函数
-- (void)onChangeSkin:(NSNotification*)notification;
+- (BOOL)isVisible;
 
 @end

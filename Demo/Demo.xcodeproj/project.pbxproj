@@ -16,6 +16,7 @@
 		17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */; };
 		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
 		17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F181A47536E0047A25A /* UITableView+Additions.m */; };
+		17E940751AF6289E00853A1E /* BANaviBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940741AF6289E00853A1E /* BANaviBackButton.m */; };
 		5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BACustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
@@ -35,7 +36,6 @@
 		5688DE6C1A067B8400F65FE9 /* BAUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0B1A067B8400F65FE9 /* BAUncaughtExceptionHandler.m */; };
 		5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */; };
 		5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0F1A067B8400F65FE9 /* BAUtility.m */; };
-		5688DE6F1A067B8400F65FE9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE121A067B8400F65FE9 /* Reachability.m */; };
 		5688DE701A067B8400F65FE9 /* BASkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE151A067B8400F65FE9 /* BASkin.m */; };
 		5688DE711A067B8400F65FE9 /* BASkinResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE171A067B8400F65FE9 /* BASkinResourceManager.m */; };
 		5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */; };
@@ -116,6 +116,8 @@
 		17285F111A4752120047A25A /* DECViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECViewViewController.m; sourceTree = "<group>"; };
 		17285F171A47536E0047A25A /* UITableView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Additions.h"; sourceTree = "<group>"; };
 		17285F181A47536E0047A25A /* UITableView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Additions.m"; sourceTree = "<group>"; };
+		17E940731AF6289E00853A1E /* BANaviBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANaviBackButton.h; sourceTree = "<group>"; };
+		17E940741AF6289E00853A1E /* BANaviBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANaviBackButton.m; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BACustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BACustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -156,8 +158,6 @@
 		5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAUserConfig.m; sourceTree = "<group>"; };
 		5688DE0E1A067B8400F65FE9 /* BAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAUtility.h; sourceTree = "<group>"; };
 		5688DE0F1A067B8400F65FE9 /* BAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAUtility.m; sourceTree = "<group>"; };
-		5688DE111A067B8400F65FE9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		5688DE121A067B8400F65FE9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5688DE141A067B8400F65FE9 /* BASkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkin.h; sourceTree = "<group>"; };
 		5688DE151A067B8400F65FE9 /* BASkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkin.m; sourceTree = "<group>"; };
 		5688DE161A067B8400F65FE9 /* BASkinResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinResourceManager.h; sourceTree = "<group>"; };
@@ -407,6 +407,8 @@
 				5688DEA61A06856600F65FE9 /* BATableViewController.m */,
 				ED16DA1B1A09BCB7006C0278 /* BAWebViewController.h */,
 				ED16DA1C1A09BCB7006C0278 /* BAWebViewController.m */,
+				17E940731AF6289E00853A1E /* BANaviBackButton.h */,
+				17E940741AF6289E00853A1E /* BANaviBackButton.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -450,19 +452,9 @@
 				5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */,
 				5688DE0E1A067B8400F65FE9 /* BAUtility.h */,
 				5688DE0F1A067B8400F65FE9 /* BAUtility.m */,
-				5688DE101A067B8400F65FE9 /* Reachability */,
 				5688DE131A067B8400F65FE9 /* Skin */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		5688DE101A067B8400F65FE9 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE111A067B8400F65FE9 /* Reachability.h */,
-				5688DE121A067B8400F65FE9 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		5688DE131A067B8400F65FE9 /* Skin */ = {
@@ -818,7 +810,6 @@
 				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
 				5688DE781A067B8400F65FE9 /* BABadgeNumberButton.m in Sources */,
-				5688DE6F1A067B8400F65FE9 /* Reachability.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
 				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
@@ -871,6 +862,7 @@
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
+				17E940751AF6289E00853A1E /* BANaviBackButton.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
 				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,

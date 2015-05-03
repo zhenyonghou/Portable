@@ -6,6 +6,10 @@
 
 @interface NSString (Additions)
 
+- (NSString*)MD5;
+
+- (NSString *)trim;
+
 - (CGSize)calculateSizeWithFont:(UIFont*)font maximumWidth:(CGFloat)maximumWidth;
 - (CGSize)calculateSizeWithFont:(UIFont*)font maximumWidth:(CGFloat)maximumWidth numberOfLines:(NSUInteger)numberOfLines;
 

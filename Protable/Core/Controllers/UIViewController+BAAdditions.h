@@ -13,28 +13,74 @@ typedef NS_ENUM(NSInteger, BAViewControllerEntryType) {
     BAViewControllerEntryTypePresent,
 };
 
+
 @interface UIViewController (BAAdditions)
 
 @property (nonatomic, assign) BAViewControllerEntryType entryType;
 
 - (void)setNewTitle:(NSString*)title;
 
-- (void)setLeftItemWithAction:(SEL)action
-                        image:(UIImage*)image;
+// buttons & items
+
+// navibar left item
+
+- (void)setLeftItemWithNormalImage:(UIImage *)normalImage
+                  highlightedImage:(UIImage *)highlightedImage
+                            action:(SEL)action;
+
+- (void)setLeftItemWithNormalImage:(UIImage *)normalImage
+                  highlightedImage:(UIImage *)highlightedImage
+                            target:(id)target
+                            action:(SEL)action;
+
+
+- (void)setLeftItemWithTitle:(NSString*)title
+                      action:(SEL)action;
+
+- (void)setLeftItemWithTitle:(NSString*)title
+                      target:(id)target
+                      action:(SEL)action;
 
 - (void)setLeftItemWithCustomView:(UIView *)customView;
 
-- (void)setRightItemWithAction:(SEL)action
-                         title:(NSString*)title;
+- (void)setLeftItem:(UIBarButtonItem *)barButtonItem;
 
-- (void)setRightItemWithAction:(SEL)action
-                         image:(UIImage*)image;
+// navibar right item
+
+- (void)setRightItemWithNormalImage:(UIImage *)normalImage
+                   highlightedImage:(UIImage *)highlightedImage
+                             action:(SEL)action;
+
+- (void)setRightItemWithNormalImage:(UIImage *)normalImage
+                   highlightedImage:(UIImage *)highlightedImage
+                             target:(id)target
+                             action:(SEL)action;
+
+
+- (void)setRightItemWithTitle:(NSString*)title
+                       action:(SEL)action;
+
+- (void)setRightItemWithTitle:(NSString*)title
+                       target:(id)target
+                       action:(SEL)action;
+
+- (void)setRightItemWithCustomView:(UIView *)customView;
+
+- (void)setRightItem:(UIBarButtonItem *)barButtonItem;
+
+// navibar back item
+
+- (void)setBackItemWithTitle:(NSString *)title
+                      target:(id)target
+                      action:(SEL)action;
+
+- (void)setBackItemWithNormalImage:(UIImage*)normalImage highlightedImage:(UIImage*)highlightedImage action:(SEL)action;
 
 - (void)setBackItemWithNormalImage:(UIImage*)normalImage
                   highlightedImage:(UIImage*)highlightedImage
-                         tintColor:(UIColor*)tintColor
+                            target:(id)target
                             action:(SEL)action;
 
-- (void)setRightItemWithCustomView:(UIView *)customView;
+- (void)setBackItemWithCustomView:(UIView *)customView;
 
 @end

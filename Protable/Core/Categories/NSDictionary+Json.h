@@ -3,13 +3,17 @@
 //  Adult
 //
 //  Created by houzhenyong on 14-8-7.
-//  Copyright (c) 2014年 hou zhenyong. All rights reserved.
+
 //
 
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (Json)
 
-- (NSString*)toJsonString;
++ (id)dictionaryWithJsonData:(NSData *)data;
++ (id)dictionaryWithJsonString:(NSString *)string;
+
+- (NSData *)toJsonData;
+- (NSString *)toJsonString;
 
 @end

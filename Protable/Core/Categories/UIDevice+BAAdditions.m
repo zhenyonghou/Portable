@@ -3,13 +3,15 @@
 
 #import "UIDevice+BAAdditions.h"
 #include <sys/sysctl.h>
-
 #include <sys/types.h>
 #include <ifaddrs.h>
 #include <net/if.h>
 #include <netdb.h>
+#import <AdSupport/AdSupport.h>
 
-@implementation UIDevice (BAAdditions)
+@import CoreTelephony;
+
+@implementation UIDevice (XCAdditions)
 
 
 + (NSString *)deviceModel {
@@ -36,6 +38,12 @@
     if ([deviceModel isEqualToString:@"iPhone4,1"])     return @"iPhone4S";
     if ([deviceModel isEqualToString:@"iPhone5,1"]
         || [deviceModel isEqualToString:@"iPhone5,2"])  return @"iPhone5";
+    if ([deviceModel isEqualToString:@"iPhone5,3"]
+        || [deviceModel isEqualToString:@"iPhone5,4"])  return @"iPhone5c";
+    if ([deviceModel isEqualToString:@"iPhone6,1"]
+        || [deviceModel isEqualToString:@"iPhone6,2"])  return @"iPhone5s";
+    if ([deviceModel isEqualToString:@"iPhone7,1"])     return @"iPhone6Plus";
+    if ([deviceModel isEqualToString:@"iPhone7,2"])     return @"iPhone6";
     
     if ([deviceModel hasPrefix:@"iPhone"]) {
         return @"iPhone";
@@ -70,6 +78,53 @@
     
     //If none was found, send the original string
     return deviceModel;
+}
+
++ (BOOL)isJailbroken
+{
+    
+#if TARGET_IPHONE_SIMULATOR
+    return NO;
+    
+#else
+    BOOL isJailbroken = NO;
+    
+    BOOL cydiaInstalled = [[NSFileManager defaultManager] fileExistsAtPath:@"/Applications/Cydia.app"];
+    
+    FILE *f = fopen("/bin/bash", "r");
+    
+    if (!(errno == ENOENT) && cydiaInstalled) {
+        
+        //Device is jailbroken
+        isJailbroken = YES;
+    }
+    fclose(f);
+    return isJailbroken;
+#endif
+    
+}
+
++ (NSString*)getCellularProviderName
+{
+    
+    CTTelephonyNetworkInfo *netInfo = [[CTTelephonyNetworkInfo alloc]init];
+    
+    CTCarrier *carrier = [netInfo subscriberCellularProvider];
+    NSString *imsi=@"";
+    if (carrier!=NULL) {
+//        NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
+//        [dic setObject:[carrier carrierName] forKey:@"Carriername"];
+//        [dic setObject:[carrier mobileCountryCode] forKey:@"MobileCountryCode"];
+//        [dic setObject:[carrier mobileNetworkCode]forKey:@"MobileNetworkCode"];
+//        [dic setObject:[carrier isoCountryCode] forKey:@"ISOCountryCode"];
+//        [dic setObject:[carrier allowsVOIP]?@"YES":@"NO" forKey:@"AllowsVOIP"];
+//        imsi = [dic toJsonString];
+        
+        imsi = [carrier carrierName];
+    }
+    
+    return imsi;//cellularProviderName;
+    
 }
 
 + (NSString *)deviceNameWithDeviceModel:(BOOL)shouldIncludeDeviceModel {
@@ -113,9 +168,14 @@
     return ipAddresses;
 }
 
-+ (NSString*)IDFA
++ (NSString*)IDFV
 {
     return [[UIDevice currentDevice].identifierForVendor UUIDString];
 }
+
+//+ (NSString*)IDFA
+//{
+//    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+//}
 
 @end

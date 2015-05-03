@@ -33,6 +33,6 @@
 + (UIImage *)ImageAtPath:(NSString *)path;
 
 //  保存图片到本地
-+ (BOOL)saveImg:(UIImage *)img ToPath:(NSString *)path;
++ (BOOL)saveImg:(UIImage *)img toPath:(NSString *)path;
 
 @end

@@ -6,12 +6,18 @@
 //  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
-#define TITLE_FONT_SIZE         18
 
 #import <objc/runtime.h>
 #import "UIViewController+BAAdditions.h"
 #import "ProtableDefines.h"
 #import "UIColor+BAAdditions.h"
+#import "BANaviBackButton.h"
+
+#define USE_CUSTOMIZE_ITEM      0
+
+#define TITLE_FONT_SIZE         18
+#define NAVI_BAR_TEXT_COLOR     SKIN_COLOR(@"color_navi_title")
+
 
 @implementation UIViewController (BAAdditions)
 
@@ -32,66 +38,135 @@ static char BAViewControllerEntryTypeKey;
     self.navigationItem.titleView = titleLabel;
 }
 
-- (UIButton*)customizeButtonForTitle:(NSString*)title
-                         normalColor:(UIColor*)normalColor
-                    highlightedColor:(UIColor*)highlightedColor
-                               image:(UIImage*)image
-                              action:(SEL)action
+#pragma mark- buttons
+
+- (UIButton *)customizeButtonForTitle:(NSString*)title
+                          normalColor:(UIColor*)normalColor
+                     highlightedColor:(UIColor*)highlightedColor
+                               target:(id)target
+                               action:(SEL)action
 {
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    if (title && title.length > 0) {
+    if (title) {
         [button setTitle:title forState:UIControlStateNormal];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [button setTitleColor:SKIN_COLOR(@"navibar_text_color") forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:18]];
+        [button setTitleColor:normalColor forState:UIControlStateNormal];
+        [button setTitleColor:highlightedColor forState:UIControlStateHighlighted];
         [button sizeToFit];
-    } else if (image) {
-        [button setImage:image forState:UIControlStateNormal];
-        button.frame = CGRectMake(0, 0, 45, 44);
     }
-    button.backgroundColor = [UIColor clearColor];
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
-- (UIBarButtonItem*)customizeBarButtonItemWithAction:(SEL)action
-                                               image:(UIImage*)image
+- (UIButton*)customizeButtonForNormalImage:(UIImage *)normalImage
+                          highlightedImage:(UIImage *)highlightedImage
+                                    target:(id)target
+                                    action:(SEL)action
 {
-    UIBarButtonItem* buttonItem;
-    if (IOS_VERSION >= 7.0) {
-        buttonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:action];
-    } else {
-        UIButton* button = [self customizeButtonForTitle:nil
-                                             normalColor:nil
-                                        highlightedColor:nil
-                                                   image:image
-                                                  action:action];
-        buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    }
-    return buttonItem;
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:normalImage forState:UIControlStateNormal];
+    [button setImage:normalImage forState:UIControlStateHighlighted];
+    button.frame = CGRectMake(0, 0, 45, 44);
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return button;
 }
 
-- (UIBarButtonItem*)customizeBarButtonItemWithAction:(SEL)action
-                                               title:(NSString*)title
+- (UIButton*)customizeLeftButtonForNormalImage:(UIImage *)normalImage
+                              highlightedImage:(UIImage *)highlightedImage
+                                        target:(id)target
+                                        action:(SEL)action
+{
+    UIButton *button = [self customizeButtonForNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
+    if (IOS_VERSION >= 7.0) {
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    }
+    
+    return button;
+}
+
+- (UIButton*)customizeRightButtonForNormalImage:(UIImage *)normalImage
+                               highlightedImage:(UIImage *)highlightedImage
+                                         target:(id)target
+                                         action:(SEL)action
+{
+    UIButton *button = [self customizeButtonForNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
+    if (IOS_VERSION >= 7.0) {
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+    }
+    
+    return button;
+}
+
+- (UIBarButtonItem*)customizeBarButtonItemWithTitle:(NSString*)title
+                                             target:(id)target
+                                             action:(SEL)action
+
 {
     UIBarButtonItem* buttonItem;
+#ifdef USE_CUSTOMIZE_ITEM
+    UIButton* button = [self customizeButtonForTitle:title normalColor:NAVI_BAR_TEXT_COLOR highlightedColor:[UIColor lightGrayColor] target:target action:action];
+    buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+#else
     if (IOS_VERSION >= 7.0) {
         buttonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
     } else {
-        UIButton* button = [self customizeButtonForTitle:title
-                                             normalColor:SKIN_COLOR(@"navibar_text_color")
-                                        highlightedColor:[UIColor lightGrayColor]
-                                                   image:nil
-                                                  action:action];
+        UIButton* button = [self customizeButtonForTitle:title normalColor:NAVI_BAR_TEXT_COLOR highlightedColor:[UIColor lightGrayColor] target:target action:action];
         buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     }
+#endif
     return buttonItem;
 }
 
-- (void)setLeftItemWithAction:(SEL)action
-                        image:(UIImage*)image
+- (UIBarButtonItem*)customizeBarButtonItemWithNormalImage:(UIImage *)normalImage
+                                         highlightedImage:(UIImage *)highlightedImage
+                                                   target:(id)target
+                                                   action:(SEL)action
 {
-    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action image:image];
+    UIBarButtonItem* buttonItem;
+#ifdef USE_CUSTOMIZE_ITEM
+    UIButton* button = [self customizeButtonForNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
+    buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+#else
+    if (IOS_VERSION >= 7.0) {
+        buttonItem = [[UIBarButtonItem alloc] initWithImage:normalImage style:UIBarButtonItemStylePlain target:target action:action];
+    } else {
+        UIButton* button = [self customizeButtonForNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
+        buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    }
+#endif
+    return buttonItem;
+}
+
+
+#pragma mark- for left
+
+- (void)setLeftItemWithNormalImage:(UIImage *)normalImage
+                  highlightedImage:(UIImage *)highlightedImage
+                            action:(SEL)action
+{
+    [self setLeftItemWithNormalImage:normalImage highlightedImage:highlightedImage target:self action:action];
+}
+
+- (void)setLeftItemWithNormalImage:(UIImage *)normalImage
+                  highlightedImage:(UIImage *)highlightedImage
+                            target:(id)target
+                            action:(SEL)action
+{
+    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
+    self.navigationItem.leftBarButtonItem = customizeButtonItem;
+}
+
+- (void)setLeftItemWithTitle:(NSString*)title
+                      action:(SEL)action
+{
+    [self setLeftItemWithTitle:title target:self action:action];
+}
+
+- (void)setLeftItemWithTitle:(NSString*)title
+                      target:(id)target
+                      action:(SEL)action
+{
+    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithTitle:title target:target action:action];
     self.navigationItem.leftBarButtonItem = customizeButtonItem;
 }
 
@@ -101,17 +176,40 @@ static char BAViewControllerEntryTypeKey;
     self.navigationItem.leftBarButtonItem = customizeButtonItem;
 }
 
-- (void)setRightItemWithAction:(SEL)action
-                         title:(NSString*)title
+- (void)setLeftItem:(UIBarButtonItem *)barButtonItem
 {
-    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action title:title];
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+#pragma mark- for right
+
+- (void)setRightItemWithNormalImage:(UIImage *)normalImage
+                   highlightedImage:(UIImage *)highlightedImage
+                             action:(SEL)action
+{
+    [self setRightItemWithNormalImage:normalImage highlightedImage:highlightedImage target:self action:action];
+}
+
+- (void)setRightItemWithNormalImage:(UIImage *)normalImage
+                   highlightedImage:(UIImage *)highlightedImage
+                             target:(id)target
+                             action:(SEL)action
+{
+    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithNormalImage:normalImage highlightedImage:highlightedImage target:target action:action];
     self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
-- (void)setRightItemWithAction:(SEL)action
-                         image:(UIImage*)image
+- (void)setRightItemWithTitle:(NSString*)title
+                       action:(SEL)action
 {
-    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithAction:action image:image];
+    [self setRightItemWithTitle:title target:self action:action];
+}
+
+- (void)setRightItemWithTitle:(NSString*)title
+                       target:(id)target
+                       action:(SEL)action
+{
+    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithTitle:title target:target action:action];
     self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
@@ -121,46 +219,45 @@ static char BAViewControllerEntryTypeKey;
     self.navigationItem.rightBarButtonItem = customizeButtonItem;
 }
 
-// 经验证，backBarButtonItem设置image不可取，但是这样在IOS6上又难看了点
-//- (void)setBackItemWithAction:(SEL)action
-//                        title:(NSString*)title
-//{
-//    UIBarButtonItem* buttonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
-//    self.navigationItem.backBarButtonItem = buttonItem;
-//}
-
-- (void)setBackItemWithNormalImage:(UIImage*)normalImage highlightedImage:(UIImage*)highlightedImage tintColor:(UIColor*)tintColor action:(SEL)action
+- (void)setRightItem:(UIBarButtonItem *)barButtonItem
 {
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:normalImage forState:UIControlStateNormal];
-    [button setImage:highlightedImage forState:UIControlStateHighlighted];
-    [button setTitle:@"返回" forState:UIControlStateNormal];
-    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [button.titleLabel setFont:[UIFont systemFontOfSize:18.0f]];
-    [button setTitleColor:tintColor forState:UIControlStateNormal];
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+}
+
+#pragma mark- for back
+// 经验证，backBarButtonItem设置image不可取，但是这样在IOS6上又难看了点
+
+- (void)setBackItemWithTitle:(NSString *)title
+                      target:(id)target
+                      action:(SEL)action
+{
+    UIBarButtonItem *customizeButtonItem = [self customizeBarButtonItemWithTitle:title target:target action:action];
+    self.navigationItem.backBarButtonItem = customizeButtonItem;
+}
+
+- (void)setBackItemWithNormalImage:(UIImage*)normalImage highlightedImage:(UIImage*)highlightedImage action:(SEL)action
+{
+    [self setBackItemWithNormalImage:normalImage highlightedImage:highlightedImage target:self action:action];
+}
+
+- (void)setBackItemWithNormalImage:(UIImage*)normalImage highlightedImage:(UIImage*)highlightedImage target:(id)target action:(SEL)action
+{
+    BANaviBackButton *button = [[BANaviBackButton alloc] initWithFrame:CGRectZero];
+    [button setNormalImage:normalImage highlightedImage:highlightedImage];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
+    [self setBackItemWithCustomView:button];
+}
+
+- (void)setBackItemWithCustomView:(UIView *)customView
+{
     if (IOS_VERSION >= 7) {
-        [button setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
-        [button setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 0.0f, -1.0f, 0.0f)];
-        [button sizeToFit];
-        button.width = button.width + 7.f;
-        
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         [negativeSpacer setWidth:-8.0f];
-        UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-        backBarButtonItem.tintColor = tintColor;
+        UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
         self.navigationItem.leftBarButtonItems = @[negativeSpacer, backBarButtonItem];
     } else {
-        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-        
-        [button setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
-        [button setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 3.0f, -1.0f, -3.0f)];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:18.0f]];
-        [button sizeToFit];
-        button.width = button.width + 7.f;
-        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
         self.navigationItem.leftBarButtonItem = barButtonItem;
     }
 }

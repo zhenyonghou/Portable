@@ -35,7 +35,7 @@
 }
 
 //  保存图片到本地
-+ (BOOL)saveImg:(UIImage *)img ToPath:(NSString *)path
++ (BOOL)saveImg:(UIImage *)img toPath:(NSString *)path
 {
     if (img) {
         if (![self isExistFileAtPath:path]) {

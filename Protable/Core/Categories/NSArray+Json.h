@@ -1,6 +1,5 @@
 //
 //  NSArray+Json.h
-//  test
 //
 //  Created by houzhenyong on 14-9-26.
 //  Copyright (c) 2014年 houzhenyong. All rights reserved.

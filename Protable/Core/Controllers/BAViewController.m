@@ -29,43 +29,20 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = SKIN_COLOR(@"view_bg_color");
     
+    // 微读里的设置：
+//    if (IOS_VERSION >= 7.0) {
+//        self.navigationController.navigationBar.translucent = NO;       // 设置为NO, self.view会从64开始
+//    }
+    
 //    if (IOS_VERSION < 7.0) {
 //        self.wantsFullScreenLayout = YES;
 //        self.navigationController.navigationBar.translucent = YES;
 //    }
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onChangeSkin:) name:kSkinChangeNotification object:nil];
-}
-
-- (void)unloadViewWhenMemoryWarning
-{
-    // 子类中去实现
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    
-    if (![self isViewLoaded]) {
-        return;
-    }
-    
-    if ([[UIDevice currentDevice] systemVersion].floatValue >= 6.0f) {      // 注：原来的代码中这里是 <, 我觉得不对，才改过来的。
-        if (self.view.window == nil) { // 是否是正在使用的视图
-            [self unloadViewWhenMemoryWarning];
-            self.view = nil;
-        }
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -84,10 +61,9 @@
 //    [MobClick endLogPageView:NSStringFromClass([self class])];
 }
 
-// 换肤协议，子类去实现
-- (void)onChangeSkin:(NSNotification*)notification
+- (BOOL)isVisible
 {
-
+    return (self.view.window && [self isViewLoaded]);
 }
 
 @end

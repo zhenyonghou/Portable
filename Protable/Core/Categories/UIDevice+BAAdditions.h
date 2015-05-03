@@ -3,7 +3,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIDevice (BAAdditions)
+@interface UIDevice (XCAdditions)
 
 // 获取设备型号，如："iPhone4,1"
 + (NSString*) deviceModel;
@@ -11,11 +11,19 @@
 // 获取设备名称，如：iPhone5, iPhone5S
 + (NSString*) deviceName;
 
+// 检测是否越狱
++ (BOOL)isJailbroken;
+
+// 获得运营商信息
++ (NSString*)getCellularProviderName;
+
 + (NSString*) deviceNameWithDeviceModel:(BOOL)shouldIncludeDeviceModel;
 
 // 获取本地IP
 + (NSArray *)localIPAddresses;
 
-+ (NSString*)IDFA;
++ (NSString*)IDFV;
+
+//+ (NSString*)IDFA;
 
 @end
