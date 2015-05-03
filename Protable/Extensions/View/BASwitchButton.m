@@ -8,34 +8,30 @@
 
 @implementation BASwitchButton
 
-- (id)initWithFrame:(CGRect)frame
-        normalImage:(UIImage*)normalImage
-      selectedImage:(UIImage*)selectedImage
-             target:(id)target
-       switchAction:(SEL)action
+- (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage
 {
-    self = [self initWithFrame:frame normalImage:normalImage selectedImage:selectedImage];
-    if (self) {
-        [self addTarget:target switchAction:action];
+    if (self = [self initWithFrame:frame]) {
+        [self setOffImage:offImage onImage:onImage];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage
-{
+- (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         _bounceAnimate = NO;
-        [self setNormalImage:normalImage selectedImage:selectedImage];
+        _manualSwitch = NO;
+        _switchState = BASwitchButtonStateOff;
+        _ignoreTouch = NO;
     }
     return self;
 }
 
-- (void)setNormalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage
+- (void)setOffImage:(UIImage*)offImage onImage:(UIImage*)onImage
 {
-    _normalImage = normalImage;
-    _selectedImage = selectedImage;
-    [self setImage:normalImage forState:UIControlStateNormal];
-    [self setImage:selectedImage forState:UIControlStateSelected];
+    _offImage = offImage;
+    _onImage = onImage;
+    
+    [self setSwitchState:_switchState];
 }
 
 - (void)addTarget:(id)target switchAction:(SEL)action
@@ -47,13 +43,41 @@
 
 - (void)touchUpInsideAction
 {
-    if (_target) {
-        //        if (self.bounceAnimate && self.stateOn) {
-        //            [self.imageView bounce:0.3];
-        //        }
-        self.selected = !self.isSelected;
+    if (_target && !_ignoreTouch) {
+        if (!self.manualSwitch) {
+            [self setSwitchState:!_switchState];
+            
+            if (self.bounceAnimate && self.switchState) {
+                [self.imageView bounce:0.3];
+            }
+        }
+        
         SuppressPerformSelectorLeakWarning([_target performSelector:_switchAction withObject:self]);
     }
 }
+
+- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated
+{
+    [self setSwitchState:switchState];
+    
+    if (animated) {
+        if (self.bounceAnimate && self.switchState) {
+            [self.imageView bounce:0.3];
+        }
+    }
+}
+
+- (void)setSwitchState:(BASwitchButtonState)switchState
+{
+    _switchState = switchState;
+    if (BASwitchButtonStateOff == _switchState) {
+        [self setImage:_offImage forState:UIControlStateNormal];
+        [self setImage:_offImage forState:UIControlStateHighlighted];
+    } else {
+        [self setImage:_onImage forState:UIControlStateNormal];
+        [self setImage:_onImage forState:UIControlStateHighlighted];
+    }
+}
+
 
 @end

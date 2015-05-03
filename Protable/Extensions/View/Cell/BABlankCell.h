@@ -1,5 +1,4 @@
-//  Created by Hou zhenyong on 13-7-25.
-//  Copyright (c) 2013年 Hou zhenyong. All rights reserved.
+//  Created by hou zhenyong on 13-7-25.
 
 #import <UIKit/UIKit.h>
 
@@ -10,7 +9,7 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
     kCustomCellPositionTypeOnlyOne
 };
 
-@interface BASeparatorLineVew : UIView
+@interface BASeparatorLineView : UIView
 
 @end
 
@@ -19,16 +18,10 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
 
 @property (nonatomic, assign) BOOL showBottomSeparatorLine;
 
-
-/**
- * cell位置类型
- * 根据Cell的位置可以指定背景图片（适用于卡片式），bottom separator line有无等，
- * 这里默认指定的是bottom separator line
- */
+// cell位置类型
 @property (nonatomic, assign) BACustomCellPositionType cellPositionType;
 
-// cell separator
-@property (nonatomic, strong, readonly) BASeparatorLineVew *bottomSeparatorLine;
+@property (nonatomic, strong, readonly) BASeparatorLineView *bottomSeparatorLine;
 @property (nonatomic, assign) CGFloat separatorLineLeftMargin;  // 只对bottom separator line有效
 
 /**
@@ -41,5 +34,8 @@ typedef NS_ENUM(NSInteger, BACustomCellPositionType) {
  */
 @property (nonatomic, strong, readonly) UIImageView *accessoryImageView;
 
+- (void)internalSetting;
+
+- (void)setBackgroundImage:(UIImage*)image hlBackgroundImage:(UIImage*)hlImage;
 
 @end

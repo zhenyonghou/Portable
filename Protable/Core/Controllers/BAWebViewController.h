@@ -1,5 +1,5 @@
 //
-//  XCWebViewController.h
+//  BAWebViewController.h
 //  Read
 //
 //  Created by houzhenyong on 14/11/4.

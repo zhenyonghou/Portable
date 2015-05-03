@@ -8,27 +8,42 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, BASwitchButtonState) {
+    BASwitchButtonStateOff  = 0,
+    BASwitchButtonStateOn
+};
+
 @interface BASwitchButton : UIButton {
 @protected
     __weak id _target;
     SEL _switchAction;
     
-    UIImage *_normalImage;
-    UIImage *_selectedImage;
+    UIImage *_offImage;
+    UIImage *_onImage;
 }
+
+/**
+ *  为YES时，touchUpInsideAction不改变状态
+ */
+@property (nonatomic, assign) BOOL manualSwitch;   // default is NO
 
 @property (nonatomic, assign) BOOL bounceAnimate;       // default is NO
 
-- (id)initWithFrame:(CGRect)frame
-        normalImage:(UIImage*)normalImage
-      selectedImage:(UIImage*)selectedImage
-             target:(id)target
-       switchAction:(SEL)action;
+@property (nonatomic, assign) BOOL ignoreTouch;
 
-- (id)initWithFrame:(CGRect)frame normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage;
+@property (nonatomic, assign) BASwitchButtonState switchState;
 
-- (void)setNormalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage;
+
+- (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage;
+
+- (void)setOffImage:(UIImage*)offImage onImage:(UIImage*)onImage;
 
 - (void)addTarget:(id)target switchAction:(SEL)action;
+
+/*
+ * 手动选择时候调用，可以设置是否动画
+ */
+- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated;
+
 
 @end

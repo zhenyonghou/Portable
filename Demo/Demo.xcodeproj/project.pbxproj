@@ -17,6 +17,20 @@
 		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
 		17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F181A47536E0047A25A /* UITableView+Additions.m */; };
 		17E940751AF6289E00853A1E /* BANaviBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940741AF6289E00853A1E /* BANaviBackButton.m */; };
+		17E9408F1AF6318200853A1E /* BASkinBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940781AF6318200853A1E /* BASkinBackButton.m */; };
+		17E940901AF6318200853A1E /* BASkinBlankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407A1AF6318200853A1E /* BASkinBlankCell.m */; };
+		17E940911AF6318200853A1E /* BASkinButton+NaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */; };
+		17E940921AF6318200853A1E /* BASkinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407E1AF6318200853A1E /* BASkinButton.m */; };
+		17E940931AF6318200853A1E /* BASkinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */; };
+		17E940941AF6318200853A1E /* BASkinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940821AF6318200853A1E /* BASkinImageView.m */; };
+		17E940951AF6318200853A1E /* BASkinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940841AF6318200853A1E /* BASkinLabel.m */; };
+		17E940961AF6318200853A1E /* BASkinRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940861AF6318200853A1E /* BASkinRightViewCell.m */; };
+		17E940971AF6318200853A1E /* BASkinSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940881AF6318200853A1E /* BASkinSwitchButton.m */; };
+		17E940981AF6318200853A1E /* BASkinToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408A1AF6318200853A1E /* BASkinToolbar.m */; };
+		17E940991AF6318200853A1E /* BASkinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408C1AF6318200853A1E /* BASkinView.m */; };
+		17E9409A1AF6318200853A1E /* BASkinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408E1AF6318200853A1E /* BASkinViewController.m */; };
+		17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BAImageView.m */; };
+		17E940A01AF6356400853A1E /* BABlankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409F1AF6356400853A1E /* BABlankCell.m */; };
 		5688DE521A067B8400F65FE9 /* BACustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BACustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+BAAdditions.m */; };
@@ -44,9 +58,7 @@
 		5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE241A067B8400F65FE9 /* BAButtonItem.m */; };
 		5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */; };
 		5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */; };
-		5688DE781A067B8400F65FE9 /* BABadgeNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2A1A067B8400F65FE9 /* BABadgeNumberButton.m */; };
 		5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2C1A067B8400F65FE9 /* BACheckBox.m */; };
-		5688DE7A1A067B8400F65FE9 /* BAEnableTouchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2E1A067B8400F65FE9 /* BAEnableTouchImageView.m */; };
 		5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */; };
 		5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE331A067B8400F65FE9 /* BACollectionViewLineLayout.m */; };
 		5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE351A067B8400F65FE9 /* BALineCollectionView.m */; };
@@ -56,7 +68,6 @@
 		5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3E1A067B8400F65FE9 /* BAPickerView.m */; };
 		5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */; };
 		5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE431A067B8400F65FE9 /* BASwitchButton.m */; };
-		5688DE841A067B8400F65FE9 /* BABlankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE461A067B8400F65FE9 /* BABlankCell.m */; };
 		5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE481A067B8400F65FE9 /* BAEnableTouchCell.m */; };
 		5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */; };
 		5688DE871A067B8400F65FE9 /* BALeftImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4C1A067B8400F65FE9 /* BALeftImageViewCell.m */; };
@@ -118,6 +129,34 @@
 		17285F181A47536E0047A25A /* UITableView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Additions.m"; sourceTree = "<group>"; };
 		17E940731AF6289E00853A1E /* BANaviBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANaviBackButton.h; sourceTree = "<group>"; };
 		17E940741AF6289E00853A1E /* BANaviBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANaviBackButton.m; sourceTree = "<group>"; };
+		17E940771AF6318200853A1E /* BASkinBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinBackButton.h; sourceTree = "<group>"; };
+		17E940781AF6318200853A1E /* BASkinBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinBackButton.m; sourceTree = "<group>"; };
+		17E940791AF6318200853A1E /* BASkinBlankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinBlankCell.h; sourceTree = "<group>"; };
+		17E9407A1AF6318200853A1E /* BASkinBlankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinBlankCell.m; sourceTree = "<group>"; };
+		17E9407B1AF6318200853A1E /* BASkinButton+NaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BASkinButton+NaviBar.h"; sourceTree = "<group>"; };
+		17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BASkinButton+NaviBar.m"; sourceTree = "<group>"; };
+		17E9407D1AF6318200853A1E /* BASkinButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinButton.h; sourceTree = "<group>"; };
+		17E9407E1AF6318200853A1E /* BASkinButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinButton.m; sourceTree = "<group>"; };
+		17E9407F1AF6318200853A1E /* BASkinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinCollectionViewCell.h; sourceTree = "<group>"; };
+		17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinCollectionViewCell.m; sourceTree = "<group>"; };
+		17E940811AF6318200853A1E /* BASkinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinImageView.h; sourceTree = "<group>"; };
+		17E940821AF6318200853A1E /* BASkinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinImageView.m; sourceTree = "<group>"; };
+		17E940831AF6318200853A1E /* BASkinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinLabel.h; sourceTree = "<group>"; };
+		17E940841AF6318200853A1E /* BASkinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinLabel.m; sourceTree = "<group>"; };
+		17E940851AF6318200853A1E /* BASkinRightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinRightViewCell.h; sourceTree = "<group>"; };
+		17E940861AF6318200853A1E /* BASkinRightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinRightViewCell.m; sourceTree = "<group>"; };
+		17E940871AF6318200853A1E /* BASkinSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinSwitchButton.h; sourceTree = "<group>"; };
+		17E940881AF6318200853A1E /* BASkinSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinSwitchButton.m; sourceTree = "<group>"; };
+		17E940891AF6318200853A1E /* BASkinToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinToolbar.h; sourceTree = "<group>"; };
+		17E9408A1AF6318200853A1E /* BASkinToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinToolbar.m; sourceTree = "<group>"; };
+		17E9408B1AF6318200853A1E /* BASkinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinView.h; sourceTree = "<group>"; };
+		17E9408C1AF6318200853A1E /* BASkinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinView.m; sourceTree = "<group>"; };
+		17E9408D1AF6318200853A1E /* BASkinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinViewController.h; sourceTree = "<group>"; };
+		17E9408E1AF6318200853A1E /* BASkinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinViewController.m; sourceTree = "<group>"; };
+		17E9409B1AF633FA00853A1E /* BAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageView.h; sourceTree = "<group>"; };
+		17E9409C1AF633FA00853A1E /* BAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageView.m; sourceTree = "<group>"; };
+		17E9409E1AF6356400853A1E /* BABlankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABlankCell.h; sourceTree = "<group>"; };
+		17E9409F1AF6356400853A1E /* BABlankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABlankCell.m; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BACustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BACustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -175,12 +214,8 @@
 		5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
 		5688DE271A067B8400F65FE9 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		5688DE291A067B8400F65FE9 /* BABadgeNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABadgeNumberButton.h; sourceTree = "<group>"; };
-		5688DE2A1A067B8400F65FE9 /* BABadgeNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABadgeNumberButton.m; sourceTree = "<group>"; };
 		5688DE2B1A067B8400F65FE9 /* BACheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACheckBox.h; sourceTree = "<group>"; };
 		5688DE2C1A067B8400F65FE9 /* BACheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACheckBox.m; sourceTree = "<group>"; };
-		5688DE2D1A067B8400F65FE9 /* BAEnableTouchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEnableTouchImageView.h; sourceTree = "<group>"; };
-		5688DE2E1A067B8400F65FE9 /* BAEnableTouchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEnableTouchImageView.m; sourceTree = "<group>"; };
 		5688DE301A067B8400F65FE9 /* BACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewCell.h; sourceTree = "<group>"; };
 		5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACollectionViewCell.m; sourceTree = "<group>"; };
 		5688DE321A067B8400F65FE9 /* BACollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewLineLayout.h; sourceTree = "<group>"; };
@@ -200,8 +235,6 @@
 		5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPickerViewWithSwitch.m; sourceTree = "<group>"; };
 		5688DE421A067B8400F65FE9 /* BASwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASwitchButton.h; sourceTree = "<group>"; };
 		5688DE431A067B8400F65FE9 /* BASwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASwitchButton.m; sourceTree = "<group>"; };
-		5688DE451A067B8400F65FE9 /* BABlankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABlankCell.h; sourceTree = "<group>"; };
-		5688DE461A067B8400F65FE9 /* BABlankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABlankCell.m; sourceTree = "<group>"; };
 		5688DE471A067B8400F65FE9 /* BAEnableTouchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEnableTouchCell.h; sourceTree = "<group>"; };
 		5688DE481A067B8400F65FE9 /* BAEnableTouchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEnableTouchCell.m; sourceTree = "<group>"; };
 		5688DE491A067B8400F65FE9 /* BAImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageGridCell.h; sourceTree = "<group>"; };
@@ -345,6 +378,37 @@
 			path = ViewExamples;
 			sourceTree = "<group>";
 		};
+		17E940761AF6318200853A1E /* SkinScheme */ = {
+			isa = PBXGroup;
+			children = (
+				17E940771AF6318200853A1E /* BASkinBackButton.h */,
+				17E940781AF6318200853A1E /* BASkinBackButton.m */,
+				17E940791AF6318200853A1E /* BASkinBlankCell.h */,
+				17E9407A1AF6318200853A1E /* BASkinBlankCell.m */,
+				17E9407B1AF6318200853A1E /* BASkinButton+NaviBar.h */,
+				17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */,
+				17E9407D1AF6318200853A1E /* BASkinButton.h */,
+				17E9407E1AF6318200853A1E /* BASkinButton.m */,
+				17E9407F1AF6318200853A1E /* BASkinCollectionViewCell.h */,
+				17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */,
+				17E940811AF6318200853A1E /* BASkinImageView.h */,
+				17E940821AF6318200853A1E /* BASkinImageView.m */,
+				17E940831AF6318200853A1E /* BASkinLabel.h */,
+				17E940841AF6318200853A1E /* BASkinLabel.m */,
+				17E940851AF6318200853A1E /* BASkinRightViewCell.h */,
+				17E940861AF6318200853A1E /* BASkinRightViewCell.m */,
+				17E940871AF6318200853A1E /* BASkinSwitchButton.h */,
+				17E940881AF6318200853A1E /* BASkinSwitchButton.m */,
+				17E940891AF6318200853A1E /* BASkinToolbar.h */,
+				17E9408A1AF6318200853A1E /* BASkinToolbar.m */,
+				17E9408B1AF6318200853A1E /* BASkinView.h */,
+				17E9408C1AF6318200853A1E /* BASkinView.m */,
+				17E9408D1AF6318200853A1E /* BASkinViewController.h */,
+				17E9408E1AF6318200853A1E /* BASkinViewController.m */,
+			);
+			path = SkinScheme;
+			sourceTree = "<group>";
+		};
 		5688DDCB1A067B8400F65FE9 /* Protable */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +535,7 @@
 		5688DE181A067B8400F65FE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				17E940761AF6318200853A1E /* SkinScheme */,
 				5688DE191A067B8400F65FE9 /* Attributed */,
 				5688DE201A067B8400F65FE9 /* ProtableExtensions.h */,
 				5688DE211A067B8400F65FE9 /* View */,
@@ -495,12 +560,10 @@
 			isa = PBXGroup;
 			children = (
 				5688DE221A067B8400F65FE9 /* AlertBlock */,
-				5688DE291A067B8400F65FE9 /* BABadgeNumberButton.h */,
-				5688DE2A1A067B8400F65FE9 /* BABadgeNumberButton.m */,
 				5688DE2B1A067B8400F65FE9 /* BACheckBox.h */,
 				5688DE2C1A067B8400F65FE9 /* BACheckBox.m */,
-				5688DE2D1A067B8400F65FE9 /* BAEnableTouchImageView.h */,
-				5688DE2E1A067B8400F65FE9 /* BAEnableTouchImageView.m */,
+				17E9409B1AF633FA00853A1E /* BAImageView.h */,
+				17E9409C1AF633FA00853A1E /* BAImageView.m */,
 				5688DE2F1A067B8400F65FE9 /* BALineCollectionView */,
 				5688DE361A067B8400F65FE9 /* BAOverlayView.h */,
 				5688DE371A067B8400F65FE9 /* BAOverlayView.m */,
@@ -557,8 +620,8 @@
 		5688DE441A067B8400F65FE9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5688DE451A067B8400F65FE9 /* BABlankCell.h */,
-				5688DE461A067B8400F65FE9 /* BABlankCell.m */,
+				17E9409E1AF6356400853A1E /* BABlankCell.h */,
+				17E9409F1AF6356400853A1E /* BABlankCell.m */,
 				5688DE471A067B8400F65FE9 /* BAEnableTouchCell.h */,
 				5688DE481A067B8400F65FE9 /* BAEnableTouchCell.m */,
 				5688DE491A067B8400F65FE9 /* BAImageGridCell.h */,
@@ -801,28 +864,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */,
+				17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
+				17E940971AF6318200853A1E /* BASkinSwitchButton.m in Sources */,
+				17E940A01AF6356400853A1E /* BABlankCell.m in Sources */,
 				5688DE641A067B8400F65FE9 /* BAFile.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BALeftImageViewCell.m in Sources */,
 				5688DE671A067B8400F65FE9 /* BAJsonFileHelper.m in Sources */,
 				5688DE711A067B8400F65FE9 /* BASkinResourceManager.m in Sources */,
 				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
-				5688DE781A067B8400F65FE9 /* BABadgeNumberButton.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
 				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */,
 				5688DE881A067B8400F65FE9 /* BARightViewCell.m in Sources */,
+				17E9408F1AF6318200853A1E /* BASkinBackButton.m in Sources */,
 				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
 				5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */,
+				17E940921AF6318200853A1E /* BASkinButton.m in Sources */,
 				5688DE661A067B8400F65FE9 /* BAImageFileHelper.m in Sources */,
 				5688DEA01A067D5C00F65FE9 /* UIView+BAAdditions.m in Sources */,
 				ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */,
 				17285F161A4752120047A25A /* DECViewViewController.m in Sources */,
 				5688DE651A067B8400F65FE9 /* BAFileDiskCache.m in Sources */,
 				5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */,
+				17E9409A1AF6318200853A1E /* BASkinViewController.m in Sources */,
 				5688DE611A067B8400F65FE9 /* BATabBarController.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
@@ -831,12 +899,15 @@
 				5688DE851A067B8400F65FE9 /* BAEnableTouchCell.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */,
+				17E940931AF6318200853A1E /* BASkinCollectionViewCell.m in Sources */,
 				5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */,
 				5688DE9E1A067D5C00F65FE9 /* UIButton+Protable.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
 				5688DEA41A067ED200F65FE9 /* UIViewController+BAAdditions.m in Sources */,
+				17E940911AF6318200853A1E /* BASkinButton+NaviBar.m in Sources */,
 				5688DE681A067B8400F65FE9 /* BAPlistFileManager.m in Sources */,
 				5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */,
+				17E940981AF6318200853A1E /* BASkinToolbar.m in Sources */,
 				5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */,
 				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
 				5688DE621A067B8400F65FE9 /* BAViewController.m in Sources */,
@@ -849,22 +920,25 @@
 				5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */,
 				5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */,
 				5688DE6C1A067B8400F65FE9 /* BAUncaughtExceptionHandler.m in Sources */,
+				17E940951AF6318200853A1E /* BASkinLabel.m in Sources */,
 				17285EFE1A474E620047A25A /* DECoreExamplesViewController.m in Sources */,
 				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
 				5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */,
 				5688DEA71A06856600F65FE9 /* BATableViewController.m in Sources */,
 				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
-				5688DE7A1A067B8400F65FE9 /* BAEnableTouchImageView.m in Sources */,
-				5688DE841A067B8400F65FE9 /* BABlankCell.m in Sources */,
+				17E940941AF6318200853A1E /* BASkinImageView.m in Sources */,
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
 				5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */,
 				5688DE6B1A067B8400F65FE9 /* BAApplication.m in Sources */,
+				17E940991AF6318200853A1E /* BASkinView.m in Sources */,
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
 				17E940751AF6289E00853A1E /* BANaviBackButton.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
+				17E940901AF6318200853A1E /* BASkinBlankCell.m in Sources */,
+				17E940961AF6318200853A1E /* BASkinRightViewCell.m in Sources */,
 				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,
 				5688DE701A067B8400F65FE9 /* BASkin.m in Sources */,
 				5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */,

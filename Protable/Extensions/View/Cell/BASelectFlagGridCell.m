@@ -23,7 +23,8 @@
         _imageView.layer.masksToBounds = YES;
         [self.contentView addSubview:_imageView];
 
-        _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero normalImage:nil selectedImage:nil target:self switchAction:@selector(onTouchedWithSelectedState:)];
+        _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero offImage:nil onImage:nil];
+        [_selectIconButton addTarget:self switchAction:@selector(onTouchedWithSelectedState:)];
         _selectIconButton.backgroundColor = [UIColor clearColor];
         _selectIconButton.bounceAnimate = YES;
         [self.contentView addSubview:_selectIconButton];
@@ -41,7 +42,7 @@
 
 - (void)setUnselectedIcon:(UIImage *)unselectedIcon selectedIcon:(UIImage*)selectedIcon
 {
-    [_selectIconButton setNormalImage:unselectedIcon selectedImage:selectedIcon];
+    [_selectIconButton setOffImage:unselectedIcon onImage:selectedIcon];
     _iconSize = selectedIcon.size;
 }
 

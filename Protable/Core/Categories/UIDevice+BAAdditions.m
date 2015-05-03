@@ -11,7 +11,7 @@
 
 @import CoreTelephony;
 
-@implementation UIDevice (XCAdditions)
+@implementation UIDevice (BAAdditions)
 
 
 + (NSString *)deviceModel {

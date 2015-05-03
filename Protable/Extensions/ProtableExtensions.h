@@ -11,7 +11,6 @@
 
 #import "BAAttributedTextView.h"
 #import "NSAttributedString+Height.h"
-#import "BABadgeNumberButton.h"
 #import "BASwitchButton.h"
 #import "BACheckBox.h"
 #import "BABlankCell.h"
@@ -21,7 +20,7 @@
 #import "BASelectFlagGridCell.h"
 #import "UIActionSheet+Blocks.h"
 #import "UIAlertView+Blocks.h"
-#import "BAEnableTouchImageView.h"
+#import "BAImageView.h"
 #import "BALineCollectionView.h"
 #import "BACollectionViewCell.h"
 

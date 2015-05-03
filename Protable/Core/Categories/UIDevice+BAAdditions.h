@@ -3,7 +3,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIDevice (XCAdditions)
+@interface UIDevice (BAAdditions)
 
 // 获取设备型号，如："iPhone4,1"
 + (NSString*) deviceModel;
