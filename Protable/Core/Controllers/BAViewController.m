@@ -34,7 +34,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = SKIN_COLOR(@"view_bg_color");
     
-    // 微读里的设置：
+    // wreader里的设置：
 //    if (IOS_VERSION >= 7.0) {
 //        self.navigationController.navigationBar.translucent = NO;       // 设置为NO, self.view会从64开始
 //    }

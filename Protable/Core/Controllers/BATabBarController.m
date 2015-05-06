@@ -45,17 +45,6 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (UITabBarItem*)buildTabBarItemWithTabBarItem:(BATabBarItem*)barItem
 {
     UITabBarItem *item;
@@ -80,6 +69,17 @@
     }
     
     self.viewControllers = mutableArray;
+}
+
+- (void)setItemWithIndex:(NSInteger)index normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage
+{
+    UITabBarItem *item = self.tabBar.items[index];
+    if (IOS_VERSION >= 7.0) {
+        item.image = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        item.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    } else {
+        [item setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:normalImage];
+    }
 }
 
 @end

@@ -18,7 +18,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        _bounceAnimate = NO;
+//        _bounceAnimate = NO;
         _manualSwitch = NO;
         _switchState = BASwitchButtonStateOff;
         _ignoreTouch = NO;
@@ -46,26 +46,26 @@
     if (_target && !_ignoreTouch) {
         if (!self.manualSwitch) {
             [self setSwitchState:!_switchState];
-            
-            if (self.bounceAnimate && self.switchState) {
-                [self.imageView bounce:0.3];
-            }
+
+//            if (self.bounceAnimate && self.switchState) {
+//                [self.imageView bounce:0.3];
+//            }
         }
         
         SuppressPerformSelectorLeakWarning([_target performSelector:_switchAction withObject:self]);
     }
 }
 
-- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated
-{
-    [self setSwitchState:switchState];
-    
-    if (animated) {
-        if (self.bounceAnimate && self.switchState) {
-            [self.imageView bounce:0.3];
-        }
-    }
-}
+//- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated
+//{
+//    [self setSwitchState:switchState];
+//    
+//    if (animated) {
+//        if (self.bounceAnimate && self.switchState) {
+//            [self.imageView bounce:0.3];
+//        }
+//    }
+//}
 
 - (void)setSwitchState:(BASwitchButtonState)switchState
 {

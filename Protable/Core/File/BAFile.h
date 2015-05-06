@@ -3,23 +3,6 @@
 
 @interface BAFile : NSObject
 
-+ (NSString*)documentPath;
-
-+ (NSString*)libraryPath;
-
-+ (NSString*)cachesPath;
-
-// 本地目录下文件的路径
-+ (NSString *)filePathAtBasicPath:(NSString *)basicPath withFileName:(NSString *)fileName;
-
-// 在Documents文件夹下的路径
-+ (NSString *)pathInDocumentsWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath;
-//  在Library文件夹下的路径
-+ (NSString *)pathInLibraryWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath;
-// 在Cache文件夹下的路径
-+ (NSString *)pathInCatchWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath;
-
-
 // 检查路径是否指向文件
 + (BOOL)isExistFileAtPath:(NSString *)path;
 // 检查路径是否指向文件夹

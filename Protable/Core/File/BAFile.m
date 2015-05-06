@@ -40,28 +40,6 @@
 
 @implementation BAFile
 
-//  返回Document目录的路径
-+ (NSString *)documentPath
-{
-    NSArray  *searchPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *path = [searchPath objectAtIndex:0];
-    return path;
-}
-
-//  返回Library目录的路径
-+ (NSString *)libraryPath
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    return [paths objectAtIndex:0];
-}
-
-//  返回Caches目录的路径
-+ (NSString *)cachesPath
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    return [paths objectAtIndex:0];
-}
-
 //  获取本地目录下文件夹的路径
 + (NSString *)dirPathAtBasicPath:(NSString *)basicPath withDirName:(NSString *)dirName
 {
@@ -95,43 +73,6 @@
     
     return currentPath;
 }
-
-//  在Documents文件夹下的路径
-+ (NSString *)pathInDocumentsWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath
-{
-    NSMutableString *basePath = (NSMutableString *)[self dirPathAtBasicPath:[self documentPath] withDirName:dirPath];
-    
-    if (filePath && ![filePath isEqualToString:@""]) {
-        return [basePath stringByAppendingPathComponent:filePath];
-    } else {
-        return basePath;
-    }
-}
-
-//  在Library文件夹下的路径
-+ (NSString *)pathInLibraryWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath
-{
-    NSMutableString *basePath = (NSMutableString *)[self dirPathAtBasicPath:[self libraryPath] withDirName:dirPath];
-    
-    if (filePath && ![filePath isEqualToString:@""]) {
-        return [basePath stringByAppendingPathComponent:filePath];
-    } else {
-        return basePath;
-    }
-}
-
-//  在Catch文件夹下的路径
-+ (NSString *)pathInCatchWithDirPath:(NSString *)dirPath filePath:(NSString *)filePath
-{
-    NSMutableString *basePath = (NSMutableString *)[self dirPathAtBasicPath:[self cachesPath] withDirName:dirPath];
-    
-    if (filePath && ![filePath isEqualToString:@""]) {
-        return [basePath stringByAppendingPathComponent:filePath];
-    } else {
-        return basePath;
-    }
-}
-
 
 //  检查文件是否存在
 + (BOOL)isFilePathExist:(NSString *)filePath isDir:(BOOL)isDir;

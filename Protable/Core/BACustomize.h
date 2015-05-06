@@ -20,8 +20,6 @@
 
 + (void)customizeStatusBar;
 
-+ (void)customizeSegmented;
-
 + (void)onSkinChanged;
 
 @end

@@ -26,7 +26,7 @@
         _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero offImage:nil onImage:nil];
         [_selectIconButton addTarget:self switchAction:@selector(onTouchedWithSelectedState:)];
         _selectIconButton.backgroundColor = [UIColor clearColor];
-        _selectIconButton.bounceAnimate = YES;
+//        _selectIconButton.bounceAnimate = YES;
         [self.contentView addSubview:_selectIconButton];
         
         _iconRightMargin = 0.f;

@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, BASwitchButtonState) {
  */
 @property (nonatomic, assign) BOOL manualSwitch;   // default is NO
 
-@property (nonatomic, assign) BOOL bounceAnimate;       // default is NO
+//@property (nonatomic, assign) BOOL bounceAnimate;       // default is NO
 
 @property (nonatomic, assign) BOOL ignoreTouch;
 
@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, BASwitchButtonState) {
 /*
  * 手动选择时候调用，可以设置是否动画
  */
-- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated;
+//- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated;
 
 
 @end

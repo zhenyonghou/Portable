@@ -4,7 +4,6 @@
 //
 //  Created by hou zhenyong on 14-1-14.
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
-//  TODO:tabbar上字体颜色可设置
 
 #import <UIKit/UIKit.h>
 
@@ -26,5 +25,7 @@
 @interface BATabBarController : UITabBarController
 
 - (void)setBarItems:(NSArray *)barItems;
+
+- (void)setItemWithIndex:(NSInteger)index normalImage:(UIImage*)normalImage selectedImage:(UIImage*)selectedImage;
 
 @end

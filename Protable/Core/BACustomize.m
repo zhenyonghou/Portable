@@ -22,8 +22,6 @@
     
     [[self class] customizeTabBar];
     
-    [[self class] customizeSegmented];
-    
     [[self class] customizeToolBar];
 }
 
@@ -31,7 +29,6 @@
 {
     [[self class] customizeButtonItem];
     [[self class] customizeBackButton];
-    [[self class] customizeSegmented];
 }
 
 + (void)customizeNavigationBar
@@ -115,59 +112,6 @@
         [[UIBarButtonItem appearance] setBackgroundImage:[[UIImage alloc] init]
                                                 forState:UIControlStateNormal
                                               barMetrics:UIBarMetricsDefault];
-    }
-}
-
-+ (void)customizeSegmented
-{
-    if (IOS_VERSION >= 7.0) {
-        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment_text_normal"),
-                                              UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
-                                              UITextAttributeTextShadowColor: [UIColor clearColor]
-                                              };
-        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment_text_selected"),
-                                                      UITextAttributeFont: [UIFont systemFontOfSize:14.0f],
-                                                      UITextAttributeTextShadowColor: [UIColor clearColor]
-                                                      };
-        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
-        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributesSelected forState:UIControlStateSelected];
-        [[UISegmentedControl appearance] setTintColor:SKIN_COLOR(@"color_segment_text_normal")];
-        
-    } else {
-//        
-//        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f);
-//        UIImage *bkgndImage = [SKIN_IMAGE(@"segment_bkgnd") resizableImageWithCapInsets:edgeInsets];
-//        UIImage *bkgndImage_highlighted = [SKIN_IMAGE(@"segment_bkgnd_highlighted") resizableImageWithCapInsets:edgeInsets];
-//        UIImage *bkgndImage_selected = [SKIN_IMAGE(@"segment_bkgnd_selected") resizableImageWithCapInsets:edgeInsets];
-//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage_highlighted forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setBackgroundImage:bkgndImage_selected forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-//        
-//        UIEdgeInsets edgeInsetsDiv = UIEdgeInsetsMake(5.0f, 0.0f, 5.0f, 0.0f);
-//        UIImage *divImage_normal_normal = [SKIN_IMAGE(@"segment_div_normal_normal") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_normal_highlighted = [SKIN_IMAGE(@"segment_div_normal_highlighted") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_normal_selected = [SKIN_IMAGE(@"segment_div_normal_selected") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_highlighted_normal = [SKIN_IMAGE(@"segment_div_highlighted_normal") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_highlighted_selected = [SKIN_IMAGE(@"segment_div_highlighted_selected") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_selected_normal = [SKIN_IMAGE(@"segment_div_selected_normal") resizableImageWithCapInsets:edgeInsetsDiv];
-//        UIImage *divImage_selected_highlighted = [SKIN_IMAGE(@"segment_div_selected_highlighted") resizableImageWithCapInsets:edgeInsetsDiv];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_normal forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_highlighted forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_normal_selected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_highlighted_normal forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_highlighted_selected forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_selected_normal forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//        [[UISegmentedControl appearance] setDividerImage:divImage_selected_highlighted forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-//        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor: SKIN_COLOR(@"color_segment"),
-//                                              UITextAttributeFont: [UIFont boldSystemFontOfSize:14.0f],
-//                                              UITextAttributeTextShadowColor: [UIColor clearColor]
-//                                              };
-//        NSDictionary *titleTextAttributesSelected = @{UITextAttributeTextColor: [UIColor whiteColor],
-//                                                      UITextAttributeFont: [UIFont boldSystemFontOfSize:14.0f],
-//                                                      UITextAttributeTextShadowColor: [UIColor clearColor]
-//                                                      };
-//        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
-//        [[UISegmentedControl appearance] setTitleTextAttributes:titleTextAttributesSelected forState:UIControlStateSelected];
     }
 }
 
