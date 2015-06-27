@@ -62,23 +62,23 @@ static AppNavigator * navigator = nil;
 - (void)setupTabBarViewControllers
 {
     BATabBarItem *barItem0 = [[BATabBarItem alloc] initWithTitle:@"Core Examples"
+                                                     normalImage:SKIN_IMAGE(@"tabbar_first")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_first_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_first")
                                                   viewController:[[DECoreExamplesViewController alloc] init]];
     
     BATabBarItem *barItem1 = [[BATabBarItem alloc] initWithTitle:@"Extensions Examples"
+                                                     normalImage:SKIN_IMAGE(@"tabbar_second")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_second_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_second")
                                                   viewController:[[DEExtensionsExamplesViewController alloc] init]];
                               
     BATabBarItem *barItem2 = [[BATabBarItem alloc] initWithTitle:@"第3页"
+                                                     normalImage:SKIN_IMAGE(@"tabbar_third")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_third_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_third")
                                                   viewController:[[ThirdViewController alloc] init]];
     
     BATabBarItem *barItem3 = [[BATabBarItem alloc] initWithTitle:@"第4页"
+                                                     normalImage:SKIN_IMAGE(@"tabbar_forth")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_forth_hl")
-                                                 unselectedImage:SKIN_IMAGE(@"tabbar_forth")
                                                   viewController:[[ForthViewController alloc] init]];
     
     self.tabBarController = [[BATabBarController alloc] init];
