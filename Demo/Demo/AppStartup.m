@@ -33,7 +33,7 @@
     [[BASkinResourceManager sharedInstance] changeSkinWithName:currentSkinName];
     
     // Step2 设置 bar
-    [BACustomize customize];
+    [BBCustomize customize];
     
     [[AppNavigator navigator] openTabBarControllers];
     

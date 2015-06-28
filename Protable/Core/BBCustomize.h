@@ -8,18 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BACustomize : NSObject
+@interface BBCustomize : NSObject
 
 + (void)customize;
-
-+ (void)customizeNavigationBar;
-
-+ (void)customizeBackButton;
-
-+ (void)customizeTabBar;
-
-+ (void)customizeStatusBar;
-
-+ (void)onSkinChanged;
 
 @end

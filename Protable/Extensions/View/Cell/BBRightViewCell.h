@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BAEnableTouchCell.h"
+#import "BBTableViewCell.h"
 
-@interface BARightViewCell : BAEnableTouchCell
+@interface BBRightViewCell : BBTableViewCell
 
 @property (nonatomic, strong) UIView *rightView;    // default is nil
 

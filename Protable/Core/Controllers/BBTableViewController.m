@@ -11,13 +11,13 @@
  * 所以，改为将tableView add到self.view上，省去不必要的麻烦。
  */
 
-#import "BATableViewController.h"
+#import "BBTableViewController.h"
 
-@interface BATableViewController ()
+@interface BBTableViewController ()
 
 @end
 
-@implementation BATableViewController
+@implementation BBTableViewController
 
 - (id)init
 {
@@ -67,6 +67,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return nil;
+}
+
+- (void)tableView:(nonnull UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    [self performSelector:@selector(bb_deselectCell) withObject:nil afterDelay:0.5];
+}
+
+- (void)bb_deselectCell {
+    [_tableView deselectRowAtIndexPath:[_tableView indexPathForSelectedRow] animated:NO];
 }
 
 @end

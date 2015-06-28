@@ -8,7 +8,7 @@
 
 #import "BAViewController.h"
 
-@interface BATableViewController : BAViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface BBTableViewController : BAViewController <UITableViewDataSource, UITableViewDelegate>{
 @protected
     CGFloat _bottomBarHeight;
 }

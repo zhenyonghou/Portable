@@ -14,9 +14,9 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_background")]
-               hlBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_highlighted")]];
-        self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
+//        [self setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_background")]
+//               hlBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_highlighted")]];
+//        self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onChangeSkin:) name:kSkinChangeNotification object:nil];
     }
@@ -30,10 +30,10 @@
 
 - (void)onChangeSkin:(NSNotification *)notification
 {
-    [self setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_background")]
-           hlBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_highlighted")]];
-    
-    self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
+//    [self setBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_background")]
+//           hlBackgroundImage:[UIImage imageWithColor:SKIN_COLOR(@"color_cell_highlighted")]];
+//    
+//    self.bottomSeparatorLine.backgroundColor = SKIN_COLOR(@"color_cell_separator");
 }
 
 @end

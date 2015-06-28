@@ -8,9 +8,9 @@
 
 #define kImageViewPadding       5
 
-#import "BALeftImageViewCell.h"
+#import "BBLeftImageViewCell.h"
 
-@implementation BALeftImageViewCell
+@implementation BBLeftImageViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BATableViewController.h"
+#import "BBTableViewController.h"
 
-@interface DECCategoriesViewController : BATableViewController
+@interface DECCategoriesViewController : BBTableViewController
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BARightViewCell.h"
+#import "BBRightViewCell.h"
 
-@implementation BARightViewCell
+@implementation BBRightViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

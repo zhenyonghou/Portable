@@ -25,7 +25,7 @@
 #import "UIView+BAAdditions.h"
 #import "UIView+Bounce.h"
 
-#import "BACustomize.h"
+#import "BBCustomize.h"
 
 // File
 #import "BADiskCache.h"
@@ -39,7 +39,7 @@
 // Controllers
 #import "UIViewController+BAAdditions.h"
 #import "BAViewController.h"
-#import "BATableViewController.h"
+#import "BBTableViewController.h"
 
 // Utilities
 #import "BAUtility.h"
