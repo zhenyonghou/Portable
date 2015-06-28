@@ -8,6 +8,7 @@
 
 #import "AppNavigator.h"
 #import "AppDelegate.h"
+#import "BBTabBarController.h"
 
 #import "DECoreExamplesViewController.h"
 #import "DEExtensionsExamplesViewController.h"
@@ -15,6 +16,8 @@
 #import "ForthViewController.h"
 
 @interface AppNavigator()
+
+@property (nonatomic, strong) BBTabBarController *tabBarController;
 
 @end
 
@@ -32,18 +35,10 @@ static AppNavigator * navigator = nil;
 	return navigator;
 }
 
-- (id)init
-{
-    if (self = [super init]) {
-    }
-    return self;
-}
-
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
 
 - (AppDelegate *)sharedAppDelegate
 {
@@ -54,35 +49,37 @@ static AppNavigator * navigator = nil;
 - (void)openTabBarControllers
 {
     if (!self.tabBarController) {
-        [self setupTabBarViewControllers];
+        [self buildTabBarViewControllers];
     }
     [self sharedAppDelegate].window.rootViewController = self.tabBarController;
 }
 
-- (void)setupTabBarViewControllers
+- (void)buildTabBarViewControllers
 {
-    BATabBarItem *barItem0 = [[BATabBarItem alloc] initWithTitle:@"Core Examples"
-                                                     normalImage:SKIN_IMAGE(@"tabbar_first")
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_first_hl")
-                                                  viewController:[[DECoreExamplesViewController alloc] init]];
+    BBTabBarItem *barItem0 = [[BBTabBarItem alloc] initWithTitle:@"Core Examples"
+                                                           image:SKIN_IMAGE(@"tabbar_first")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_first_hl")];
     
-    BATabBarItem *barItem1 = [[BATabBarItem alloc] initWithTitle:@"Extensions Examples"
-                                                     normalImage:SKIN_IMAGE(@"tabbar_second")
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_second_hl")
-                                                  viewController:[[DEExtensionsExamplesViewController alloc] init]];
-                              
-    BATabBarItem *barItem2 = [[BATabBarItem alloc] initWithTitle:@"第3页"
-                                                     normalImage:SKIN_IMAGE(@"tabbar_third")
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_third_hl")
-                                                  viewController:[[ThirdViewController alloc] init]];
+    BBTabBarItem *barItem1 = [[BBTabBarItem alloc] initWithTitle:@"Extensions Examples"
+                                                           image:SKIN_IMAGE(@"tabbar_second")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_second_hl")];
     
-    BATabBarItem *barItem3 = [[BATabBarItem alloc] initWithTitle:@"第4页"
-                                                     normalImage:SKIN_IMAGE(@"tabbar_forth")
-                                                   selectedImage:SKIN_IMAGE(@"tabbar_forth_hl")
-                                                  viewController:[[ForthViewController alloc] init]];
+    BBTabBarItem *barItem2 = [[BBTabBarItem alloc] initWithTitle:@"第3页"
+                                                           image:SKIN_IMAGE(@"tabbar_third")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_third_hl")];
     
-    self.tabBarController = [[BATabBarController alloc] init];
-    [self.tabBarController setBarItems:@[barItem0, barItem1, barItem2, barItem3]];
+    BBTabBarItem *barItem3 = [[BBTabBarItem alloc] initWithTitle:@"第4页"
+                                                           image:SKIN_IMAGE(@"tabbar_forth")
+                                                   selectedImage:SKIN_IMAGE(@"tabbar_forth_hl")];
+    
+    UINavigationController *navi0 = [[UINavigationController alloc] initWithRootViewController:[[DECoreExamplesViewController alloc] init]];
+    UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:[[DEExtensionsExamplesViewController alloc] init]];
+    UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+    UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ForthViewController alloc] init]];
+
+    self.tabBarController = [[BBTabBarController alloc] init];
+    [self.tabBarController bb_setBarItems:@[barItem0, barItem1, barItem2, barItem3]];
+    self.tabBarController.viewControllers = @[navi0, navi1, navi2, navi3];
 }
 
 @end

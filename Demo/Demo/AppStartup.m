@@ -9,8 +9,7 @@
 #import "AppStartup.h"
 //#import "COApplicationService.h"
 #import "UIViewController+BAAdditions.h"
-#import "BATabBarController.h"
-#import "BAUncaughtExceptionHandler.h"
+//#import "BATabBarController.h"
 #import "AppNavigator.h"
 
 @implementation AppStartup
@@ -26,8 +25,6 @@
 //            [MobClick event:@"post_crash" label:@"error"];;
 //        }];
 //    }];
-    
-	[BAUncaughtExceptionHandler installUncaughtExceptionHandler];
 
     [[BAUserConfig sharedInstance] registerDefaults];
     

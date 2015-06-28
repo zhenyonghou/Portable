@@ -45,7 +45,6 @@
 #import "BAUtility.h"
 #import "BAApplication.h"
 #import "BAUserConfig.h"
-#import "BAUncaughtExceptionHandler.h"
 
 #import "BASkinResourceManager.h"
 #import "BASkin.h"

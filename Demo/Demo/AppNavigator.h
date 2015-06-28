@@ -7,18 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BATabBarController.h"
+//#import "BATabBarController.h"
 
 @interface AppNavigator : NSObject
 
-//@property (nonatomic, strong) UINavigationController* mainNav;
-
-@property (nonatomic, strong) BATabBarController *tabBarController;
+//@property (nonatomic, strong) BATabBarController *tabBarController;
 
 + (AppNavigator*)navigator;
-
-//- (UINavigationController*)tabBarNavigationController;
-
 
 // 打开Tab controller
 - (void)openTabBarControllers;
