@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 hou zhenyong. All rights reserved.
 //
 
-#import "BAViewController.h"
+#import "BBViewController.h"
 
-@interface DECTestLabelViewController : BAViewController
+@interface DECTestLabelViewController : BBViewController
 
 @end

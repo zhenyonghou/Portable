@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BAViewController.h"
+#import "BBViewController.h"
 
-@interface BBTableViewController : BAViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface BBTableViewController : BBViewController <UITableViewDataSource, UITableViewDelegate>{
 @protected
     CGFloat _bottomBarHeight;
 }

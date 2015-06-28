@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BAViewController.h"
+#import "BBViewController.h"
 
-@interface ThirdViewController : BAViewController
+@interface ThirdViewController : BBViewController
 
 @end

@@ -18,24 +18,14 @@
 		17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F181A47536E0047A25A /* UITableView+Additions.m */; };
 		17CA1AF41B40003C0028848D /* BANaviBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AE61B40003C0028848D /* BANaviBackButton.m */; };
 		17CA1AF51B40003C0028848D /* BBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AE81B40003C0028848D /* BBTableViewController.m */; };
-		17CA1AF61B40003C0028848D /* BAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEA1B40003C0028848D /* BAViewController.m */; };
+		17CA1AF61B40003C0028848D /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEA1B40003C0028848D /* BBViewController.m */; };
 		17CA1AF71B40003C0028848D /* BAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEC1B40003C0028848D /* BAWebViewController.m */; };
 		17CA1AF81B40003C0028848D /* BBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEF1B40003C0028848D /* BBTabBarController.m */; };
 		17CA1AF91B40003C0028848D /* BBTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AF11B40003C0028848D /* BBTabBarItem.m */; };
 		17CA1AFA1B40003C0028848D /* UIViewController+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AF31B40003C0028848D /* UIViewController+BAAdditions.m */; };
 		17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AFC1B4005F00028848D /* BBTableViewCell.m */; };
-		17E9408F1AF6318200853A1E /* BASkinBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940781AF6318200853A1E /* BASkinBackButton.m */; };
-		17E940901AF6318200853A1E /* BASkinBlankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407A1AF6318200853A1E /* BASkinBlankCell.m */; };
-		17E940911AF6318200853A1E /* BASkinButton+NaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */; };
-		17E940921AF6318200853A1E /* BASkinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9407E1AF6318200853A1E /* BASkinButton.m */; };
-		17E940931AF6318200853A1E /* BASkinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */; };
-		17E940941AF6318200853A1E /* BASkinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940821AF6318200853A1E /* BASkinImageView.m */; };
-		17E940951AF6318200853A1E /* BASkinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940841AF6318200853A1E /* BASkinLabel.m */; };
-		17E940961AF6318200853A1E /* BASkinRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940861AF6318200853A1E /* BASkinRightViewCell.m */; };
-		17E940971AF6318200853A1E /* BASkinSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E940881AF6318200853A1E /* BASkinSwitchButton.m */; };
-		17E940981AF6318200853A1E /* BASkinToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408A1AF6318200853A1E /* BASkinToolbar.m */; };
-		17E940991AF6318200853A1E /* BASkinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408C1AF6318200853A1E /* BASkinView.m */; };
-		17E9409A1AF6318200853A1E /* BASkinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9408E1AF6318200853A1E /* BASkinViewController.m */; };
+		17CA1B051B4013290028848D /* font_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17CA1B041B4013290028848D /* font_color.plist */; };
+		17CA1B081B4016740028848D /* BBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1B071B4016740028848D /* BBSkin.m */; };
 		17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BAImageView.m */; };
 		5688DE521A067B8400F65FE9 /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BBCustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
@@ -50,11 +40,9 @@
 		5688DE671A067B8400F65FE9 /* BAJsonFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFD1A067B8400F65FE9 /* BAJsonFileHelper.m */; };
 		5688DE681A067B8400F65FE9 /* BAPlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFF1A067B8400F65FE9 /* BAPlistFileManager.m */; };
 		5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE021A067B8400F65FE9 /* BALocationManager.m */; };
-		5688DE6B1A067B8400F65FE9 /* BAApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE091A067B8400F65FE9 /* BAApplication.m */; };
+		5688DE6B1A067B8400F65FE9 /* BBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE091A067B8400F65FE9 /* BBApplication.m */; };
 		5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */; };
-		5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0F1A067B8400F65FE9 /* BAUtility.m */; };
-		5688DE701A067B8400F65FE9 /* BASkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE151A067B8400F65FE9 /* BASkin.m */; };
-		5688DE711A067B8400F65FE9 /* BASkinResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE171A067B8400F65FE9 /* BASkinResourceManager.m */; };
+		5688DE6E1A067B8400F65FE9 /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0F1A067B8400F65FE9 /* BBUtility.m */; };
 		5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */; };
 		5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1D1A067B8400F65FE9 /* BAAttributedTextView.m */; };
 		5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1F1A067B8400F65FE9 /* NSAttributedString+Height.m */; };
@@ -84,10 +72,6 @@
 		568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A56031A0614C200163FA3 /* LaunchScreen.xib */; };
 		568A56111A0614C200163FA3 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A56101A0614C200163FA3 /* DemoTests.m */; };
 		568A56711A0615BA00163FA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 568A561B1A0615BA00163FA3 /* Default-568h@2x.png */; };
-		568A56C11A0615BA00163FA3 /* skin_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568A566E1A0615BA00163FA3 /* skin_list.plist */; };
-		568A56C61A0616A400163FA3 /* skin_basic in Resources */ = {isa = PBXBuildFile; fileRef = 568A56C31A0616A400163FA3 /* skin_basic */; };
-		568A56C71A0616A400163FA3 /* skin_common in Resources */ = {isa = PBXBuildFile; fileRef = 568A56C41A0616A400163FA3 /* skin_common */; };
-		568A56C81A0616A400163FA3 /* skin_night in Resources */ = {isa = PBXBuildFile; fileRef = 568A56C51A0616A400163FA3 /* skin_night */; };
 		568A58021A061BE400163FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FD1A061BE400163FA3 /* AppDelegate.m */; };
 		568A58031A061BE400163FA3 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FF1A061BE400163FA3 /* AppNavigator.m */; };
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
@@ -130,8 +114,8 @@
 		17CA1AE61B40003C0028848D /* BANaviBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANaviBackButton.m; sourceTree = "<group>"; };
 		17CA1AE71B40003C0028848D /* BBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewController.h; sourceTree = "<group>"; };
 		17CA1AE81B40003C0028848D /* BBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewController.m; sourceTree = "<group>"; };
-		17CA1AE91B40003C0028848D /* BAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewController.h; sourceTree = "<group>"; };
-		17CA1AEA1B40003C0028848D /* BAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAViewController.m; sourceTree = "<group>"; };
+		17CA1AE91B40003C0028848D /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		17CA1AEA1B40003C0028848D /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
 		17CA1AEB1B40003C0028848D /* BAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAWebViewController.h; sourceTree = "<group>"; };
 		17CA1AEC1B40003C0028848D /* BAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAWebViewController.m; sourceTree = "<group>"; };
 		17CA1AEE1B40003C0028848D /* BBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTabBarController.h; sourceTree = "<group>"; };
@@ -142,30 +126,9 @@
 		17CA1AF31B40003C0028848D /* UIViewController+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BAAdditions.m"; sourceTree = "<group>"; };
 		17CA1AFB1B4005F00028848D /* BBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewCell.h; sourceTree = "<group>"; };
 		17CA1AFC1B4005F00028848D /* BBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewCell.m; sourceTree = "<group>"; };
-		17E940771AF6318200853A1E /* BASkinBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinBackButton.h; sourceTree = "<group>"; };
-		17E940781AF6318200853A1E /* BASkinBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinBackButton.m; sourceTree = "<group>"; };
-		17E940791AF6318200853A1E /* BASkinBlankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinBlankCell.h; sourceTree = "<group>"; };
-		17E9407A1AF6318200853A1E /* BASkinBlankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinBlankCell.m; sourceTree = "<group>"; };
-		17E9407B1AF6318200853A1E /* BASkinButton+NaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BASkinButton+NaviBar.h"; sourceTree = "<group>"; };
-		17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BASkinButton+NaviBar.m"; sourceTree = "<group>"; };
-		17E9407D1AF6318200853A1E /* BASkinButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinButton.h; sourceTree = "<group>"; };
-		17E9407E1AF6318200853A1E /* BASkinButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinButton.m; sourceTree = "<group>"; };
-		17E9407F1AF6318200853A1E /* BASkinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinCollectionViewCell.h; sourceTree = "<group>"; };
-		17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinCollectionViewCell.m; sourceTree = "<group>"; };
-		17E940811AF6318200853A1E /* BASkinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinImageView.h; sourceTree = "<group>"; };
-		17E940821AF6318200853A1E /* BASkinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinImageView.m; sourceTree = "<group>"; };
-		17E940831AF6318200853A1E /* BASkinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinLabel.h; sourceTree = "<group>"; };
-		17E940841AF6318200853A1E /* BASkinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinLabel.m; sourceTree = "<group>"; };
-		17E940851AF6318200853A1E /* BASkinRightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinRightViewCell.h; sourceTree = "<group>"; };
-		17E940861AF6318200853A1E /* BASkinRightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinRightViewCell.m; sourceTree = "<group>"; };
-		17E940871AF6318200853A1E /* BASkinSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinSwitchButton.h; sourceTree = "<group>"; };
-		17E940881AF6318200853A1E /* BASkinSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinSwitchButton.m; sourceTree = "<group>"; };
-		17E940891AF6318200853A1E /* BASkinToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinToolbar.h; sourceTree = "<group>"; };
-		17E9408A1AF6318200853A1E /* BASkinToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinToolbar.m; sourceTree = "<group>"; };
-		17E9408B1AF6318200853A1E /* BASkinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinView.h; sourceTree = "<group>"; };
-		17E9408C1AF6318200853A1E /* BASkinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinView.m; sourceTree = "<group>"; };
-		17E9408D1AF6318200853A1E /* BASkinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinViewController.h; sourceTree = "<group>"; };
-		17E9408E1AF6318200853A1E /* BASkinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinViewController.m; sourceTree = "<group>"; };
+		17CA1B041B4013290028848D /* font_color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = font_color.plist; sourceTree = "<group>"; };
+		17CA1B061B4016740028848D /* BBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSkin.h; sourceTree = "<group>"; };
+		17CA1B071B4016740028848D /* BBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSkin.m; sourceTree = "<group>"; };
 		17E9409B1AF633FA00853A1E /* BAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageView.h; sourceTree = "<group>"; };
 		17E9409C1AF633FA00853A1E /* BAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageView.m; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
@@ -196,16 +159,12 @@
 		5688DE021A067B8400F65FE9 /* BALocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationManager.m; sourceTree = "<group>"; };
 		5688DE031A067B8400F65FE9 /* ProtableCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableCore.h; sourceTree = "<group>"; };
 		5688DE041A067B8400F65FE9 /* ProtableDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableDefines.h; sourceTree = "<group>"; };
-		5688DE081A067B8400F65FE9 /* BAApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAApplication.h; sourceTree = "<group>"; };
-		5688DE091A067B8400F65FE9 /* BAApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAApplication.m; sourceTree = "<group>"; };
+		5688DE081A067B8400F65FE9 /* BBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBApplication.h; sourceTree = "<group>"; };
+		5688DE091A067B8400F65FE9 /* BBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBApplication.m; sourceTree = "<group>"; };
 		5688DE0C1A067B8400F65FE9 /* BAUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAUserConfig.h; sourceTree = "<group>"; };
 		5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAUserConfig.m; sourceTree = "<group>"; };
-		5688DE0E1A067B8400F65FE9 /* BAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAUtility.h; sourceTree = "<group>"; };
-		5688DE0F1A067B8400F65FE9 /* BAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAUtility.m; sourceTree = "<group>"; };
-		5688DE141A067B8400F65FE9 /* BASkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkin.h; sourceTree = "<group>"; };
-		5688DE151A067B8400F65FE9 /* BASkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkin.m; sourceTree = "<group>"; };
-		5688DE161A067B8400F65FE9 /* BASkinResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASkinResourceManager.h; sourceTree = "<group>"; };
-		5688DE171A067B8400F65FE9 /* BASkinResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASkinResourceManager.m; sourceTree = "<group>"; };
+		5688DE0E1A067B8400F65FE9 /* BBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUtility.h; sourceTree = "<group>"; };
+		5688DE0F1A067B8400F65FE9 /* BBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUtility.m; sourceTree = "<group>"; };
 		5688DE1A1A067B8400F65FE9 /* BAAttributedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAttributedText.h; sourceTree = "<group>"; };
 		5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAttributedText.m; sourceTree = "<group>"; };
 		5688DE1C1A067B8400F65FE9 /* BAAttributedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAttributedTextView.h; sourceTree = "<group>"; };
@@ -266,10 +225,6 @@
 		568A560F1A0614C200163FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568A56101A0614C200163FA3 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		568A561B1A0615BA00163FA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		568A566E1A0615BA00163FA3 /* skin_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skin_list.plist; sourceTree = "<group>"; };
-		568A56C31A0616A400163FA3 /* skin_basic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin_basic; sourceTree = "<group>"; };
-		568A56C41A0616A400163FA3 /* skin_common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin_common; sourceTree = "<group>"; };
-		568A56C51A0616A400163FA3 /* skin_night */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin_night; sourceTree = "<group>"; };
 		568A57831A06176100163FA3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		568A57FC1A061BE400163FA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		568A57FD1A061BE400163FA3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -382,8 +337,8 @@
 				17CA1AE61B40003C0028848D /* BANaviBackButton.m */,
 				17CA1AE71B40003C0028848D /* BBTableViewController.h */,
 				17CA1AE81B40003C0028848D /* BBTableViewController.m */,
-				17CA1AE91B40003C0028848D /* BAViewController.h */,
-				17CA1AEA1B40003C0028848D /* BAViewController.m */,
+				17CA1AE91B40003C0028848D /* BBViewController.h */,
+				17CA1AEA1B40003C0028848D /* BBViewController.m */,
 				17CA1AEB1B40003C0028848D /* BAWebViewController.h */,
 				17CA1AEC1B40003C0028848D /* BAWebViewController.m */,
 				17CA1AED1B40003C0028848D /* TabBarController */,
@@ -402,37 +357,6 @@
 				17CA1AF11B40003C0028848D /* BBTabBarItem.m */,
 			);
 			path = TabBarController;
-			sourceTree = "<group>";
-		};
-		17E940761AF6318200853A1E /* SkinScheme */ = {
-			isa = PBXGroup;
-			children = (
-				17E940771AF6318200853A1E /* BASkinBackButton.h */,
-				17E940781AF6318200853A1E /* BASkinBackButton.m */,
-				17E940791AF6318200853A1E /* BASkinBlankCell.h */,
-				17E9407A1AF6318200853A1E /* BASkinBlankCell.m */,
-				17E9407B1AF6318200853A1E /* BASkinButton+NaviBar.h */,
-				17E9407C1AF6318200853A1E /* BASkinButton+NaviBar.m */,
-				17E9407D1AF6318200853A1E /* BASkinButton.h */,
-				17E9407E1AF6318200853A1E /* BASkinButton.m */,
-				17E9407F1AF6318200853A1E /* BASkinCollectionViewCell.h */,
-				17E940801AF6318200853A1E /* BASkinCollectionViewCell.m */,
-				17E940811AF6318200853A1E /* BASkinImageView.h */,
-				17E940821AF6318200853A1E /* BASkinImageView.m */,
-				17E940831AF6318200853A1E /* BASkinLabel.h */,
-				17E940841AF6318200853A1E /* BASkinLabel.m */,
-				17E940851AF6318200853A1E /* BASkinRightViewCell.h */,
-				17E940861AF6318200853A1E /* BASkinRightViewCell.m */,
-				17E940871AF6318200853A1E /* BASkinSwitchButton.h */,
-				17E940881AF6318200853A1E /* BASkinSwitchButton.m */,
-				17E940891AF6318200853A1E /* BASkinToolbar.h */,
-				17E9408A1AF6318200853A1E /* BASkinToolbar.m */,
-				17E9408B1AF6318200853A1E /* BASkinView.h */,
-				17E9408C1AF6318200853A1E /* BASkinView.m */,
-				17E9408D1AF6318200853A1E /* BASkinViewController.h */,
-				17E9408E1AF6318200853A1E /* BASkinViewController.m */,
-			);
-			path = SkinScheme;
 			sourceTree = "<group>";
 		};
 		5688DDCB1A067B8400F65FE9 /* Protable */ = {
@@ -515,32 +439,21 @@
 		5688DE071A067B8400F65FE9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5688DE081A067B8400F65FE9 /* BAApplication.h */,
-				5688DE091A067B8400F65FE9 /* BAApplication.m */,
+				5688DE081A067B8400F65FE9 /* BBApplication.h */,
+				5688DE091A067B8400F65FE9 /* BBApplication.m */,
 				5688DE0C1A067B8400F65FE9 /* BAUserConfig.h */,
 				5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */,
-				5688DE0E1A067B8400F65FE9 /* BAUtility.h */,
-				5688DE0F1A067B8400F65FE9 /* BAUtility.m */,
-				5688DE131A067B8400F65FE9 /* Skin */,
+				5688DE0E1A067B8400F65FE9 /* BBUtility.h */,
+				5688DE0F1A067B8400F65FE9 /* BBUtility.m */,
+				17CA1B061B4016740028848D /* BBSkin.h */,
+				17CA1B071B4016740028848D /* BBSkin.m */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		5688DE131A067B8400F65FE9 /* Skin */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE141A067B8400F65FE9 /* BASkin.h */,
-				5688DE151A067B8400F65FE9 /* BASkin.m */,
-				5688DE161A067B8400F65FE9 /* BASkinResourceManager.h */,
-				5688DE171A067B8400F65FE9 /* BASkinResourceManager.m */,
-			);
-			path = Skin;
 			sourceTree = "<group>";
 		};
 		5688DE181A067B8400F65FE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				17E940761AF6318200853A1E /* SkinScheme */,
 				5688DE191A067B8400F65FE9 /* Attributed */,
 				5688DE201A067B8400F65FE9 /* ProtableExtensions.h */,
 				5688DE211A067B8400F65FE9 /* View */,
@@ -734,11 +647,8 @@
 		568A561A1A0615BA00163FA3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				17CA1B041B4013290028848D /* font_color.plist */,
 				568A561B1A0615BA00163FA3 /* Default-568h@2x.png */,
-				568A566E1A0615BA00163FA3 /* skin_list.plist */,
-				568A56C31A0616A400163FA3 /* skin_basic */,
-				568A56C41A0616A400163FA3 /* skin_common */,
-				568A56C51A0616A400163FA3 /* skin_night */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -842,13 +752,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				568A56C71A0616A400163FA3 /* skin_common in Resources */,
 				568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */,
-				568A56C61A0616A400163FA3 /* skin_basic in Resources */,
-				568A56C81A0616A400163FA3 /* skin_night in Resources */,
 				568A56021A0614C200163FA3 /* Images.xcassets in Resources */,
 				568A56711A0615BA00163FA3 /* Default-568h@2x.png in Resources */,
-				568A56C11A0615BA00163FA3 /* skin_list.plist in Resources */,
+				17CA1B051B4013290028848D /* font_color.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,13 +777,11 @@
 				17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+BAAdditions.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
-				17E940971AF6318200853A1E /* BASkinSwitchButton.m in Sources */,
 				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
 				17CA1AF51B40003C0028848D /* BBTableViewController.m in Sources */,
 				5688DE641A067B8400F65FE9 /* BAFile.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
 				5688DE671A067B8400F65FE9 /* BAJsonFileHelper.m in Sources */,
-				5688DE711A067B8400F65FE9 /* BASkinResourceManager.m in Sources */,
 				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
@@ -884,10 +789,8 @@
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */,
 				5688DE881A067B8400F65FE9 /* BBRightViewCell.m in Sources */,
-				17E9408F1AF6318200853A1E /* BASkinBackButton.m in Sources */,
 				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
 				5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */,
-				17E940921AF6318200853A1E /* BASkinButton.m in Sources */,
 				5688DE661A067B8400F65FE9 /* BAImageFileHelper.m in Sources */,
 				5688DEA01A067D5C00F65FE9 /* UIView+BAAdditions.m in Sources */,
 				ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */,
@@ -895,7 +798,6 @@
 				5688DE651A067B8400F65FE9 /* BAFileDiskCache.m in Sources */,
 				17CA1AF71B40003C0028848D /* BAWebViewController.m in Sources */,
 				5688DE541A067B8400F65FE9 /* NSDate+BAAdditions.m in Sources */,
-				17E9409A1AF6318200853A1E /* BASkinViewController.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
 				17CA1AFA1B40003C0028848D /* UIViewController+BAAdditions.m in Sources */,
 				17CA1AF91B40003C0028848D /* BBTabBarItem.m in Sources */,
@@ -905,15 +807,13 @@
 				17285F191A47536E0047A25A /* UITableView+Additions.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				170659121A473AF600B58000 /* UIImage+BAAdditions.m in Sources */,
-				17E940931AF6318200853A1E /* BASkinCollectionViewCell.m in Sources */,
 				5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */,
 				5688DE9E1A067D5C00F65FE9 /* UIButton+Protable.m in Sources */,
 				17CA1AF81B40003C0028848D /* BBTabBarController.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
-				17E940911AF6318200853A1E /* BASkinButton+NaviBar.m in Sources */,
 				5688DE681A067B8400F65FE9 /* BAPlistFileManager.m in Sources */,
 				5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */,
-				17E940981AF6318200853A1E /* BASkinToolbar.m in Sources */,
+				17CA1B081B4016740028848D /* BBSkin.m in Sources */,
 				5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */,
 				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
 				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
@@ -923,26 +823,20 @@
 				5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */,
 				5688DE591A067B8400F65FE9 /* UIDevice+BAAdditions.m in Sources */,
 				5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */,
-				17E940951AF6318200853A1E /* BASkinLabel.m in Sources */,
 				17285EFE1A474E620047A25A /* DECoreExamplesViewController.m in Sources */,
 				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
-				5688DE6E1A067B8400F65FE9 /* BAUtility.m in Sources */,
+				5688DE6E1A067B8400F65FE9 /* BBUtility.m in Sources */,
 				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
-				17E940941AF6318200853A1E /* BASkinImageView.m in Sources */,
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
 				5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */,
-				5688DE6B1A067B8400F65FE9 /* BAApplication.m in Sources */,
-				17E940991AF6318200853A1E /* BASkinView.m in Sources */,
+				5688DE6B1A067B8400F65FE9 /* BBApplication.m in Sources */,
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
-				17CA1AF61B40003C0028848D /* BAViewController.m in Sources */,
+				17CA1AF61B40003C0028848D /* BBViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
-				17E940901AF6318200853A1E /* BASkinBlankCell.m in Sources */,
-				17E940961AF6318200853A1E /* BASkinRightViewCell.m in Sources */,
 				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,
-				5688DE701A067B8400F65FE9 /* BASkin.m in Sources */,
 				5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */,
 				ED6B5C141A2DAAA3008CED69 /* NSString+Additions.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,

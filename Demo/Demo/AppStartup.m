@@ -28,10 +28,6 @@
 
     [[BAUserConfig sharedInstance] registerDefaults];
     
-    // Step1 设置皮肤
-    NSString *currentSkinName = [BAUserConfig sharedInstance].currentSkinName;
-    [[BASkinResourceManager sharedInstance] changeSkinWithName:currentSkinName];
-    
     // Step2 设置 bar
     [BBCustomize customize];
     

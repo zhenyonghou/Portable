@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
-#import "BAViewController.h"
+#import "BBViewController.h"
 
-@interface BAWebViewController : BAViewController <UIWebViewDelegate>
+@interface BAWebViewController : BBViewController <UIWebViewDelegate>
 
 - (id)initWithRequest:(NSURLRequest *)request;
 - (id)initWithURL:(NSURL *)URL;

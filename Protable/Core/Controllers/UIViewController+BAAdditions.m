@@ -30,7 +30,7 @@ static char BAViewControllerEntryTypeKey;
     
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.font = [UIFont systemFontOfSize:TITLE_FONT_SIZE];
-    titleLabel.textColor = SKIN_COLOR(@"navibar_text_color");
+    titleLabel.textColor = SKIN_COLOR(@"color_navibar_title");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.text = title;
     [titleLabel sizeToFit];

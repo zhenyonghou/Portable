@@ -37,7 +37,7 @@
 + (void)customizeBackButton
 {
     if (IOS_VERSION < 7.0) {
-        UIImage *naviBackImage = [SKIN_IMAGE(@"BackArrowWhite") resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 0)];
+        UIImage *naviBackImage = [SKIN_IMAGE(@"navibar_back_white") resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 0)];
         [[UIBarButtonItem appearance] setBackButtonBackgroundImage:naviBackImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
         [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(5, 0) forBarMetrics:UIBarMetricsDefault];
         
