@@ -12,32 +12,34 @@
 #import "ProtableDefines.h"
 // Categories
 #import "NSArray+Json.h"
-#import "NSDate+BAAdditions.h"
+#import "NSDate+Protable.h"
 #import "NSDictionary+Json.h"
-#import "NSString+Additions.h"
-#import "UIColor+BAAdditions.h"
-#import "UIDevice+BAAdditions.h"
+#import "NSString+Protable.h"
+#import "UIColor+Protable.h"
+#import "UIDevice+Protable.h"
+#import "UIImage+Protable.h"
 
-#import "UIImage+BAAdditions.h"
-#import "UITableView+Additions.h"
+
 #import "UIButton+Protable.h"
 #import "UILabel+Protable.h"
-#import "UIView+BAAdditions.h"
+#import "UIView+Protable.h"
 #import "UIView+Bounce.h"
+
+#import "UITableView+Protable.h"
 
 #import "BBCustomize.h"
 
 // File
-#import "BADiskCache.h"
-#import "BAFile.h"
-#import "BAFileDiskCache.h"
-#import "BAImageFileHelper.h"
-#import "BAJsonFileHelper.h"
-#import "BAPlistFileManager.h"
+#import "BBDiskCache.h"
+#import "BBFile.h"
+#import "BBFileDiskCache.h"
+#import "BBImageFileHelper.h"
+#import "BBJsonFileHelper.h"
+#import "BBPlistFileManager.h"
 
 
 // Controllers
-#import "UIViewController+BAAdditions.h"
+#import "UIViewController+Protable.h"
 #import "BBViewController.h"
 #import "BBTableViewController.h"
 

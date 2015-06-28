@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+BAAdditions.h"
+#import "UIViewController+Protable.h"
 
 @interface BBViewController : UIViewController
 

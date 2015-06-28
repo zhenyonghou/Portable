@@ -8,7 +8,7 @@
 
 #import "AppStartup.h"
 //#import "COApplicationService.h"
-#import "UIViewController+BAAdditions.h"
+#import "UIViewController+Protable.h"
 //#import "BATabBarController.h"
 #import "AppNavigator.h"
 
