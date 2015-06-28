@@ -3,10 +3,10 @@
 //  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
-#import "BASwitchButton.h"
+#import "BBSwitchButton.h"
 #import "UIView+Bounce.h"
 
-@implementation BASwitchButton
+@implementation BBSwitchButton
 
 - (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage
 {

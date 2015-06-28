@@ -11,9 +11,9 @@
 @interface BAPickerViewWithSwitch : BAMaskPickerView
 
 //for subclass
-@property (nonatomic, weak) BASwitchButton *switchButton;
+@property (nonatomic, weak) BBSwitchButton *switchButton;
 
-- (void)setObserverForSwitchButton:(BASwitchButton*)switchButton;
+- (void)setObserverForSwitchButton:(BBSwitchButton*)switchButton;
 
 - (void)removeObserverForSwitchButton;
 

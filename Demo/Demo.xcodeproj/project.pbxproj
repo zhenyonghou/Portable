@@ -26,7 +26,7 @@
 		17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AFC1B4005F00028848D /* BBTableViewCell.m */; };
 		17CA1B051B4013290028848D /* font_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17CA1B041B4013290028848D /* font_color.plist */; };
 		17CA1B081B4016740028848D /* BBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1B071B4016740028848D /* BBSkin.m */; };
-		17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BAImageView.m */; };
+		17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BBImageView.m */; };
 		5688DE521A067B8400F65FE9 /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDCE1A067B8400F65FE9 /* BBCustomize.m */; };
 		5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD11A067B8400F65FE9 /* NSArray+Json.m */; };
 		5688DE541A067B8400F65FE9 /* NSDate+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDD31A067B8400F65FE9 /* NSDate+Protable.m */; };
@@ -49,7 +49,7 @@
 		5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE241A067B8400F65FE9 /* BAButtonItem.m */; };
 		5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */; };
 		5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */; };
-		5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2C1A067B8400F65FE9 /* BACheckBox.m */; };
+		5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */; };
 		5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */; };
 		5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE331A067B8400F65FE9 /* BACollectionViewLineLayout.m */; };
 		5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE351A067B8400F65FE9 /* BALineCollectionView.m */; };
@@ -58,7 +58,7 @@
 		5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3C1A067B8400F65FE9 /* BAMaskPickerView.m */; };
 		5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3E1A067B8400F65FE9 /* BAPickerView.m */; };
 		5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */; };
-		5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE431A067B8400F65FE9 /* BASwitchButton.m */; };
+		5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE431A067B8400F65FE9 /* BBSwitchButton.m */; };
 		5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */; };
 		5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4C1A067B8400F65FE9 /* BBLeftImageViewCell.m */; };
 		5688DE881A067B8400F65FE9 /* BBRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4E1A067B8400F65FE9 /* BBRightViewCell.m */; };
@@ -129,8 +129,8 @@
 		17CA1B041B4013290028848D /* font_color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = font_color.plist; sourceTree = "<group>"; };
 		17CA1B061B4016740028848D /* BBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSkin.h; sourceTree = "<group>"; };
 		17CA1B071B4016740028848D /* BBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSkin.m; sourceTree = "<group>"; };
-		17E9409B1AF633FA00853A1E /* BAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageView.h; sourceTree = "<group>"; };
-		17E9409C1AF633FA00853A1E /* BAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageView.m; sourceTree = "<group>"; };
+		17E9409B1AF633FA00853A1E /* BBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageView.h; sourceTree = "<group>"; };
+		17E9409C1AF633FA00853A1E /* BBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageView.m; sourceTree = "<group>"; };
 		5688DDCD1A067B8400F65FE9 /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
 		5688DDCE1A067B8400F65FE9 /* BBCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCustomize.m; sourceTree = "<group>"; };
 		5688DDD01A067B8400F65FE9 /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 		5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
 		5688DE271A067B8400F65FE9 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		5688DE2B1A067B8400F65FE9 /* BACheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACheckBox.h; sourceTree = "<group>"; };
-		5688DE2C1A067B8400F65FE9 /* BACheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACheckBox.m; sourceTree = "<group>"; };
+		5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCheckBox.h; sourceTree = "<group>"; };
+		5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCheckBox.m; sourceTree = "<group>"; };
 		5688DE301A067B8400F65FE9 /* BACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewCell.h; sourceTree = "<group>"; };
 		5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACollectionViewCell.m; sourceTree = "<group>"; };
 		5688DE321A067B8400F65FE9 /* BACollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewLineLayout.h; sourceTree = "<group>"; };
@@ -197,8 +197,8 @@
 		5688DE3F1A067B8400F65FE9 /* BAPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPickerViewDelegate.h; sourceTree = "<group>"; };
 		5688DE401A067B8400F65FE9 /* BAPickerViewWithSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPickerViewWithSwitch.h; sourceTree = "<group>"; };
 		5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPickerViewWithSwitch.m; sourceTree = "<group>"; };
-		5688DE421A067B8400F65FE9 /* BASwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASwitchButton.h; sourceTree = "<group>"; };
-		5688DE431A067B8400F65FE9 /* BASwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASwitchButton.m; sourceTree = "<group>"; };
+		5688DE421A067B8400F65FE9 /* BBSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSwitchButton.h; sourceTree = "<group>"; };
+		5688DE431A067B8400F65FE9 /* BBSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSwitchButton.m; sourceTree = "<group>"; };
 		5688DE491A067B8400F65FE9 /* BAImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageGridCell.h; sourceTree = "<group>"; };
 		5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageGridCell.m; sourceTree = "<group>"; };
 		5688DE4B1A067B8400F65FE9 /* BBLeftImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLeftImageViewCell.h; sourceTree = "<group>"; };
@@ -478,16 +478,16 @@
 			isa = PBXGroup;
 			children = (
 				5688DE221A067B8400F65FE9 /* AlertBlock */,
-				5688DE2B1A067B8400F65FE9 /* BACheckBox.h */,
-				5688DE2C1A067B8400F65FE9 /* BACheckBox.m */,
-				17E9409B1AF633FA00853A1E /* BAImageView.h */,
-				17E9409C1AF633FA00853A1E /* BAImageView.m */,
+				5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */,
+				5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */,
+				17E9409B1AF633FA00853A1E /* BBImageView.h */,
+				17E9409C1AF633FA00853A1E /* BBImageView.m */,
 				5688DE2F1A067B8400F65FE9 /* BALineCollectionView */,
 				5688DE361A067B8400F65FE9 /* BAOverlayView.h */,
 				5688DE371A067B8400F65FE9 /* BAOverlayView.m */,
 				5688DE381A067B8400F65FE9 /* BAPickerView */,
-				5688DE421A067B8400F65FE9 /* BASwitchButton.h */,
-				5688DE431A067B8400F65FE9 /* BASwitchButton.m */,
+				5688DE421A067B8400F65FE9 /* BBSwitchButton.h */,
+				5688DE431A067B8400F65FE9 /* BBSwitchButton.m */,
 				5688DE441A067B8400F65FE9 /* Cell */,
 			);
 			path = View;
@@ -773,8 +773,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5688DE791A067B8400F65FE9 /* BACheckBox.m in Sources */,
-				17E9409D1AF633FA00853A1E /* BAImageView.m in Sources */,
+				5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */,
+				17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */,
 				5688DE581A067B8400F65FE9 /* UIColor+Protable.m in Sources */,
 				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
 				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
@@ -822,7 +822,7 @@
 				5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */,
 				5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */,
 				5688DE591A067B8400F65FE9 /* UIDevice+Protable.m in Sources */,
-				5688DE831A067B8400F65FE9 /* BASwitchButton.m in Sources */,
+				5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */,
 				17285EFE1A474E620047A25A /* DECoreExamplesViewController.m in Sources */,
 				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
 				5688DE6E1A067B8400F65FE9 /* BBUtility.m in Sources */,

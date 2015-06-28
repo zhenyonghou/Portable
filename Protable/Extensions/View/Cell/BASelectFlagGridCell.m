@@ -23,7 +23,7 @@
         _imageView.layer.masksToBounds = YES;
         [self.contentView addSubview:_imageView];
 
-        _selectIconButton = [[BASwitchButton alloc] initWithFrame:CGRectZero offImage:nil onImage:nil];
+        _selectIconButton = [[BBSwitchButton alloc] initWithFrame:CGRectZero offImage:nil onImage:nil];
         [_selectIconButton addTarget:self switchAction:@selector(onTouchedWithSelectedState:)];
         _selectIconButton.backgroundColor = [UIColor clearColor];
 //        _selectIconButton.bounceAnimate = YES;
@@ -48,7 +48,7 @@
 
 - (void)onTouchedWithSelectedState:(id)sender
 {
-    BASwitchButton *button = sender;
+    BBSwitchButton *button = sender;
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(selectFlagGridCell:stateChanged:)]) {
         [self.delegate selectFlagGridCell:self stateChanged:button.isSelected];

@@ -1,10 +1,10 @@
 //  Created by hou zhenyong on 14-3-31.
 
 
-#import "BAImageView.h"
+#import "BBImageView.h"
 //#import "UIImageView+WebCache.h"
 
-@implementation BAImageView
+@implementation BBImageView
 
 - (id)initWithFrame:(CGRect)frame
 {

@@ -11,15 +11,15 @@
 
 #import "BAAttributedTextView.h"
 #import "NSAttributedString+Height.h"
-#import "BASwitchButton.h"
-#import "BACheckBox.h"
+#import "BBSwitchButton.h"
+#import "BBCheckBox.h"
 #import "BBTableViewCell.h"
 #import "BBLeftImageViewCell.h"
 #import "BBRightViewCell.h"
 #import "BASelectFlagGridCell.h"
 #import "UIActionSheet+Blocks.h"
 #import "UIAlertView+Blocks.h"
-#import "BAImageView.h"
+#import "BBImageView.h"
 #import "BALineCollectionView.h"
 #import "BACollectionViewCell.h"
 

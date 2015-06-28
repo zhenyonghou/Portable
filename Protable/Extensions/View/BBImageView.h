@@ -3,7 +3,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BAImageView : UIImageView {
+@interface BBImageView : UIImageView {
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 

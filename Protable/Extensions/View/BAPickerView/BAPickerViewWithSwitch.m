@@ -15,7 +15,7 @@
     [self removeObserverForSwitchButton];
 }
 
-- (void)setObserverForSwitchButton:(BASwitchButton*)switchButton
+- (void)setObserverForSwitchButton:(BBSwitchButton*)switchButton
 {
     [self removeObserverForSwitchButton];
     self.switchButton = switchButton;

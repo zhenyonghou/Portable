@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BASwitchButton.h"
+#import "BBSwitchButton.h"
 
 @protocol BASelectFlagGridCellDelegate;
 
@@ -17,7 +17,7 @@
     UIImageView *_imageView;
 }
 
-@property (nonatomic, strong, readonly) BASwitchButton* selectIconButton;
+@property (nonatomic, strong, readonly) BBSwitchButton* selectIconButton;
 
 @property (nonatomic, assign) CGFloat iconRightMargin;
 @property (nonatomic, assign) CGFloat iconTopMargin;

@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, BASwitchButtonState) {
     BASwitchButtonStateOn
 };
 
-@interface BASwitchButton : UIButton {
+@interface BBSwitchButton : UIButton {
 @protected
     __weak id _target;
     SEL _switchAction;

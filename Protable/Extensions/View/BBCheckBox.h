@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BASwitchButton.h"
+#import "BBSwitchButton.h"
 
-@interface BACheckBox : BASwitchButton
+@interface BBCheckBox : BBSwitchButton
 
 @end

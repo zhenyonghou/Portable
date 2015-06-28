@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BACheckBox.h"
+#import "BBCheckBox.h"
 
 #define kSpacing        2       // 间距x2
 
-@implementation BACheckBox
+@implementation BBCheckBox
 
 - (id)initWithFrame:(CGRect)frame
 {
