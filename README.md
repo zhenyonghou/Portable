@@ -1,6 +1,6 @@
 #Protable
 
-Portable，与具体业务无关的纯净、便捷的类库。
+Portable，与具体业务无关的纯净、便捷的类库，帮助你提高开发效率。
 
 Portable分两部分：Core和Extended
 
@@ -10,12 +10,8 @@ Core
 
 Extended
 
-在Core之外的扩展，可选择使用里面的类和组件。
+在Core之外的扩展，选择使用。
 
-###使用
-多个工程公用Protable的推荐方法:
-
-在Build Settings -> Search Paths-> Header Search Paths 中加入：../Protable/Core路径和../Protable/extensions路径
 
 ###写Portable库的目的
 * 开发任何项目都能快速搭建起框架。
