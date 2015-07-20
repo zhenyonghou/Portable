@@ -39,7 +39,6 @@
 		5688DE661A067B8400F65FE9 /* BBImageFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFB1A067B8400F65FE9 /* BBImageFileHelper.m */; };
 		5688DE671A067B8400F65FE9 /* BBJsonFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFD1A067B8400F65FE9 /* BBJsonFileHelper.m */; };
 		5688DE681A067B8400F65FE9 /* BBPlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFF1A067B8400F65FE9 /* BBPlistFileManager.m */; };
-		5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE021A067B8400F65FE9 /* BALocationManager.m */; };
 		5688DE6B1A067B8400F65FE9 /* BBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE091A067B8400F65FE9 /* BBApplication.m */; };
 		5688DE6D1A067B8400F65FE9 /* BBUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0D1A067B8400F65FE9 /* BBUserConfig.m */; };
 		5688DE6E1A067B8400F65FE9 /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0F1A067B8400F65FE9 /* BBUtility.m */; };
@@ -154,8 +153,6 @@
 		5688DDFD1A067B8400F65FE9 /* BBJsonFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJsonFileHelper.m; sourceTree = "<group>"; };
 		5688DDFE1A067B8400F65FE9 /* BBPlistFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPlistFileManager.h; sourceTree = "<group>"; };
 		5688DDFF1A067B8400F65FE9 /* BBPlistFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPlistFileManager.m; sourceTree = "<group>"; };
-		5688DE011A067B8400F65FE9 /* BALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationManager.h; sourceTree = "<group>"; };
-		5688DE021A067B8400F65FE9 /* BALocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationManager.m; sourceTree = "<group>"; };
 		5688DE031A067B8400F65FE9 /* ProtableCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableCore.h; sourceTree = "<group>"; };
 		5688DE041A067B8400F65FE9 /* ProtableDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableDefines.h; sourceTree = "<group>"; };
 		5688DE081A067B8400F65FE9 /* BBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBApplication.h; sourceTree = "<group>"; };
@@ -377,7 +374,6 @@
 				5688DE941A067D5C00F65FE9 /* View */,
 				5688DDF31A067B8400F65FE9 /* File */,
 				5688DE071A067B8400F65FE9 /* Utilities */,
-				5688DE001A067B8400F65FE9 /* Location */,
 				5688DE031A067B8400F65FE9 /* ProtableCore.h */,
 				5688DE041A067B8400F65FE9 /* ProtableDefines.h */,
 			);
@@ -422,15 +418,6 @@
 				5688DDFF1A067B8400F65FE9 /* BBPlistFileManager.m */,
 			);
 			path = File;
-			sourceTree = "<group>";
-		};
-		5688DE001A067B8400F65FE9 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE011A067B8400F65FE9 /* BALocationManager.h */,
-				5688DE021A067B8400F65FE9 /* BALocationManager.m */,
-			);
-			path = Location;
 			sourceTree = "<group>";
 		};
 		5688DE071A067B8400F65FE9 /* Utilities */ = {
@@ -777,7 +764,6 @@
 				5688DE641A067B8400F65FE9 /* BBFile.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
 				5688DE671A067B8400F65FE9 /* BBJsonFileHelper.m in Sources */,
-				5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */,
 				5688DE551A067B8400F65FE9 /* NSDictionary+Json.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
 				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
