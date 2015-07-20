@@ -11,7 +11,7 @@
 
 @interface BBTabBarController : UITabBarController
 
-- (void)bb_setBarItems:(NSArray <BBTabBarItem *> *)items;
+- (void)bb_setBarItems:(NSArray *)items;
 
 @end
 

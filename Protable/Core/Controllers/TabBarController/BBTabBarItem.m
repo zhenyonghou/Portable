@@ -9,16 +9,7 @@
 #import "BBTabBarItem.h"
 
 @implementation BBTabBarItem
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
-
+	
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage
 {
     if (self = [super init]) {
@@ -39,7 +30,7 @@
 }
 
 
-- (void)setImage:(nullable UIImage *)image forState:(BBTabBarItemViewState)state
+- (void)setImage:(UIImage *)image forState:(BBTabBarItemViewState)state
 {
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
@@ -53,7 +44,7 @@
     }
 }
 
-- (void)setTitle:(nullable NSString *)title
+- (void)setTitle:(NSString *)title
 {
     _title = title;
     
@@ -68,7 +59,7 @@
     }
 }
 
-- (void)setTitleTextAttributes:(nullable NSDictionary<NSString *,id> *)attributes forState:(BBTabBarItemViewState)state
+- (void)setTitleTextAttributes:(NSDictionary *)attributes forState:(BBTabBarItemViewState)state
 {
     if (BBTabBarItemViewStateNormal == state) {
         _attributedNormal = attributes;

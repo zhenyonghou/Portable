@@ -9,7 +9,7 @@
 
 @interface BBTabBarController ()
 
-@property (nonatomic, strong) NSMutableArray<BBTabBarItem *> *bb_itemButtons;
+@property (nonatomic, strong) NSMutableArray *bb_itemButtons;
 
 @end
 
@@ -26,7 +26,7 @@
     [self removeObserver:self forKeyPath:@"selectedViewController"];
 }
 
-- (void)bb_setBarItems:(NSArray <BBTabBarItem *> *)items
+- (void)bb_setBarItems:(NSArray *)items
 {
     if (self.bb_itemButtons) {
         for (UIButton *item in self.bb_itemButtons) {

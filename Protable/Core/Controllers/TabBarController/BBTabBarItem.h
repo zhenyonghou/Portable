@@ -35,6 +35,6 @@ typedef NS_ENUM(NSInteger, BBTabBarItemViewState) {
 
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage;
 
-- (void)setTitleTextAttributes:(nullable NSDictionary<NSString *,id> *)attributes forState:(BBTabBarItemViewState)state;
+- (void)setTitleTextAttributes:(NSDictionary *)attributes forState:(BBTabBarItemViewState)state;
 
 @end
