@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, BAViewControllerEntryType) {
-    BAViewControllerEntryTypePush       = 0,
-    BAViewControllerEntryTypePresent,
+typedef NS_ENUM(NSInteger, BBViewControllerEntryType) {
+    BBViewControllerEntryTypePush       = 0,
+    BBViewControllerEntryTypePresent,
 };
 
 
 @interface UIViewController (Protable)
 
-@property (nonatomic, assign) BAViewControllerEntryType entryType;
+@property (nonatomic, assign) BBViewControllerEntryType entryType;
 
 - (void)setNewTitle:(NSString*)title;
 

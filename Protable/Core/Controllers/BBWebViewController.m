@@ -193,7 +193,7 @@
 
 - (void)buildToolbar
 {
-    self.toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.height - PHONE_TOOLBAR_HEIGHT, SCREEN_WIDTH, PHONE_TOOLBAR_HEIGHT)];
+    self.toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.mm_height - PHONE_TOOLBAR_HEIGHT, SCREEN_WIDTH, PHONE_TOOLBAR_HEIGHT)];
     self.toolbar.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin
                                      | UIViewAutoresizingFlexibleWidth);
     self.toolbar.tintColor = [UIColor redColor];

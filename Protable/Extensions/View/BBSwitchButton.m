@@ -4,7 +4,7 @@
 //
 
 #import "BBSwitchButton.h"
-#import "UIView+Bounce.h"
+//#import "UIView+Bounce.h"
 
 @implementation BBSwitchButton
 

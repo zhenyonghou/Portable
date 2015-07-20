@@ -35,7 +35,7 @@
     
     _summaryLabel.text = @"可以更改此内容进行测试，宽度不变，高度根据内容自动调节";
     [_summaryLabel fitSizeWithConstantWidth:(SCREEN_WIDTH - 60 - 35) limitedLines:1];
-    [_summaryLabel setLeft:(60) bottom:(kCellHeight - 15)];
+    [_summaryLabel mm_setLeft:(60) bottom:(kCellHeight - 15)];
     _summaryLabel.backgroundColor = [UIColor redColor];
     
     UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 34, 0, 35, kCellHeight)];

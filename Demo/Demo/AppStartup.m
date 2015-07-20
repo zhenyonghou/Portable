@@ -26,7 +26,7 @@
 //        }];
 //    }];
 
-    [[BAUserConfig sharedInstance] registerDefaults];
+    [[BBUserConfig sharedInstance] registerDefaults];
     
     // Step2 设置 bar
     [BBCustomize customize];

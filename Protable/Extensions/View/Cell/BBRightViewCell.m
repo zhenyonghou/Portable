@@ -27,12 +27,12 @@
         [self addSubview:self.rightView];
     }
     
-    CGFloat rightMargin = self.width - 13;
+    CGFloat rightMargin = self.mm_width - 13;
     if (self.accessoryImageView.image) {
-        rightMargin = self.accessoryImageView.left - 5;
+        rightMargin = self.accessoryImageView.mm_left - 5;
     }
     
-    [self.rightView setRight:rightMargin top:(self.height - self.rightView.height) / 2];
+    [self.rightView mm_setRight:rightMargin top:(self.mm_height - self.rightView.mm_height) / 2];
 }
 
 - (void)updateRithView

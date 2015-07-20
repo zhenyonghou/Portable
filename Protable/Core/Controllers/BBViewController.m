@@ -9,11 +9,6 @@
 #import "BBViewController.h"
 #import "ProtableCore.h"
 
-/**
- * 如果在IOS6上设置self.navigationController.navigationBar.translucent = YES;
- * 会带来一些问题，比如用系统的UIRefreshControl的时候...
- */
-
 @interface BBViewController ()
 
 @end

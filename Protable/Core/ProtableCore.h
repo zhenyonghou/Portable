@@ -23,7 +23,6 @@
 #import "UIButton+Protable.h"
 #import "UILabel+Protable.h"
 #import "UIView+Protable.h"
-#import "UIView+Bounce.h"
 
 #import "UITableView+Protable.h"
 
@@ -46,7 +45,7 @@
 // Utilities
 #import "BBUtility.h"
 #import "BBApplication.h"
-#import "BAUserConfig.h"
+#import "BBUserConfig.h"
 
 #import "BBSkin.h"
 

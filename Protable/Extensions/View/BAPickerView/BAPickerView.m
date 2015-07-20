@@ -79,7 +79,7 @@
     }
     _isShowing = YES;
     
-    self.frame = CGRectMake(0, view.frame.size.height, view.width, view.height);
+    self.frame = CGRectMake(0, view.frame.size.height, view.mm_width, view.mm_height);
     [view addSubview:self];
     [UIView animateWithDuration:0.3 animations:^{
         self.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);

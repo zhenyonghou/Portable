@@ -14,8 +14,6 @@
 
 @end
 
-
-
 @interface BBSkin : NSObject
 
 + (instancetype)sharedInstance;

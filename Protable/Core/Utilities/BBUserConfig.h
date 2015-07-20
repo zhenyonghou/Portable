@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BAUserConfig : NSObject
+@interface BBUserConfig : NSObject
 
-+ (BAUserConfig*)sharedInstance;
++ (BBUserConfig*)sharedInstance;
 
 - (void)registerDefaults;
 

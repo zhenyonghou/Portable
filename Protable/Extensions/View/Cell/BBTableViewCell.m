@@ -53,15 +53,15 @@ const CGFloat kAccessoryViewLeftSpacing   = 5;
     
     if (self.accessoryImageView.image) {
         CGSize imageSize = self.accessoryImageView.image.size;
-        self.accessoryImageView.frame = CGRectMake(self.width - kAccessoryViewRightMargin - imageSize.width - kAccessoryViewLeftSpacing,
-                                                   (self.height - imageSize.height)/2,
+        self.accessoryImageView.frame = CGRectMake(self.mm_width - kAccessoryViewRightMargin - imageSize.width - kAccessoryViewLeftSpacing,
+                                                   (self.mm_height - imageSize.height)/2,
                                                    imageSize.width,
                                                    imageSize.height);
         [self addSubview:self.accessoryImageView];
-        self.textLabel.width = (self.accessoryImageView.left - kAccessoryViewLeftSpacing) - self.textLabel.left;
+        self.textLabel.mm_width = (self.accessoryImageView.mm_left - kAccessoryViewLeftSpacing) - self.textLabel.mm_left;
     } else {
         [self.accessoryImageView removeFromSuperview];
-        self.textLabel.width = self.right - self.textLabel.left;
+        self.textLabel.mm_width = self.mm_right - self.textLabel.mm_left;
     }
 }
 

@@ -21,7 +21,7 @@
 
 @implementation UIViewController (BAAdditions)
 
-static char BAViewControllerEntryTypeKey;
+static char BBViewControllerEntryTypeKey;
 
 - (void)setNewTitle:(NSString*)title
 {
@@ -262,14 +262,14 @@ static char BAViewControllerEntryTypeKey;
     }
 }
 
-- (void)setEntryType:(BAViewControllerEntryType)entryType
+- (void)setEntryType:(BBViewControllerEntryType)entryType
 {
-    objc_setAssociatedObject(self, &BAViewControllerEntryTypeKey, @(entryType), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &BBViewControllerEntryTypeKey, @(entryType), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (BAViewControllerEntryType)entryType
+- (BBViewControllerEntryType)entryType
 {
-    NSNumber *val = objc_getAssociatedObject(self, &BAViewControllerEntryTypeKey);
+    NSNumber *val = objc_getAssociatedObject(self, &BBViewControllerEntryTypeKey);
     return [val integerValue];
 }
 

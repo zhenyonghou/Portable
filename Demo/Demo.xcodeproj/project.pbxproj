@@ -41,7 +41,7 @@
 		5688DE681A067B8400F65FE9 /* BBPlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DDFF1A067B8400F65FE9 /* BBPlistFileManager.m */; };
 		5688DE691A067B8400F65FE9 /* BALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE021A067B8400F65FE9 /* BALocationManager.m */; };
 		5688DE6B1A067B8400F65FE9 /* BBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE091A067B8400F65FE9 /* BBApplication.m */; };
-		5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */; };
+		5688DE6D1A067B8400F65FE9 /* BBUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0D1A067B8400F65FE9 /* BBUserConfig.m */; };
 		5688DE6E1A067B8400F65FE9 /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE0F1A067B8400F65FE9 /* BBUtility.m */; };
 		5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */; };
 		5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1D1A067B8400F65FE9 /* BAAttributedTextView.m */; };
@@ -66,7 +66,6 @@
 		5688DE9E1A067D5C00F65FE9 /* UIButton+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE971A067D5C00F65FE9 /* UIButton+Protable.m */; };
 		5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE991A067D5C00F65FE9 /* UILabel+Protable.m */; };
 		5688DEA01A067D5C00F65FE9 /* UIView+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE9B1A067D5C00F65FE9 /* UIView+Protable.m */; };
-		5688DEA11A067D5C00F65FE9 /* UIView+Bounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */; };
 		568A55FD1A0614C200163FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A55FC1A0614C200163FA3 /* main.m */; };
 		568A56021A0614C200163FA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568A56011A0614C200163FA3 /* Images.xcassets */; };
 		568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A56031A0614C200163FA3 /* LaunchScreen.xib */; };
@@ -161,8 +160,8 @@
 		5688DE041A067B8400F65FE9 /* ProtableDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableDefines.h; sourceTree = "<group>"; };
 		5688DE081A067B8400F65FE9 /* BBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBApplication.h; sourceTree = "<group>"; };
 		5688DE091A067B8400F65FE9 /* BBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBApplication.m; sourceTree = "<group>"; };
-		5688DE0C1A067B8400F65FE9 /* BAUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAUserConfig.h; sourceTree = "<group>"; };
-		5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAUserConfig.m; sourceTree = "<group>"; };
+		5688DE0C1A067B8400F65FE9 /* BBUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserConfig.h; sourceTree = "<group>"; };
+		5688DE0D1A067B8400F65FE9 /* BBUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserConfig.m; sourceTree = "<group>"; };
 		5688DE0E1A067B8400F65FE9 /* BBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUtility.h; sourceTree = "<group>"; };
 		5688DE0F1A067B8400F65FE9 /* BBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUtility.m; sourceTree = "<group>"; };
 		5688DE1A1A067B8400F65FE9 /* BAAttributedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAttributedText.h; sourceTree = "<group>"; };
@@ -214,8 +213,6 @@
 		5688DE991A067D5C00F65FE9 /* UILabel+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Protable.m"; sourceTree = "<group>"; };
 		5688DE9A1A067D5C00F65FE9 /* UIView+Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Protable.h"; sourceTree = "<group>"; };
 		5688DE9B1A067D5C00F65FE9 /* UIView+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Protable.m"; sourceTree = "<group>"; };
-		5688DE9C1A067D5C00F65FE9 /* UIView+Bounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Bounce.h"; sourceTree = "<group>"; };
-		5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Bounce.m"; sourceTree = "<group>"; };
 		568A55F71A0614C200163FA3 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A55FB1A0614C200163FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568A55FC1A0614C200163FA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -441,8 +438,8 @@
 			children = (
 				5688DE081A067B8400F65FE9 /* BBApplication.h */,
 				5688DE091A067B8400F65FE9 /* BBApplication.m */,
-				5688DE0C1A067B8400F65FE9 /* BAUserConfig.h */,
-				5688DE0D1A067B8400F65FE9 /* BAUserConfig.m */,
+				5688DE0C1A067B8400F65FE9 /* BBUserConfig.h */,
+				5688DE0D1A067B8400F65FE9 /* BBUserConfig.m */,
 				5688DE0E1A067B8400F65FE9 /* BBUtility.h */,
 				5688DE0F1A067B8400F65FE9 /* BBUtility.m */,
 				17CA1B061B4016740028848D /* BBSkin.h */,
@@ -569,8 +566,6 @@
 				5688DE991A067D5C00F65FE9 /* UILabel+Protable.m */,
 				5688DE9A1A067D5C00F65FE9 /* UIView+Protable.h */,
 				5688DE9B1A067D5C00F65FE9 /* UIView+Protable.m */,
-				5688DE9C1A067D5C00F65FE9 /* UIView+Bounce.h */,
-				5688DE9D1A067D5C00F65FE9 /* UIView+Bounce.m */,
 				17285F171A47536E0047A25A /* UITableView+Protable.h */,
 				17285F181A47536E0047A25A /* UITableView+Protable.m */,
 			);
@@ -818,7 +813,6 @@
 				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
 				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
 				5688DE631A067B8400F65FE9 /* BBDiskCache.m in Sources */,
-				5688DEA11A067D5C00F65FE9 /* UIView+Bounce.m in Sources */,
 				5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */,
 				5688DE531A067B8400F65FE9 /* NSArray+Json.m in Sources */,
 				5688DE591A067B8400F65FE9 /* UIDevice+Protable.m in Sources */,
@@ -836,7 +830,7 @@
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
 				17CA1AF61B40003C0028848D /* BBViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
-				5688DE6D1A067B8400F65FE9 /* BAUserConfig.m in Sources */,
+				5688DE6D1A067B8400F65FE9 /* BBUserConfig.m in Sources */,
 				5688DE9F1A067D5C00F65FE9 /* UILabel+Protable.m in Sources */,
 				ED6B5C141A2DAAA3008CED69 /* NSString+Protable.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,
@@ -964,7 +958,7 @@
 					../Protable/Extensions,
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hou.mumu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,7 +979,7 @@
 					../Protable/Extensions,
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hou.mumu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

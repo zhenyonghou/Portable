@@ -16,7 +16,7 @@
     if (self) {
         _parentView = parentView;
         
-        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height)];
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.mm_width, self.mm_height)];
         _contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _contentView.backgroundColor = [UIColor blackColor];
         [self addSubview:_contentView];
@@ -43,7 +43,7 @@
         [self pickerViewReloadData];
     }
 
-    self.frame = CGRectMake(0, 0, view.width, view.height);
+    self.frame = CGRectMake(0, 0, view.mm_width, view.mm_height);
     [view addSubview:self];
 
     _pickerView.frame = [self pickerViewFrameWhenHidden];

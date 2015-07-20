@@ -31,7 +31,7 @@
     [self setImage:highlightedImage forState:UIControlStateHighlighted];
     
     [self sizeToFit];
-    self.width += 7.f;
+    self.mm_width += 7.f;
 }
 
 @end

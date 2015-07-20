@@ -33,10 +33,10 @@
 {
     [super layoutSubviews];
     
-    CGFloat textLabelOffset = self.leftImageView.right + kImageViewPadding;
+    CGFloat textLabelOffset = self.leftImageView.mm_right + kImageViewPadding;
 
     CGSize labelSize = [self.textLabel sizeThatFits:CGSizeZero];
-    self.textLabel.frame = CGRectMake(textLabelOffset, (self.height - labelSize.height)/2, labelSize.width, labelSize.height);
+    self.textLabel.frame = CGRectMake(textLabelOffset, (self.mm_height - labelSize.height)/2, labelSize.width, labelSize.height);
 }
 
 @end

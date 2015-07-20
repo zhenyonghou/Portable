@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 hou zhenyong. All rights reserved.
 //
 
-#import "BAUserConfig.h"
+#import "BBUserConfig.h"
 
 static NSString* const kCurrentSkinName                 = @"ba.currentSkinName";
 static NSString* const kServerVersion                   = @"ba.serverVersion";
@@ -15,14 +15,14 @@ static NSString* const kLastUpdateTipForNewVersion      = @"ba.lastUpdateNewVers
 static NSString* const kLastVersionForPraise            = @"ba.lastVersionForPraise";
 static NSString* const kIntroVersion                    = @"ba.introVersion";
 
-@implementation BAUserConfig
+@implementation BBUserConfig
 
-static BAUserConfig* _instance = nil;
+static BBUserConfig* _instance = nil;
 
-+ (BAUserConfig*)sharedInstance {
++ (BBUserConfig*)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[BAUserConfig alloc] init];
+        _instance = [[BBUserConfig alloc] init];
     });
 
     return _instance;
