@@ -6,9 +6,8 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "BBViewController.h"
+#import "BBSegmentViewController.h"
 
-@interface ThirdViewController : BBViewController
+@interface DESolutionsViewController : BBSegmentViewController
 
 @end

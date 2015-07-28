@@ -22,6 +22,7 @@
 {
     self = [super init];
     if (self) {
+        
     }
     return self;
 }
@@ -34,13 +35,6 @@
     self.tableView.contentInset = UIEdgeInsetsZero;
     [self.tableView reloadData];
 }
-
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [BBUtility printRect:self.view.frame mark:@"2 didAppear view"];
-//    [BBUtility printRect:self.tableView.frame mark:@"2 didAppear tableView"];
-//    NSLog(@"%f %f", self.tableView.contentInset.top, self.tableView.contentInset.bottom);;
-//}
 
 #pragma mark- UITableViewDataSource
 

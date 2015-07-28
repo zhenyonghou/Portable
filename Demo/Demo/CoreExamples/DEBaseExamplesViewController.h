@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BBSegmentViewController.h"
+#import "BBTableViewController.h"
 
-@interface DEBaseExamplesViewController : BBSegmentViewController
+@interface DEBaseExamplesViewController : BBTableViewController
 
 @end

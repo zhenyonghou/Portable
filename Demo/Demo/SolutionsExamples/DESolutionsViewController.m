@@ -1,10 +1,12 @@
 //
-//  DETableViewController.m
+//  ThirdViewController.m
 //  Demo
 //
-//  Created by houzhenyong on 14/11/2.
+//  Created by houzhenyong on 14-11-2.
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
+
+#import "DESolutionsViewController.h"
 
 #import "DEBaseExamplesViewController.h"
 #import "DEBaseFirstViewController.h"
@@ -13,7 +15,7 @@
 #import "DEBaseForthViewController.h"
 #import "DEBaseFifthViewController.h"
 
-@interface DEBaseExamplesViewController ()
+@interface DESolutionsViewController ()
 
 @property (nonatomic, strong) DEBaseFirstViewController *firstViewController;
 @property (nonatomic, strong) DEBaseSecondViewController *secondViewController;
@@ -23,7 +25,7 @@
 
 @end
 
-@implementation DEBaseExamplesViewController
+@implementation DESolutionsViewController
 
 - (id)init
 {
@@ -39,17 +41,17 @@
     
     [self setNaviTitle:@"Base"];
     self.view.backgroundColor = [UIColor colorWithHex:0xf0f0f0];
-
+    
     self.firstViewController = [[DEBaseFirstViewController alloc] init];
-//    self.firstViewController.delegate = self;
+    //    self.firstViewController.delegate = self;
     self.secondViewController = [[DEBaseSecondViewController alloc] init];
-//    self.serviceViewController.delegate = self;
+    //    self.serviceViewController.delegate = self;
     self.thirdViewController = [[DEBaseThirdViewController alloc] init];
-//    self.housingViewController.delegate = self;
+    //    self.housingViewController.delegate = self;
     self.forthViewController = [[DEBaseForthViewController alloc] init];
-//    self.jobsViewController.delegate = self;
+    //    self.jobsViewController.delegate = self;
     self.fifthViewController = [[DEBaseFifthViewController alloc] init];
-//    self.followingViewController.delegate = self;
+    //    self.followingViewController.delegate = self;
     
     NSArray *pageTitles = @[@"Demo第1页", @"第2页", @"第3页", @"第4页", @"第5页"];
     
@@ -80,6 +82,5 @@
     [super viewDidAppear:animated];
     
 }
-
 
 @end

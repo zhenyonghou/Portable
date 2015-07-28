@@ -12,7 +12,7 @@
 
 #import "DEBaseExamplesViewController.h"
 #import "DEExtensionsExamplesViewController.h"
-#import "ThirdViewController.h"
+#import "DESolutionsViewController.h"
 #import "ForthViewController.h"
 
 @interface AppNavigator()
@@ -56,15 +56,15 @@ static AppNavigator * navigator = nil;
 
 - (void)buildTabBarViewControllers
 {
-    BBTabBarItem *barItem0 = [[BBTabBarItem alloc] initWithTitle:@"Core Examples"
+    BBTabBarItem *barItem0 = [[BBTabBarItem alloc] initWithTitle:@"Base"
                                                            image:SKIN_IMAGE(@"tabbar_first")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_first_hl")];
     
-    BBTabBarItem *barItem1 = [[BBTabBarItem alloc] initWithTitle:@"Extensions Examples"
+    BBTabBarItem *barItem1 = [[BBTabBarItem alloc] initWithTitle:@"Extensions"
                                                            image:SKIN_IMAGE(@"tabbar_second")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_second_hl")];
     
-    BBTabBarItem *barItem2 = [[BBTabBarItem alloc] initWithTitle:@"第3页"
+    BBTabBarItem *barItem2 = [[BBTabBarItem alloc] initWithTitle:@"Solutions"
                                                            image:SKIN_IMAGE(@"tabbar_third")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_third_hl")];
     
@@ -74,7 +74,7 @@ static AppNavigator * navigator = nil;
     
     UINavigationController *navi0 = [[UINavigationController alloc] initWithRootViewController:[[DEBaseExamplesViewController alloc] init]];
     UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:[[DEExtensionsExamplesViewController alloc] init]];
-    UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+    UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[DESolutionsViewController alloc] init]];
     UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ForthViewController alloc] init]];
 
     self.tabBarController = [[BBTabBarController alloc] init];
