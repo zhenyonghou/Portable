@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNewTitle:@"Core Examples"];
+    [self setNaviTitle:@"Core Examples"];
     
     self.model = @[@"Categories", @"View", @"Controllers", @"File", @"Utilities", @"Location"];
     

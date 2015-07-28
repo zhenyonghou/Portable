@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNewTitle:@"Extensions Examples"];
+    [self setNaviTitle:@"Extensions Examples"];
     
     self.model = @[@"Attributed", @"View"];
     

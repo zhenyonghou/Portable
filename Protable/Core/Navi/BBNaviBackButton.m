@@ -14,13 +14,8 @@
 {
     if (self = [super initWithFrame:frame]) {
         self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        if (IOS_VERSION >= 7) {
-            [self setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
-            [self setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 0.0f, -1.0f, 0.0f)];
-        } else {
-            [self setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
-            [self setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 3.0f, -1.0f, -3.0f)];
-        }
+        [self setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 7.0f, 0.0f, -7.0f)];
+        [self setContentEdgeInsets:UIEdgeInsetsMake(1.0f, 0.0f, -1.0f, 0.0f)];
     }
     return self;
 }

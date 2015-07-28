@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNewTitle:NSStringFromClass([self class])];
+    [self setNaviTitle:NSStringFromClass([self class])];
 }
 
 - (void)didReceiveMemoryWarning {

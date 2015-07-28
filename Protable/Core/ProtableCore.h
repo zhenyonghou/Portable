@@ -38,7 +38,7 @@
 
 
 // Controllers
-#import "UIViewController+Protable.h"
+#import "UIViewController+Navi.h"
 #import "BBViewController.h"
 #import "BBTableViewController.h"
 

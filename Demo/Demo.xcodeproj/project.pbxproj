@@ -16,13 +16,11 @@
 		17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */; };
 		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
 		17285F191A47536E0047A25A /* UITableView+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F181A47536E0047A25A /* UITableView+Protable.m */; };
-		17CA1AF41B40003C0028848D /* BBNaviBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AE61B40003C0028848D /* BBNaviBackButton.m */; };
 		17CA1AF51B40003C0028848D /* BBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AE81B40003C0028848D /* BBTableViewController.m */; };
 		17CA1AF61B40003C0028848D /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEA1B40003C0028848D /* BBViewController.m */; };
 		17CA1AF71B40003C0028848D /* BBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEC1B40003C0028848D /* BBWebViewController.m */; };
 		17CA1AF81B40003C0028848D /* BBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AEF1B40003C0028848D /* BBTabBarController.m */; };
 		17CA1AF91B40003C0028848D /* BBTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AF11B40003C0028848D /* BBTabBarItem.m */; };
-		17CA1AFA1B40003C0028848D /* UIViewController+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AF31B40003C0028848D /* UIViewController+Protable.m */; };
 		17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AFC1B4005F00028848D /* BBTableViewCell.m */; };
 		17CA1B051B4013290028848D /* font_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17CA1B041B4013290028848D /* font_color.plist */; };
 		17CA1B081B4016740028848D /* BBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1B071B4016740028848D /* BBSkin.m */; };
@@ -75,6 +73,9 @@
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
 		568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A581F1A062FAE00163FA3 /* ThirdViewController.m */; };
+		DD5760DA1B6733B400CE800A /* BBNaviBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5760D51B6733B400CE800A /* BBNaviBackButton.m */; };
+		DD5760DB1B6733B400CE800A /* UINavigationItem+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5760D71B6733B400CE800A /* UINavigationItem+Protable.m */; };
+		DD5760DC1B6733B400CE800A /* UIViewController+Navi.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5760D91B6733B400CE800A /* UIViewController+Navi.m */; };
 		ED6B5C141A2DAAA3008CED69 /* NSString+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B5C131A2DAAA3008CED69 /* NSString+Protable.m */; };
 		ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */; };
 /* End PBXBuildFile section */
@@ -108,8 +109,6 @@
 		17285F111A4752120047A25A /* DECViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECViewViewController.m; sourceTree = "<group>"; };
 		17285F171A47536E0047A25A /* UITableView+Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Protable.h"; sourceTree = "<group>"; };
 		17285F181A47536E0047A25A /* UITableView+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Protable.m"; sourceTree = "<group>"; };
-		17CA1AE51B40003C0028848D /* BBNaviBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBNaviBackButton.h; sourceTree = "<group>"; };
-		17CA1AE61B40003C0028848D /* BBNaviBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBNaviBackButton.m; sourceTree = "<group>"; };
 		17CA1AE71B40003C0028848D /* BBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewController.h; sourceTree = "<group>"; };
 		17CA1AE81B40003C0028848D /* BBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewController.m; sourceTree = "<group>"; };
 		17CA1AE91B40003C0028848D /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
@@ -120,8 +119,6 @@
 		17CA1AEF1B40003C0028848D /* BBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTabBarController.m; sourceTree = "<group>"; };
 		17CA1AF01B40003C0028848D /* BBTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTabBarItem.h; sourceTree = "<group>"; };
 		17CA1AF11B40003C0028848D /* BBTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTabBarItem.m; sourceTree = "<group>"; };
-		17CA1AF21B40003C0028848D /* UIViewController+Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Protable.h"; sourceTree = "<group>"; };
-		17CA1AF31B40003C0028848D /* UIViewController+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Protable.m"; sourceTree = "<group>"; };
 		17CA1AFB1B4005F00028848D /* BBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewCell.h; sourceTree = "<group>"; };
 		17CA1AFC1B4005F00028848D /* BBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewCell.m; sourceTree = "<group>"; };
 		17CA1B041B4013290028848D /* font_color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = font_color.plist; sourceTree = "<group>"; };
@@ -230,6 +227,12 @@
 		568A58191A062FAE00163FA3 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		568A581E1A062FAE00163FA3 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		568A581F1A062FAE00163FA3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		DD5760D41B6733B400CE800A /* BBNaviBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBNaviBackButton.h; sourceTree = "<group>"; };
+		DD5760D51B6733B400CE800A /* BBNaviBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBNaviBackButton.m; sourceTree = "<group>"; };
+		DD5760D61B6733B400CE800A /* UINavigationItem+Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Protable.h"; sourceTree = "<group>"; };
+		DD5760D71B6733B400CE800A /* UINavigationItem+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Protable.m"; sourceTree = "<group>"; };
+		DD5760D81B6733B400CE800A /* UIViewController+Navi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navi.h"; sourceTree = "<group>"; };
+		DD5760D91B6733B400CE800A /* UIViewController+Navi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navi.m"; sourceTree = "<group>"; };
 		ED6B5C121A2DAAA3008CED69 /* NSString+Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Protable.h"; sourceTree = "<group>"; };
 		ED6B5C131A2DAAA3008CED69 /* NSString+Protable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Protable.m"; sourceTree = "<group>"; };
 		ED943E091A89A041006A5C73 /* DECTestLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECTestLabelViewController.h; sourceTree = "<group>"; };
@@ -327,8 +330,6 @@
 		17CA1AE41B40003C0028848D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17CA1AE51B40003C0028848D /* BBNaviBackButton.h */,
-				17CA1AE61B40003C0028848D /* BBNaviBackButton.m */,
 				17CA1AE71B40003C0028848D /* BBTableViewController.h */,
 				17CA1AE81B40003C0028848D /* BBTableViewController.m */,
 				17CA1AE91B40003C0028848D /* BBViewController.h */,
@@ -336,8 +337,6 @@
 				17CA1AEB1B40003C0028848D /* BBWebViewController.h */,
 				17CA1AEC1B40003C0028848D /* BBWebViewController.m */,
 				17CA1AED1B40003C0028848D /* TabBarController */,
-				17CA1AF21B40003C0028848D /* UIViewController+Protable.h */,
-				17CA1AF31B40003C0028848D /* UIViewController+Protable.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -369,6 +368,7 @@
 			children = (
 				5688DDCD1A067B8400F65FE9 /* BBCustomize.h */,
 				5688DDCE1A067B8400F65FE9 /* BBCustomize.m */,
+				DD5760D31B6733B400CE800A /* Navi */,
 				17CA1AE41B40003C0028848D /* Controllers */,
 				5688DDCF1A067B8400F65FE9 /* Categories */,
 				5688DE941A067D5C00F65FE9 /* View */,
@@ -653,6 +653,19 @@
 			path = ThirdTab;
 			sourceTree = "<group>";
 		};
+		DD5760D31B6733B400CE800A /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				DD5760D41B6733B400CE800A /* BBNaviBackButton.h */,
+				DD5760D51B6733B400CE800A /* BBNaviBackButton.m */,
+				DD5760D61B6733B400CE800A /* UINavigationItem+Protable.h */,
+				DD5760D71B6733B400CE800A /* UINavigationItem+Protable.m */,
+				DD5760D81B6733B400CE800A /* UIViewController+Navi.h */,
+				DD5760D91B6733B400CE800A /* UIViewController+Navi.m */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -780,11 +793,10 @@
 				17CA1AF71B40003C0028848D /* BBWebViewController.m in Sources */,
 				5688DE541A067B8400F65FE9 /* NSDate+Protable.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
-				17CA1AFA1B40003C0028848D /* UIViewController+Protable.m in Sources */,
+				DD5760DB1B6733B400CE800A /* UINavigationItem+Protable.m in Sources */,
 				17CA1AF91B40003C0028848D /* BBTabBarItem.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
 				5688DE521A067B8400F65FE9 /* BBCustomize.m in Sources */,
-				17CA1AF41B40003C0028848D /* BBNaviBackButton.m in Sources */,
 				17285F191A47536E0047A25A /* UITableView+Protable.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				170659121A473AF600B58000 /* UIImage+Protable.m in Sources */,
@@ -795,6 +807,7 @@
 				5688DE681A067B8400F65FE9 /* BBPlistFileManager.m in Sources */,
 				5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */,
 				17CA1B081B4016740028848D /* BBSkin.m in Sources */,
+				DD5760DA1B6733B400CE800A /* BBNaviBackButton.m in Sources */,
 				5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */,
 				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
 				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
@@ -810,6 +823,7 @@
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
 				5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */,
 				5688DE6B1A067B8400F65FE9 /* BBApplication.m in Sources */,
+				DD5760DC1B6733B400CE800A /* UIViewController+Navi.m in Sources */,
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
