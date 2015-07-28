@@ -2,7 +2,7 @@
 
 Portable，与具体业务无关的纯净、便捷的类库，帮助你提高开发效率。
 
-Portable分两部分：Base和Extended
+Portable分为：Base，Extended，Solutions
 
 Base 
 
@@ -12,6 +12,13 @@ Extended
 
 在Base之外的扩展，选择使用。
 
+Solutions
+
+一些组件，项目中极有可能用到。
+
+依赖的库文件：
+libz
+
 
 ###写Portable库的目的
 * 开发任何项目都能快速搭建起框架。
@@ -19,7 +26,7 @@ Extended
 
 使用Portable库的时候，建议使用纯代码写App的UI，推荐纯代码+Masonry
 
-支持IOS6及以上系统。
+支持IOS7及以上系统。
 从2015年夏天，我准备不支持IOS6了，后续的版本会从IOS7开始支持。也正在推出[Swift版](https://github.com/zhenyonghou/Racer)。
 
 

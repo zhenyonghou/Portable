@@ -48,6 +48,9 @@
 		DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */; };
 		DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */; };
 		DD56ACE01B67D18300B12647 /* BBRoundCornerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */; };
+		DD56ACE41B67D66000B12647 /* BBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACE31B67D66000B12647 /* BBLocationManager.m */; };
+		DD56ACE91B67D6EE00B12647 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACE81B67D6EE00B12647 /* GZIP.m */; };
+		DD56ACEB1B67D71B00B12647 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD56ACEA1B67D71B00B12647 /* libz.1.2.5.dylib */; };
 		DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761061B673B6100CE800A /* BBCustomize.m */; };
 		DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761091B673B6100CE800A /* NSArray+Json.m */; };
 		DD57614C1B673B6100CE800A /* NSDate+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57610B1B673B6100CE800A /* NSDate+Protable.m */; };
@@ -183,6 +186,11 @@
 		DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBInteractiveWebViewController.m; sourceTree = "<group>"; };
 		DD56ACDE1B67D18300B12647 /* BBRoundCornerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRoundCornerImageView.h; sourceTree = "<group>"; };
 		DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRoundCornerImageView.m; sourceTree = "<group>"; };
+		DD56ACE21B67D66000B12647 /* BBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLocationManager.h; sourceTree = "<group>"; };
+		DD56ACE31B67D66000B12647 /* BBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLocationManager.m; sourceTree = "<group>"; };
+		DD56ACE71B67D6EE00B12647 /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
+		DD56ACE81B67D6EE00B12647 /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
+		DD56ACEA1B67D71B00B12647 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DD5761051B673B6100CE800A /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
 		DD5761061B673B6100CE800A /* BBCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCustomize.m; sourceTree = "<group>"; };
 		DD5761081B673B6100CE800A /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -268,6 +276,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD56ACEB1B67D71B00B12647 /* libz.1.2.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				5688DE201A067B8400F65FE9 /* ProtableExtensions.h */,
+				DD56ACE51B67D6EE00B12647 /* Tools */,
+				DD56ACE11B67D66000B12647 /* Location */,
 				5688DE211A067B8400F65FE9 /* View */,
 			);
 			path = Extensions;
@@ -408,6 +419,7 @@
 		568A55EE1A0614C200163FA3 = {
 			isa = PBXGroup;
 			children = (
+				DD56ACEA1B67D71B00B12647 /* libz.1.2.5.dylib */,
 				5688DDCB1A067B8400F65FE9 /* Protable */,
 				568A55F91A0614C200163FA3 /* Demo */,
 				568A560D1A0614C200163FA3 /* DemoTests */,
@@ -563,6 +575,32 @@
 				DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */,
 			);
 			path = ComponentsExamples;
+			sourceTree = "<group>";
+		};
+		DD56ACE11B67D66000B12647 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACE21B67D66000B12647 /* BBLocationManager.h */,
+				DD56ACE31B67D66000B12647 /* BBLocationManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DD56ACE51B67D6EE00B12647 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACE61B67D6EE00B12647 /* GZIP */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DD56ACE61B67D6EE00B12647 /* GZIP */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACE71B67D6EE00B12647 /* GZIP.h */,
+				DD56ACE81B67D6EE00B12647 /* GZIP.m */,
+			);
+			path = GZIP;
 			sourceTree = "<group>";
 		};
 		DD5761041B673B6100CE800A /* Base */ = {
@@ -845,6 +883,7 @@
 				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
 				DD57615B1B673B6100CE800A /* BBDiskCache.m in Sources */,
 				DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */,
+				DD56ACE41B67D66000B12647 /* BBLocationManager.m in Sources */,
 				DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
 				DD56ACBD1B67BD9D00B12647 /* UIActionSheet+Blocks.m in Sources */,
@@ -886,6 +925,7 @@
 				DD5761591B673B6100CE800A /* BBTabBarController.m in Sources */,
 				DD57615F1B673B6100CE800A /* BBJsonFileHelper.m in Sources */,
 				DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */,
+				DD56ACE91B67D6EE00B12647 /* GZIP.m in Sources */,
 				DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */,
 				DD5761551B673B6100CE800A /* UIDevice+Protable.m in Sources */,
 				DD56ACC01B67BD9D00B12647 /* BBCollectionViewCell.m in Sources */,
