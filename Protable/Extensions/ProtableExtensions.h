@@ -16,8 +16,7 @@
 #import "BBRightViewCell.h"
 #import "BASelectFlagGridCell.h"
 #import "BBImageView.h"
-#import "BBLineCollectionView.h"
 #import "BBCollectionViewCell.h"
-
+#import "BBRoundCornerImageView.h"
 
 #endif

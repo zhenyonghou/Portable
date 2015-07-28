@@ -1,5 +1,5 @@
 //  Created by hou zhenyong on 14-3-31.
-//
+//  推荐使用BBRoundCornerImageView，效率更高
 
 #import <UIKit/UIKit.h>
 

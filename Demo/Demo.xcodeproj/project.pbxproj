@@ -47,6 +47,7 @@
 		DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD61B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m */; };
 		DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */; };
 		DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */; };
+		DD56ACE01B67D18300B12647 /* BBRoundCornerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */; };
 		DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761061B673B6100CE800A /* BBCustomize.m */; };
 		DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761091B673B6100CE800A /* NSArray+Json.m */; };
 		DD57614C1B673B6100CE800A /* NSDate+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57610B1B673B6100CE800A /* NSDate+Protable.m */; };
@@ -180,6 +181,8 @@
 		DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECWebViewController.m; sourceTree = "<group>"; };
 		DD56ACDB1B67CF6800B12647 /* BBInteractiveWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBInteractiveWebViewController.h; sourceTree = "<group>"; };
 		DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBInteractiveWebViewController.m; sourceTree = "<group>"; };
+		DD56ACDE1B67D18300B12647 /* BBRoundCornerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRoundCornerImageView.h; sourceTree = "<group>"; };
+		DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRoundCornerImageView.m; sourceTree = "<group>"; };
 		DD5761051B673B6100CE800A /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
 		DD5761061B673B6100CE800A /* BBCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCustomize.m; sourceTree = "<group>"; };
 		DD5761081B673B6100CE800A /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -376,6 +379,8 @@
 				5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */,
 				17E9409B1AF633FA00853A1E /* BBImageView.h */,
 				17E9409C1AF633FA00853A1E /* BBImageView.m */,
+				DD56ACDE1B67D18300B12647 /* BBRoundCornerImageView.h */,
+				DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */,
 				5688DE421A067B8400F65FE9 /* BBSwitchButton.h */,
 				5688DE431A067B8400F65FE9 /* BBSwitchButton.m */,
 				5688DE441A067B8400F65FE9 /* Cell */,
@@ -829,6 +834,7 @@
 			files = (
 				DD5761541B673B6100CE800A /* UIView+Protable.m in Sources */,
 				DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */,
+				DD56ACE01B67D18300B12647 /* BBRoundCornerImageView.m in Sources */,
 				DD57615E1B673B6100CE800A /* BBImageFileHelper.m in Sources */,
 				DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */,
 				5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */,

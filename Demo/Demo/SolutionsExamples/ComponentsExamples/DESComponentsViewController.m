@@ -18,18 +18,9 @@
 
 @implementation DESComponentsViewController
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.model = @[@"EmailSuggestTextField", @"Web", @"Controllers", @"File", @"Utilities", @"Location"];
+    self.model = @[@"EmailSuggestTextField", @"Web"];
     
     self.tableView.contentInset = UIEdgeInsetsZero;
     [self.tableView reloadData];
