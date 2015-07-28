@@ -46,4 +46,9 @@
     return YES;
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.emailTextField resignFirstResponder];
+}
+
 @end
