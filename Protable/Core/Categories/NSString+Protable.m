@@ -30,14 +30,10 @@
 - (CGSize)calculateSizeWithFont:(UIFont*)font maximumWidth:(CGFloat)maximumWidth
 {
     CGSize size;
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-        NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-        size = [self boundingRectWithSize:CGSizeMake(maximumWidth, MAXFLOAT)
-                                  options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                               attributes:attribute context:nil].size;
-    } else {
-        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(maximumWidth, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
-    }
+    NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
+    size = [self boundingRectWithSize:CGSizeMake(maximumWidth, MAXFLOAT)
+                              options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                           attributes:attribute context:nil].size;
     return size;
 }
 
@@ -45,14 +41,10 @@
 {
     CGSize size;
     CGFloat height = numberOfLines == 0 ? CGFLOAT_MAX : numberOfLines * font.lineHeight;
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-        NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-        size = [self boundingRectWithSize:CGSizeMake(maximumWidth, height)
-                                  options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                               attributes:attribute context:nil].size;
-    } else {
-        size = [self sizeWithFont:font constrainedToSize:CGSizeMake(maximumWidth, height) lineBreakMode:NSLineBreakByWordWrapping];
-    }
+    NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
+    size = [self boundingRectWithSize:CGSizeMake(maximumWidth, height)
+                              options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                           attributes:attribute context:nil].size;
     return size;
 }
 
