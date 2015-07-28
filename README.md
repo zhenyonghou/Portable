@@ -2,15 +2,15 @@
 
 Portable，与具体业务无关的纯净、便捷的类库，帮助你提高开发效率。
 
-Portable分两部分：Core和Extended
+Portable分两部分：Base和Extended
 
-Core 
+Base 
 
 项目中必须使用到的类和组件，此外还有一些Category。
 
 Extended
 
-在Core之外的扩展，选择使用。
+在Base之外的扩展，选择使用。
 
 
 ###写Portable库的目的

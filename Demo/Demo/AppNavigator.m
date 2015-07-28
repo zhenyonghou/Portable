@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "BBTabBarController.h"
 
-#import "DECoreExamplesViewController.h"
+#import "DEBaseExamplesViewController.h"
 #import "DEExtensionsExamplesViewController.h"
 #import "ThirdViewController.h"
 #import "ForthViewController.h"
@@ -72,7 +72,7 @@ static AppNavigator * navigator = nil;
                                                            image:SKIN_IMAGE(@"tabbar_forth")
                                                    selectedImage:SKIN_IMAGE(@"tabbar_forth_hl")];
     
-    UINavigationController *navi0 = [[UINavigationController alloc] initWithRootViewController:[[DECoreExamplesViewController alloc] init]];
+    UINavigationController *navi0 = [[UINavigationController alloc] initWithRootViewController:[[DEBaseExamplesViewController alloc] init]];
     UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:[[DEExtensionsExamplesViewController alloc] init]];
     UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
     UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ForthViewController alloc] init]];

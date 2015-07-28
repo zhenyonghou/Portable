@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "DECoreExamplesViewController.h"
+#import "DEBaseExamplesViewController.h"
 
-@interface DECoreExamplesViewController ()
+@interface DEBaseExamplesViewController ()
 
 @property (nonatomic, strong) NSArray *model;
 
 @end
 
-@implementation DECoreExamplesViewController
+@implementation DEBaseExamplesViewController
 
 - (id)init
 {
@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNaviTitle:@"Core Examples"];
+    [self setNaviTitle:@"Base Examples"];
     
     self.model = @[@"Categories", @"View", @"Controllers", @"File", @"Utilities", @"Location"];
     
