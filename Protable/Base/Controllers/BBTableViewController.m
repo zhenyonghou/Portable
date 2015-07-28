@@ -31,15 +31,13 @@
     [super viewDidLoad];
     [self __buildTableView];
 
-    if (IOS_VERSION >= 7.0) {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-        UIEdgeInsets contentInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
-                                                   0,
-                                                   _bottomBarHeight,
-                                                   0);
-        self.tableView.contentInset = contentInsets;
-        self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(contentInsets.top, 0, contentInsets.bottom, 0);
-    }
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(PHONE_NAVIGATIONBAR_HEIGHT + PHONE_STATUSBAR_HEIGHT,
+                                                  0,
+                                                  _bottomBarHeight,
+                                                  0);
+    self.tableView.contentInset = contentInsets;
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(contentInsets.top, 0, contentInsets.bottom, 0);
 }
 
 - (void)__buildTableView

@@ -77,6 +77,13 @@
 		DD5761651B673B6100CE800A /* BBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761451B673B6100CE800A /* BBSkin.m */; };
 		DD5761661B673B6100CE800A /* BBUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761471B673B6100CE800A /* BBUserConfig.m */; };
 		DD5761671B673B6100CE800A /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761491B673B6100CE800A /* BBUtility.m */; };
+		DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57616D1B675C5F00CE800A /* BBSegmentedControl.m */; };
+		DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57616F1B675C5F00CE800A /* BBSegmentViewController.m */; };
+		DD57617A1B6760DB00CE800A /* DEBaseFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761731B6760DB00CE800A /* DEBaseFirstViewController.m */; };
+		DD57617B1B6760DB00CE800A /* DEBaseForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761751B6760DB00CE800A /* DEBaseForthViewController.m */; };
+		DD57617C1B6760DB00CE800A /* DEBaseSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761771B6760DB00CE800A /* DEBaseSecondViewController.m */; };
+		DD57617D1B6760DB00CE800A /* DEBaseThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761791B6760DB00CE800A /* DEBaseThirdViewController.m */; };
+		DD5761801B6763E300CE800A /* DEBaseFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57617F1B6763E300CE800A /* DEBaseFifthViewController.m */; };
 		ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +242,20 @@
 		DD5761471B673B6100CE800A /* BBUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserConfig.m; sourceTree = "<group>"; };
 		DD5761481B673B6100CE800A /* BBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUtility.h; sourceTree = "<group>"; };
 		DD5761491B673B6100CE800A /* BBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUtility.m; sourceTree = "<group>"; };
+		DD57616C1B675C5F00CE800A /* BBSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSegmentedControl.h; sourceTree = "<group>"; };
+		DD57616D1B675C5F00CE800A /* BBSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSegmentedControl.m; sourceTree = "<group>"; };
+		DD57616E1B675C5F00CE800A /* BBSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSegmentViewController.h; sourceTree = "<group>"; };
+		DD57616F1B675C5F00CE800A /* BBSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSegmentViewController.m; sourceTree = "<group>"; };
+		DD5761721B6760DB00CE800A /* DEBaseFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseFirstViewController.h; sourceTree = "<group>"; };
+		DD5761731B6760DB00CE800A /* DEBaseFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseFirstViewController.m; sourceTree = "<group>"; };
+		DD5761741B6760DB00CE800A /* DEBaseForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseForthViewController.h; sourceTree = "<group>"; };
+		DD5761751B6760DB00CE800A /* DEBaseForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseForthViewController.m; sourceTree = "<group>"; };
+		DD5761761B6760DB00CE800A /* DEBaseSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseSecondViewController.h; sourceTree = "<group>"; };
+		DD5761771B6760DB00CE800A /* DEBaseSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseSecondViewController.m; sourceTree = "<group>"; };
+		DD5761781B6760DB00CE800A /* DEBaseThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseThirdViewController.h; sourceTree = "<group>"; };
+		DD5761791B6760DB00CE800A /* DEBaseThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseThirdViewController.m; sourceTree = "<group>"; };
+		DD57617E1B6763E300CE800A /* DEBaseFifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseFifthViewController.h; sourceTree = "<group>"; };
+		DD57617F1B6763E300CE800A /* DEBaseFifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseFifthViewController.m; sourceTree = "<group>"; };
 		ED943E091A89A041006A5C73 /* DECTestLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECTestLabelViewController.h; sourceTree = "<group>"; };
 		ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECTestLabelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +283,16 @@
 			children = (
 				17285EF91A474E620047A25A /* DEBaseExamplesViewController.h */,
 				17285EFA1A474E620047A25A /* DEBaseExamplesViewController.m */,
+				DD5761721B6760DB00CE800A /* DEBaseFirstViewController.h */,
+				DD5761731B6760DB00CE800A /* DEBaseFirstViewController.m */,
+				DD5761761B6760DB00CE800A /* DEBaseSecondViewController.h */,
+				DD5761771B6760DB00CE800A /* DEBaseSecondViewController.m */,
+				DD5761781B6760DB00CE800A /* DEBaseThirdViewController.h */,
+				DD5761791B6760DB00CE800A /* DEBaseThirdViewController.m */,
+				DD5761741B6760DB00CE800A /* DEBaseForthViewController.h */,
+				DD5761751B6760DB00CE800A /* DEBaseForthViewController.m */,
+				DD57617E1B6763E300CE800A /* DEBaseFifthViewController.h */,
+				DD57617F1B6763E300CE800A /* DEBaseFifthViewController.m */,
 				17285F031A4752120047A25A /* CategoriesExamples */,
 				17285F061A4752120047A25A /* ControllersExamples */,
 				17285F091A4752120047A25A /* FileExamples */,
@@ -662,8 +693,20 @@
 		DD57616A1B673E4A00CE800A /* Solutions */ = {
 			isa = PBXGroup;
 			children = (
+				DD57616B1B675C5F00CE800A /* Segmented */,
 			);
 			path = Solutions;
+			sourceTree = "<group>";
+		};
+		DD57616B1B675C5F00CE800A /* Segmented */ = {
+			isa = PBXGroup;
+			children = (
+				DD57616C1B675C5F00CE800A /* BBSegmentedControl.h */,
+				DD57616D1B675C5F00CE800A /* BBSegmentedControl.m */,
+				DD57616E1B675C5F00CE800A /* BBSegmentViewController.h */,
+				DD57616F1B675C5F00CE800A /* BBSegmentViewController.m */,
+			);
+			path = Segmented;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -776,6 +819,9 @@
 				DD5761621B673B6100CE800A /* UINavigationItem+Protable.m in Sources */,
 				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
 				DD57615B1B673B6100CE800A /* BBDiskCache.m in Sources */,
+				DD57617B1B6760DB00CE800A /* DEBaseForthViewController.m in Sources */,
+				DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */,
+				DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
 				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
 				DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */,
@@ -796,6 +842,7 @@
 				ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */,
 				DD5761611B673B6100CE800A /* BBNaviBackButton.m in Sources */,
 				DD5761511B673B6100CE800A /* UIImage+Protable.m in Sources */,
+				DD57617C1B6760DB00CE800A /* DEBaseSecondViewController.m in Sources */,
 				DD57614E1B673B6100CE800A /* NSString+Protable.m in Sources */,
 				17285F161A4752120047A25A /* DECViewViewController.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
@@ -812,6 +859,7 @@
 				5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */,
 				DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */,
 				DD5761551B673B6100CE800A /* UIDevice+Protable.m in Sources */,
+				DD57617A1B6760DB00CE800A /* DEBaseFirstViewController.m in Sources */,
 				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
 				DD57615D1B673B6100CE800A /* BBFileDiskCache.m in Sources */,
 				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
@@ -823,12 +871,14 @@
 				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
 				DD5761571B673B6100CE800A /* BBViewController.m in Sources */,
 				DD5761641B673B6100CE800A /* BBApplication.m in Sources */,
+				DD57617D1B6760DB00CE800A /* DEBaseThirdViewController.m in Sources */,
 				5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */,
 				568A58231A062FAE00163FA3 /* ThirdViewController.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
 				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
+				DD5761801B6763E300CE800A /* DEBaseFifthViewController.m in Sources */,
 				DD5761631B673B6100CE800A /* UIViewController+Navi.m in Sources */,
 				DD5761651B673B6100CE800A /* BBSkin.m in Sources */,
 				DD5761601B673B6100CE800A /* BBPlistFileManager.m in Sources */,

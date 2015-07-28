@@ -7,10 +7,19 @@
 //
 
 #import "DEBaseExamplesViewController.h"
+#import "DEBaseFirstViewController.h"
+#import "DEBaseSecondViewController.h"
+#import "DEBaseThirdViewController.h"
+#import "DEBaseForthViewController.h"
+#import "DEBaseFifthViewController.h"
 
 @interface DEBaseExamplesViewController ()
 
-@property (nonatomic, strong) NSArray *model;
+@property (nonatomic, strong) DEBaseFirstViewController *firstViewController;
+@property (nonatomic, strong) DEBaseSecondViewController *secondViewController;
+@property (nonatomic, strong) DEBaseThirdViewController *thirdViewController;
+@property (nonatomic, strong) DEBaseForthViewController *forthViewController;
+@property (nonatomic, strong) DEBaseFifthViewController *fifthViewController;
 
 @end
 
@@ -28,59 +37,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNaviTitle:@"Base Examples"];
+    [self setNaviTitle:@"Base"];
+    self.view.backgroundColor = [UIColor colorWithHex:0xf0f0f0];
+
+    self.firstViewController = [[DEBaseFirstViewController alloc] init];
+//    self.firstViewController.delegate = self;
+    self.secondViewController = [[DEBaseSecondViewController alloc] init];
+//    self.serviceViewController.delegate = self;
+    self.thirdViewController = [[DEBaseThirdViewController alloc] init];
+//    self.housingViewController.delegate = self;
+    self.forthViewController = [[DEBaseForthViewController alloc] init];
+//    self.jobsViewController.delegate = self;
+    self.fifthViewController = [[DEBaseFifthViewController alloc] init];
+//    self.followingViewController.delegate = self;
     
-    self.model = @[@"Categories", @"View", @"Controllers", @"File", @"Utilities", @"Location"];
+    NSArray *pageTitles = @[@"Demo第1页", @"Demo第2页", @"第3页", @"第4页", @"第5页"];
     
-    [self.tableView reloadData];
+    NSArray *pageControllers = @[self.firstViewController,
+                                 self.secondViewController,
+                                 self.thirdViewController,
+                                 self.forthViewController,
+                                 self.fifthViewController];
+    
+    [self setPageTitles:pageTitles controllers:pageControllers];
+    
+    // customize segmented control
+    CTFontRef normalFont = [BBUtility ctFontRefFromUIFont:[UIFont systemFontOfSize:14]];
+    CGColorRef normalColor = [UIColor blackColor].CGColor;
+    CGColorRef selectedColor = [UIColor colorWithHex:0xff8830].CGColor;//FANCY_COLOR(@"ff8830").CGColor;
+    CTFontRef selectedFont = [BBUtility ctFontRefFromUIFont:[UIFont systemFontOfSize:14]];
+    
+    NSDictionary *normalAttributes = @{NSFontAttributeName : (__bridge id)normalFont, NSForegroundColorAttributeName : (__bridge id)normalColor};
+    NSDictionary *selectedAttributes = @{NSFontAttributeName : (__bridge id)selectedFont, NSForegroundColorAttributeName : (__bridge id)selectedColor};
+    [self setTitleNormalAttributes:normalAttributes titleSelectedAttributes:selectedAttributes];
+    
+    self.segmentedControl.bottomLineColor = [UIColor lightGrayColor];
+    self.segmentedControl.selectionIndicatorColor = [UIColor colorWithHex:0xff8830];
 }
 
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [BAUtility printRect:self.view.frame mark:@"2 didAppear view"];
-//    [BAUtility printRect:self.tableView.frame mark:@"2 didAppear tableView"];
-//    NSLog(@"%f %f", self.tableView.contentInset.top, self.tableView.contentInset.bottom);;
-//}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark- UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void)viewDidAppear:(BOOL)animated
 {
-    return [self.model count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString* cellId = @"blankCellId;laks";
-    BBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (!cell) {
-        cell = [[BBTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-    }
-//    cell.showBottomSeparatorLine = (indexPath.row < [self.model count] - 1);
-    cell.textLabel.text = self.model[indexPath.row];
-    return cell;
-}
-
-#pragma mark- UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    [super viewDidAppear:animated];
     
-    NSString *name = self.model[indexPath.row];
-    
-    Class cls = NSClassFromString([NSString stringWithFormat:@"DEC%@ViewController", name]);
-    UIViewController *vc = [[cls alloc] init];
-    if (!vc) {
-        NSLog(@"Error %s", __func__);
-        return;
-    }
-    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 @end

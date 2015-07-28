@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreText/CoreText.h>
 
 static inline double degreesToRadians(double degrees) {return degrees * M_PI / 180;}
 
 static inline double radiansToDegrees(double radians) {return radians * 180/M_PI;}
 
 @interface BBUtility : NSObject
+
++ (CTFontRef)ctFontRefFromUIFont:(UIFont *)font;
 
 + (void)printRect:(CGRect)rect mark:(NSString*)mark;
 
