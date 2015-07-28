@@ -17,16 +17,16 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 
 @property (nonatomic, strong) NSArray *sectionTitles;
 
-@property (nonatomic, strong) UIColor *backgroundColor;
-
 
 @property (nonatomic, assign) NSInteger selectedSegmentIndex;
 
-@property (nonatomic, readwrite) UIEdgeInsets segmentEdgeInset;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 @property (nonatomic, strong) NSDictionary *titleTextAttributes;
 
 @property (nonatomic, strong) NSDictionary *selectedTitleTextAttributes;
+
+@property (nonatomic, readwrite) UIEdgeInsets segmentEdgeInset;
 
 // bottom line
 @property (nonatomic, assign) CGFloat bottomLineHeight;
@@ -39,7 +39,7 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 
 @property (nonatomic, assign) CGFloat selectionIndicatorHeight;
 
-
+- (void)registerObserverForScrollView:(UIScrollView *)scrollView;
 
 - (void)setSelectedSegmentIndex:(NSUInteger)index animated:(BOOL)animated;
 

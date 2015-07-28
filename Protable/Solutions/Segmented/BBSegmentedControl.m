@@ -49,6 +49,8 @@
 @property (nonatomic, readwrite) NSArray *segmentWidthsArray;
 @property (nonatomic, strong) HGScrollView *scrollView;
 
+@property (nonatomic, strong) UIScrollView *registerScrollView;
+
 @end
 
 @implementation BBSegmentedControl
@@ -95,6 +97,12 @@
     self.selectionIndicatorColor = [UIColor blackColor];
     
     self.contentMode = UIViewContentModeRedraw;
+}
+
+- (void)dealloc {
+    if (self.registerScrollView) {
+        [self.registerScrollView removeObserver:self forKeyPath:@"contentOffset"];
+    }
 }
 
 - (void)setBottomLineColor:(UIColor *)bottomLineColor
@@ -145,6 +153,12 @@
     [self setNeedsLayout];
 }
 
+- (void)registerObserverForScrollView:(UIScrollView *)scrollView
+{
+    self.registerScrollView = scrollView;
+    [scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:NULL];
+}
+
 #pragma mark- Drawing
 
 - (CGSize)measureTitleAtIndex:(NSUInteger)index
@@ -173,27 +187,27 @@
     UIRectFill([self bounds]);
 
     self.selectionIndicatorStripLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
-    
+
     self.scrollView.layer.sublayers = nil;
-    
+
     [self.sectionTitles enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         CGSize titleSize = [self measureTitleAtIndex:idx];
-        
+
         CGFloat y = roundf(CGRectGetHeight(self.frame) - titleSize.height) / 2;
-        
+
         CGRect titleRect = CGRectMake((self.segmentWidth * idx) + (self.segmentWidth - titleSize.width) / 2, y, titleSize.width, titleSize.height);
         titleRect = CGRectMake(ceilf(titleRect.origin.x), ceilf(titleRect.origin.y), ceilf(titleRect.size.width), ceilf(titleRect.size.height));
-        
+
         CATextLayer *titleLayer = [CATextLayer layer];
         titleLayer.frame = titleRect;
         titleLayer.alignmentMode = kCAAlignmentCenter;
         titleLayer.truncationMode = kCATruncationEnd;
         titleLayer.string = [self attributedTitleAtIndex:idx];
         titleLayer.contentsScale = [[UIScreen mainScreen] scale];
-        
+
         [self.scrollView.layer addSublayer:titleLayer];
     }];
-    
+
     if (!self.selectionIndicatorStripLayer.superlayer) {
         self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
         [self.scrollView.layer addSublayer:self.selectionIndicatorStripLayer];
@@ -256,32 +270,24 @@
 - (void)setSelectedSegmentIndex:(NSUInteger)index animated:(BOOL)animated notify:(BOOL)notify {
     _selectedSegmentIndex = index;
     [self setNeedsDisplay];
-    
+
     [self scrollToSelectedSegmentIndex:animated];
-    
+
     if (animated) {
-        if (!self.selectionIndicatorStripLayer.superlayer) {
-            [self.scrollView.layer addSublayer:self.selectionIndicatorStripLayer];
-            [self setSelectedSegmentIndex:index animated:NO notify:YES];
-            return;
-        }
-        
         if (notify) {
             [self notifyForSegmentChangeToIndex:index];
         }
-        
+
         self.selectionIndicatorStripLayer.actions = nil;
         
         // Animate to new position
-        [CATransaction begin];
-        [CATransaction setAnimationDuration:0.15f];
-        [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-
-        self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
-        [CATransaction commit];
+//        [CATransaction begin];
+//        [CATransaction setAnimationDuration:0.15f];
+//        [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
+//
+//        self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
+//        [CATransaction commit];
     } else {
-//        NSMutableDictionary *newActions = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNull null], @"position", [NSNull null], @"bounds", nil];
-//        self.selectionIndicatorStripLayer.actions = newActions;
         self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
         if (notify) {
             [self notifyForSegmentChangeToIndex:index];
@@ -295,6 +301,20 @@
     
     if (self.indexChangeBlock)
         self.indexChangeBlock(index);
+}
+
+#pragma mark- kvo
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([object isEqual:self.registerScrollView] && [keyPath isEqualToString:@"contentOffset"]) {
+//        NSLog(@"x = %f", self.registerScrollView.contentOffset.x);
+//        NSLog(@"width = %f", self.registerScrollView.contentSize.width);
+        
+        CGFloat indicatorOffsetX = (self.registerScrollView.contentOffset.x / self.registerScrollView.contentSize.width) * [self totalSegmentedControlWidth];
+        CGFloat indicatorOffsetY = self.bounds.size.height - self.selectionIndicatorHeight;
+        self.selectionIndicatorStripLayer.frame = CGRectMake(indicatorOffsetX, indicatorOffsetY, self.segmentWidth, self.selectionIndicatorHeight);
+    }
 }
 
 @end

@@ -51,7 +51,7 @@
     self.fifthViewController = [[DEBaseFifthViewController alloc] init];
 //    self.followingViewController.delegate = self;
     
-    NSArray *pageTitles = @[@"Demo第1页", @"Demo第2页", @"第3页", @"第4页", @"第5页"];
+    NSArray *pageTitles = @[@"Demo第1页", @"第2页", @"第3页", @"第4页", @"第5页"];
     
     NSArray *pageControllers = @[self.firstViewController,
                                  self.secondViewController,

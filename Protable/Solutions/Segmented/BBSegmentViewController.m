@@ -14,6 +14,8 @@ static NSInteger kSegmentControlHeight      = 40;
 
 @property (nonatomic, strong, readwrite) UIViewController *currentController;
 
+@property (nonatomic, assign) CGPoint lastContentOffset;
+
 @end
 
 @implementation BBSegmentViewController
@@ -32,6 +34,8 @@ static NSInteger kSegmentControlHeight      = 40;
     _pageControllers = controllers;
     
     [self setupChildViewControllers:controllers];
+    
+    [self.segmentedControl registerObserverForScrollView:self.contentView];
 }
 
 - (void)setTitleNormalAttributes:(NSDictionary *)normalAttributes titleSelectedAttributes:(NSDictionary *)selectedAttributes
@@ -145,10 +149,58 @@ static NSInteger kSegmentControlHeight      = 40;
 
 #pragma mark - UIScrollViewDelegate
 
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//{
+//    NSLog(@"--------offset=%f, %d, %d", scrollView.contentOffset.x, scrollView.isDragging, scrollView.isDecelerating);
+//    
+//    if (scrollView.decelerating) {
+//        if (self.lastContentOffset.x < scrollView.contentOffset.x) {
+//            CGFloat pageWidth = scrollView.frame.size.width;
+//            NSInteger page = scrollView.contentOffset.x / pageWidth + 1;
+//            NSLog(@"page++  %d", page);
+//        } else {
+//            CGFloat pageWidth = scrollView.frame.size.width;
+//            NSInteger page = scrollView.contentOffset.x / pageWidth;
+//            NSLog(@"page-- %d", page);
+//        }
+//    }
+//    self.lastContentOffset = scrollView.contentOffset;
+//}
+//
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//    NSLog(@"%s", __func__);
+//}
+//
+//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+//{
+//    NSLog(@"%s", __func__);
+////    CGFloat pageWidth = scrollView.frame.size.width;
+////    NSInteger page = scrollView.contentOffset.x / pageWidth;
+////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+//{
+//    NSLog(@"%s", __func__);
+////    CGFloat pageWidth = scrollView.frame.size.width;
+////    NSInteger page = scrollView.contentOffset.x / pageWidth;
+////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
+//}
+//
+//- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+//{
+//    NSLog(@"%s", __func__);
+////    CGFloat pageWidth = scrollView.frame.size.width;
+////    NSInteger page = scrollView.contentOffset.x / pageWidth;
+////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
+//}
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if ([scrollView isEqual:self.contentView]) {
         CGFloat pageWidth = scrollView.frame.size.width;
         NSInteger page = scrollView.contentOffset.x / pageWidth;
+//        NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
         
         [self.segmentedControl setSelectedSegmentIndex:page animated:YES];
         
