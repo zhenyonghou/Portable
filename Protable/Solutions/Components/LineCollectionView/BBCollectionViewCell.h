@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BACollectionViewCell : UICollectionViewCell
+@interface BBCollectionViewCell : UICollectionViewCell
 
 @property(nonatomic, strong, readonly) UILabel* textLabel;
 

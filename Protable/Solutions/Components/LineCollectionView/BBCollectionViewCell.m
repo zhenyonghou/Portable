@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BACollectionViewCell.h"
+#import "BBCollectionViewCell.h"
 
-@implementation BACollectionViewCell
+@implementation BBCollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame
 {

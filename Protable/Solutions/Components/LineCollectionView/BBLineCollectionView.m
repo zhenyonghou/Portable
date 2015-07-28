@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BALineCollectionView.h"
-#import "BACollectionViewCell.h"
+#import "BBLineCollectionView.h"
+#import "BBCollectionViewCell.h"
 
-@interface BALineCollectionView ()
+@interface BBLineCollectionView ()
 
 @property (nonatomic, assign) Class registerCellClass;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation BALineCollectionView
+@implementation BBLineCollectionView
 
 static NSString* kCellIndentifier = @"MY_CELL";
 
@@ -33,7 +33,7 @@ static NSString* kCellIndentifier = @"MY_CELL";
 - (void)reloadData
 {
     if (!_lineLayout) {
-        _lineLayout = [[BACollectionViewLineLayout alloc] init];
+        _lineLayout = [[BBCollectionViewLineLayout alloc] init];
         _lineLayout.itemSize = [self.delegate itemSizeForLineCollectionView:self];
         _lineLayout.sectionInset = [self.delegate edgeInsetsForLineCollectionView:self];
         _lineLayout.interitemSpacing = [self.delegate interitemSpacingForLineCollectionView:self];

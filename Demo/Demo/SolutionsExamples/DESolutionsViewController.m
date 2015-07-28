@@ -9,7 +9,7 @@
 #import "DESolutionsViewController.h"
 
 #import "DEBaseExamplesViewController.h"
-#import "DEBaseFirstViewController.h"
+#import "DESComponentsViewController.h"
 #import "DEBaseSecondViewController.h"
 #import "DEBaseThirdViewController.h"
 #import "DEBaseForthViewController.h"
@@ -17,7 +17,7 @@
 
 @interface DESolutionsViewController ()
 
-@property (nonatomic, strong) DEBaseFirstViewController *firstViewController;
+@property (nonatomic, strong) DESComponentsViewController *componentsViewController;
 @property (nonatomic, strong) DEBaseSecondViewController *secondViewController;
 @property (nonatomic, strong) DEBaseThirdViewController *thirdViewController;
 @property (nonatomic, strong) DEBaseForthViewController *forthViewController;
@@ -39,11 +39,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNaviTitle:@"Base"];
+    [self setNaviTitle:@"Solutions"];
     self.view.backgroundColor = [UIColor colorWithHex:0xf0f0f0];
     
-    self.firstViewController = [[DEBaseFirstViewController alloc] init];
-    //    self.firstViewController.delegate = self;
+    self.componentsViewController = [[DESComponentsViewController alloc] init];
+    //    self.componentsViewController.delegate = self;
     self.secondViewController = [[DEBaseSecondViewController alloc] init];
     //    self.serviceViewController.delegate = self;
     self.thirdViewController = [[DEBaseThirdViewController alloc] init];
@@ -53,9 +53,9 @@
     self.fifthViewController = [[DEBaseFifthViewController alloc] init];
     //    self.followingViewController.delegate = self;
     
-    NSArray *pageTitles = @[@"Demo第1页", @"第2页", @"第3页", @"第4页", @"第5页"];
+    NSArray *pageTitles = @[@"Components", @"第2页", @"第3页", @"第4页", @"第5页"];
     
-    NSArray *pageControllers = @[self.firstViewController,
+    NSArray *pageControllers = @[self.componentsViewController,
                                  self.secondViewController,
                                  self.thirdViewController,
                                  self.forthViewController,

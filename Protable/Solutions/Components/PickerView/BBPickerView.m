@@ -1,9 +1,9 @@
 
-#import "BAPickerView.h"
+#import "BBPickerView.h"
 
-@implementation BAPickerView
+@implementation BBPickerView
 
-- (id)initWithDelegate:(id<BAPickerViewDelegate>)delegate {
+- (id)initWithDelegate:(id<BBPickerViewDelegate>)delegate {
     if (self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_NAVIGATIONBAR_HEIGHT - PHONE_STATUSBAR_HEIGHT)]) {
         self.backgroundColor = [UIColor clearColor];
 

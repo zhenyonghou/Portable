@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BAMaskPickerView.h"
+#import "BBMaskPickerView.h"
 
-@implementation BAMaskPickerView
+@implementation BBMaskPickerView
 
 - (id)initWithParentView:(UIView*)parentView
 {

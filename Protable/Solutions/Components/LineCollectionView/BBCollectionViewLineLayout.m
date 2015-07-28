@@ -5,9 +5,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BACollectionViewLineLayout.h"
+#import "BBCollectionViewLineLayout.h"
 
-@implementation BACollectionViewLineLayout
+@implementation BBCollectionViewLineLayout
 
 - (void)prepareLayout
 {

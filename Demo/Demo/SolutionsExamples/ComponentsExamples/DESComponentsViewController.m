@@ -6,17 +6,17 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "DEBaseFirstViewController.h"
+#import "DESComponentsViewController.h"
 #import "BBUtility.h"
 #import "BBSegmentViewController.h"
 
-@interface DEBaseFirstViewController () <BBSegmentSubViewControllerProtocol>
+@interface DESComponentsViewController () <BBSegmentSubViewControllerProtocol>
 
 @property (nonatomic, strong) NSArray *model;
 
 @end
 
-@implementation DEBaseFirstViewController
+@implementation DESComponentsViewController
 
 - (id)init
 {
@@ -29,8 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNaviTitle:@"Base Examples"];
-    self.model = @[@"Categories", @"View", @"Controllers", @"File", @"Utilities", @"Location"];
+    self.model = @[@"EmailSuggestTextField", @"Web", @"Controllers", @"File", @"Utilities", @"Location"];
     
     self.tableView.contentInset = UIEdgeInsetsZero;
     [self.tableView reloadData];

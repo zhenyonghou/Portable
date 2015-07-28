@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol BADatePickerViewDelegate;
+@protocol BBDatePickerViewDelegate;
 
-@interface BADatePickerView : UIView
+@interface BBDatePickerView : UIView
 
-- (id)initWithDelegate:(id<BADatePickerViewDelegate>)delegate;
+- (id)initWithDelegate:(id<BBDatePickerViewDelegate>)delegate;
 
 - (void)showInView:(UIView *)view;
 - (void)hidePickerWithAnimation;
@@ -29,7 +29,7 @@
 
 
 
-@protocol BADatePickerViewDelegate <NSObject>
+@protocol BBDatePickerViewDelegate <NSObject>
 
 // 确定选中
 - (void)confirmDatePickerView:(id)pickerView;

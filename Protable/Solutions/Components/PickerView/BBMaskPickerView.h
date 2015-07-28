@@ -10,16 +10,16 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol BAMaskPickerViewDelegate;
+@protocol BBMaskPickerViewDelegate;
 
-@interface BAMaskPickerView : UIView {
+@interface BBMaskPickerView : UIView {
 
 @protected
     UIView *_contentView;
     UIView *_pickerView;
 }
 
-@property (nonatomic, weak) id<BAMaskPickerViewDelegate> delegate;
+@property (nonatomic, weak) id<BBMaskPickerViewDelegate> delegate;
 
 //for subclass
 @property (nonatomic, weak) UIView *parentView;
@@ -41,9 +41,9 @@
 @end
 
 
-@protocol BAMaskPickerViewDelegate <NSObject>
+@protocol BBMaskPickerViewDelegate <NSObject>
 
-- (void)cancelPickerView:(BAMaskPickerView*)maskPickerView;
+- (void)cancelPickerView:(BBMaskPickerView*)maskPickerView;
 
 @end
 

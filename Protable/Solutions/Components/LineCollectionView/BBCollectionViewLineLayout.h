@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BACollectionViewLineLayout : UICollectionViewLayout
+@interface BBCollectionViewLineLayout : UICollectionViewLayout
 
 @property (nonatomic, assign) CGSize itemSize;
 @property (nonatomic, assign) NSInteger itemCount;

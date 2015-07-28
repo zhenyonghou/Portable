@@ -3,12 +3,12 @@
 
 
 #import <UIKit/UIKit.h>
-#import "BAPickerViewDelegate.h"
+#import "BBPickerViewDelegate.h"
 
-@interface BAPickerView : UIView<UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface BBPickerView : UIView<UIPickerViewDelegate, UIPickerViewDataSource> {
 }
 
-- (id)initWithDelegate:(id<BAPickerViewDelegate>)delegate;
+- (id)initWithDelegate:(id<BBPickerViewDelegate>)delegate;
 
 - (void)showInView:(UIView *)view;
 - (void)hidePickerWithAnimation;
@@ -16,7 +16,7 @@
 @property (nonatomic, assign, readonly) BOOL isShowing;
 @property (nonatomic, strong) UIToolbar *toolBar;
 @property (nonatomic, strong) UIPickerView *pickerView;
-@property (nonatomic, weak) id<BAPickerViewDelegate> delegate;
+@property (nonatomic, weak) id<BBPickerViewDelegate> delegate;
 
 @end
 

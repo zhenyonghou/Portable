@@ -6,17 +6,17 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BADatePickerView.h"
+#import "BBDatePickerView.h"
 
-@interface BADatePickerView ()
+@interface BBDatePickerView ()
 
-@property (nonatomic, weak) id<BADatePickerViewDelegate> delegate;
+@property (nonatomic, weak) id<BBDatePickerViewDelegate> delegate;
 
 @end
 
-@implementation BADatePickerView
+@implementation BBDatePickerView
 
-- (id)initWithDelegate:(id<BADatePickerViewDelegate>)delegate {
+- (id)initWithDelegate:(id<BBDatePickerViewDelegate>)delegate {
     if (self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_NAVIGATIONBAR_HEIGHT - PHONE_STATUSBAR_HEIGHT)]) {
         self.backgroundColor = [UIColor clearColor];
         

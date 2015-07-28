@@ -8,6 +8,6 @@
 
 #import "BBTableViewController.h"
 
-@interface DEBaseFirstViewController : BBTableViewController
+@interface DESComponentsViewController : BBTableViewController
 
 @end

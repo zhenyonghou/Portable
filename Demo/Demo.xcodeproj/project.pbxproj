@@ -17,21 +17,7 @@
 		17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AFC1B4005F00028848D /* BBTableViewCell.m */; };
 		17CA1B051B4013290028848D /* font_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17CA1B041B4013290028848D /* font_color.plist */; };
 		17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BBImageView.m */; };
-		5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */; };
-		5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1D1A067B8400F65FE9 /* BAAttributedTextView.m */; };
-		5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE1F1A067B8400F65FE9 /* NSAttributedString+Height.m */; };
-		5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE241A067B8400F65FE9 /* BAButtonItem.m */; };
-		5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */; };
-		5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */; };
 		5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */; };
-		5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */; };
-		5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE331A067B8400F65FE9 /* BACollectionViewLineLayout.m */; };
-		5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE351A067B8400F65FE9 /* BALineCollectionView.m */; };
-		5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE371A067B8400F65FE9 /* BAOverlayView.m */; };
-		5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3A1A067B8400F65FE9 /* BADatePickerView.m */; };
-		5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3C1A067B8400F65FE9 /* BAMaskPickerView.m */; };
-		5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE3E1A067B8400F65FE9 /* BAPickerView.m */; };
-		5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */; };
 		5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE431A067B8400F65FE9 /* BBSwitchButton.m */; };
 		5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */; };
 		5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4C1A067B8400F65FE9 /* BBLeftImageViewCell.m */; };
@@ -46,6 +32,21 @@
 		568A58031A061BE400163FA3 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FF1A061BE400163FA3 /* AppNavigator.m */; };
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
+		DD56ACBC1B67BD9D00B12647 /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */; };
+		DD56ACBD1B67BD9D00B12647 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */; };
+		DD56ACBE1B67BD9D00B12647 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */; };
+		DD56ACBF1B67BD9D00B12647 /* BBEmailSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */; };
+		DD56ACC01B67BD9D00B12647 /* BBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */; };
+		DD56ACC11B67BD9D00B12647 /* BBCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */; };
+		DD56ACC21B67BD9D00B12647 /* BBLineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */; };
+		DD56ACCD1B67BEC500B12647 /* BBDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */; };
+		DD56ACCE1B67BEC500B12647 /* BBMaskPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */; };
+		DD56ACCF1B67BEC500B12647 /* BBPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC91B67BEC500B12647 /* BBPickerView.m */; };
+		DD56ACD01B67BEC500B12647 /* BBPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */; };
+		DD56ACD41B67C15500B12647 /* DESComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD31B67C15500B12647 /* DESComponentsViewController.m */; };
+		DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD61B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m */; };
+		DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */; };
+		DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */; };
 		DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761061B673B6100CE800A /* BBCustomize.m */; };
 		DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761091B673B6100CE800A /* NSArray+Json.m */; };
 		DD57614C1B673B6100CE800A /* NSDate+Protable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57610B1B673B6100CE800A /* NSDate+Protable.m */; };
@@ -80,7 +81,6 @@
 		DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57616F1B675C5F00CE800A /* BBSegmentViewController.m */; };
 		DD5761871B67A36000CE800A /* DESolutionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761861B67A36000CE800A /* DESolutionsViewController.m */; };
 		DD5761921B67A44D00CE800A /* DEBaseFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761891B67A44D00CE800A /* DEBaseFifthViewController.m */; };
-		DD5761931B67A44D00CE800A /* DEBaseFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618B1B67A44D00CE800A /* DEBaseFirstViewController.m */; };
 		DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */; };
 		DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */; };
 		DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */; };
@@ -117,38 +117,9 @@
 		17CA1B041B4013290028848D /* font_color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = font_color.plist; sourceTree = "<group>"; };
 		17E9409B1AF633FA00853A1E /* BBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageView.h; sourceTree = "<group>"; };
 		17E9409C1AF633FA00853A1E /* BBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageView.m; sourceTree = "<group>"; };
-		5688DE1A1A067B8400F65FE9 /* BAAttributedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAttributedText.h; sourceTree = "<group>"; };
-		5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAttributedText.m; sourceTree = "<group>"; };
-		5688DE1C1A067B8400F65FE9 /* BAAttributedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAttributedTextView.h; sourceTree = "<group>"; };
-		5688DE1D1A067B8400F65FE9 /* BAAttributedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAttributedTextView.m; sourceTree = "<group>"; };
-		5688DE1E1A067B8400F65FE9 /* NSAttributedString+Height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Height.h"; sourceTree = "<group>"; };
-		5688DE1F1A067B8400F65FE9 /* NSAttributedString+Height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Height.m"; sourceTree = "<group>"; };
 		5688DE201A067B8400F65FE9 /* ProtableExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableExtensions.h; sourceTree = "<group>"; };
-		5688DE231A067B8400F65FE9 /* BAButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAButtonItem.h; sourceTree = "<group>"; };
-		5688DE241A067B8400F65FE9 /* BAButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAButtonItem.m; sourceTree = "<group>"; };
-		5688DE251A067B8400F65FE9 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
-		5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
-		5688DE271A067B8400F65FE9 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCheckBox.h; sourceTree = "<group>"; };
 		5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCheckBox.m; sourceTree = "<group>"; };
-		5688DE301A067B8400F65FE9 /* BACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewCell.h; sourceTree = "<group>"; };
-		5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACollectionViewCell.m; sourceTree = "<group>"; };
-		5688DE321A067B8400F65FE9 /* BACollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACollectionViewLineLayout.h; sourceTree = "<group>"; };
-		5688DE331A067B8400F65FE9 /* BACollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACollectionViewLineLayout.m; sourceTree = "<group>"; };
-		5688DE341A067B8400F65FE9 /* BALineCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALineCollectionView.h; sourceTree = "<group>"; };
-		5688DE351A067B8400F65FE9 /* BALineCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALineCollectionView.m; sourceTree = "<group>"; };
-		5688DE361A067B8400F65FE9 /* BAOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAOverlayView.h; sourceTree = "<group>"; };
-		5688DE371A067B8400F65FE9 /* BAOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAOverlayView.m; sourceTree = "<group>"; };
-		5688DE391A067B8400F65FE9 /* BADatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADatePickerView.h; sourceTree = "<group>"; };
-		5688DE3A1A067B8400F65FE9 /* BADatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADatePickerView.m; sourceTree = "<group>"; };
-		5688DE3B1A067B8400F65FE9 /* BAMaskPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMaskPickerView.h; sourceTree = "<group>"; };
-		5688DE3C1A067B8400F65FE9 /* BAMaskPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMaskPickerView.m; sourceTree = "<group>"; };
-		5688DE3D1A067B8400F65FE9 /* BAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPickerView.h; sourceTree = "<group>"; };
-		5688DE3E1A067B8400F65FE9 /* BAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPickerView.m; sourceTree = "<group>"; };
-		5688DE3F1A067B8400F65FE9 /* BAPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPickerViewDelegate.h; sourceTree = "<group>"; };
-		5688DE401A067B8400F65FE9 /* BAPickerViewWithSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPickerViewWithSwitch.h; sourceTree = "<group>"; };
-		5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPickerViewWithSwitch.m; sourceTree = "<group>"; };
 		5688DE421A067B8400F65FE9 /* BBSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSwitchButton.h; sourceTree = "<group>"; };
 		5688DE431A067B8400F65FE9 /* BBSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSwitchButton.m; sourceTree = "<group>"; };
 		5688DE491A067B8400F65FE9 /* BAImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageGridCell.h; sourceTree = "<group>"; };
@@ -178,6 +149,37 @@
 		568A58011A061BE400163FA3 /* AppStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStartup.m; sourceTree = "<group>"; };
 		568A58181A062FAE00163FA3 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		568A58191A062FAE00163FA3 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		DD56ACAC1B67BD9D00B12647 /* BAButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAButtonItem.h; sourceTree = "<group>"; };
+		DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAButtonItem.m; sourceTree = "<group>"; };
+		DD56ACAE1B67BD9D00B12647 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		DD56ACB01B67BD9D00B12647 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		DD56ACB31B67BD9D00B12647 /* BBEmailSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEmailSuggestTextField.h; sourceTree = "<group>"; };
+		DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEmailSuggestTextField.m; sourceTree = "<group>"; };
+		DD56ACB61B67BD9D00B12647 /* BBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewCell.h; sourceTree = "<group>"; };
+		DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewCell.m; sourceTree = "<group>"; };
+		DD56ACB81B67BD9D00B12647 /* BBCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewLineLayout.h; sourceTree = "<group>"; };
+		DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewLineLayout.m; sourceTree = "<group>"; };
+		DD56ACBA1B67BD9D00B12647 /* BBLineCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLineCollectionView.h; sourceTree = "<group>"; };
+		DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLineCollectionView.m; sourceTree = "<group>"; };
+		DD56ACC41B67BEC500B12647 /* BBDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDatePickerView.h; sourceTree = "<group>"; };
+		DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDatePickerView.m; sourceTree = "<group>"; };
+		DD56ACC61B67BEC500B12647 /* BBMaskPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMaskPickerView.h; sourceTree = "<group>"; };
+		DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMaskPickerView.m; sourceTree = "<group>"; };
+		DD56ACC81B67BEC500B12647 /* BBPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerView.h; sourceTree = "<group>"; };
+		DD56ACC91B67BEC500B12647 /* BBPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerView.m; sourceTree = "<group>"; };
+		DD56ACCA1B67BEC500B12647 /* BBPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewDelegate.h; sourceTree = "<group>"; };
+		DD56ACCB1B67BEC500B12647 /* BBPickerViewWithSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewWithSwitch.h; sourceTree = "<group>"; };
+		DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerViewWithSwitch.m; sourceTree = "<group>"; };
+		DD56ACD21B67C15500B12647 /* DESComponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESComponentsViewController.h; sourceTree = "<group>"; };
+		DD56ACD31B67C15500B12647 /* DESComponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESComponentsViewController.m; sourceTree = "<group>"; };
+		DD56ACD51B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECEmailSuggestTextFieldViewController.h; sourceTree = "<group>"; };
+		DD56ACD61B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECEmailSuggestTextFieldViewController.m; sourceTree = "<group>"; };
+		DD56ACD81B67CCFB00B12647 /* DECWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECWebViewController.h; sourceTree = "<group>"; };
+		DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECWebViewController.m; sourceTree = "<group>"; };
+		DD56ACDB1B67CF6800B12647 /* BBInteractiveWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBInteractiveWebViewController.h; sourceTree = "<group>"; };
+		DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBInteractiveWebViewController.m; sourceTree = "<group>"; };
 		DD5761051B673B6100CE800A /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
 		DD5761061B673B6100CE800A /* BBCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCustomize.m; sourceTree = "<group>"; };
 		DD5761081B673B6100CE800A /* NSArray+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Json.h"; sourceTree = "<group>"; };
@@ -248,8 +250,6 @@
 		DD5761861B67A36000CE800A /* DESolutionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESolutionsViewController.m; sourceTree = "<group>"; };
 		DD5761881B67A44D00CE800A /* DEBaseFifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseFifthViewController.h; sourceTree = "<group>"; };
 		DD5761891B67A44D00CE800A /* DEBaseFifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseFifthViewController.m; sourceTree = "<group>"; };
-		DD57618A1B67A44D00CE800A /* DEBaseFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseFirstViewController.h; sourceTree = "<group>"; };
-		DD57618B1B67A44D00CE800A /* DEBaseFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseFirstViewController.m; sourceTree = "<group>"; };
 		DD57618C1B67A44D00CE800A /* DEBaseForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseForthViewController.h; sourceTree = "<group>"; };
 		DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseForthViewController.m; sourceTree = "<group>"; };
 		DD57618E1B67A44D00CE800A /* DEBaseSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseSecondViewController.h; sourceTree = "<group>"; };
@@ -363,85 +363,24 @@
 		5688DE181A067B8400F65FE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5688DE191A067B8400F65FE9 /* Attributed */,
 				5688DE201A067B8400F65FE9 /* ProtableExtensions.h */,
 				5688DE211A067B8400F65FE9 /* View */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5688DE191A067B8400F65FE9 /* Attributed */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE1A1A067B8400F65FE9 /* BAAttributedText.h */,
-				5688DE1B1A067B8400F65FE9 /* BAAttributedText.m */,
-				5688DE1C1A067B8400F65FE9 /* BAAttributedTextView.h */,
-				5688DE1D1A067B8400F65FE9 /* BAAttributedTextView.m */,
-				5688DE1E1A067B8400F65FE9 /* NSAttributedString+Height.h */,
-				5688DE1F1A067B8400F65FE9 /* NSAttributedString+Height.m */,
-			);
-			path = Attributed;
-			sourceTree = "<group>";
-		};
 		5688DE211A067B8400F65FE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5688DE221A067B8400F65FE9 /* AlertBlock */,
 				5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */,
 				5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */,
 				17E9409B1AF633FA00853A1E /* BBImageView.h */,
 				17E9409C1AF633FA00853A1E /* BBImageView.m */,
-				5688DE2F1A067B8400F65FE9 /* BALineCollectionView */,
-				5688DE361A067B8400F65FE9 /* BAOverlayView.h */,
-				5688DE371A067B8400F65FE9 /* BAOverlayView.m */,
-				5688DE381A067B8400F65FE9 /* BAPickerView */,
 				5688DE421A067B8400F65FE9 /* BBSwitchButton.h */,
 				5688DE431A067B8400F65FE9 /* BBSwitchButton.m */,
 				5688DE441A067B8400F65FE9 /* Cell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5688DE221A067B8400F65FE9 /* AlertBlock */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE231A067B8400F65FE9 /* BAButtonItem.h */,
-				5688DE241A067B8400F65FE9 /* BAButtonItem.m */,
-				5688DE251A067B8400F65FE9 /* UIActionSheet+Blocks.h */,
-				5688DE261A067B8400F65FE9 /* UIActionSheet+Blocks.m */,
-				5688DE271A067B8400F65FE9 /* UIAlertView+Blocks.h */,
-				5688DE281A067B8400F65FE9 /* UIAlertView+Blocks.m */,
-			);
-			path = AlertBlock;
-			sourceTree = "<group>";
-		};
-		5688DE2F1A067B8400F65FE9 /* BALineCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE301A067B8400F65FE9 /* BACollectionViewCell.h */,
-				5688DE311A067B8400F65FE9 /* BACollectionViewCell.m */,
-				5688DE321A067B8400F65FE9 /* BACollectionViewLineLayout.h */,
-				5688DE331A067B8400F65FE9 /* BACollectionViewLineLayout.m */,
-				5688DE341A067B8400F65FE9 /* BALineCollectionView.h */,
-				5688DE351A067B8400F65FE9 /* BALineCollectionView.m */,
-			);
-			path = BALineCollectionView;
-			sourceTree = "<group>";
-		};
-		5688DE381A067B8400F65FE9 /* BAPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE391A067B8400F65FE9 /* BADatePickerView.h */,
-				5688DE3A1A067B8400F65FE9 /* BADatePickerView.m */,
-				5688DE3B1A067B8400F65FE9 /* BAMaskPickerView.h */,
-				5688DE3C1A067B8400F65FE9 /* BAMaskPickerView.m */,
-				5688DE3D1A067B8400F65FE9 /* BAPickerView.h */,
-				5688DE3E1A067B8400F65FE9 /* BAPickerView.m */,
-				5688DE3F1A067B8400F65FE9 /* BAPickerViewDelegate.h */,
-				5688DE401A067B8400F65FE9 /* BAPickerViewWithSwitch.h */,
-				5688DE411A067B8400F65FE9 /* BAPickerViewWithSwitch.m */,
-			);
-			path = BAPickerView;
 			sourceTree = "<group>";
 		};
 		5688DE441A067B8400F65FE9 /* Cell */ = {
@@ -546,6 +485,81 @@
 			path = ForthTab;
 			sourceTree = "<group>";
 		};
+		DD56ACAA1B67BD9D00B12647 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACC31B67BEC500B12647 /* PickerView */,
+				DD56ACAB1B67BD9D00B12647 /* AlertBlock */,
+				DD56ACB21B67BD9D00B12647 /* EmailSuggestTextField */,
+				DD56ACB51B67BD9D00B12647 /* LineCollectionView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DD56ACAB1B67BD9D00B12647 /* AlertBlock */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACAC1B67BD9D00B12647 /* BAButtonItem.h */,
+				DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */,
+				DD56ACAE1B67BD9D00B12647 /* UIActionSheet+Blocks.h */,
+				DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */,
+				DD56ACB01B67BD9D00B12647 /* UIAlertView+Blocks.h */,
+				DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */,
+			);
+			path = AlertBlock;
+			sourceTree = "<group>";
+		};
+		DD56ACB21B67BD9D00B12647 /* EmailSuggestTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACB31B67BD9D00B12647 /* BBEmailSuggestTextField.h */,
+				DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */,
+			);
+			path = EmailSuggestTextField;
+			sourceTree = "<group>";
+		};
+		DD56ACB51B67BD9D00B12647 /* LineCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACB61B67BD9D00B12647 /* BBCollectionViewCell.h */,
+				DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */,
+				DD56ACB81B67BD9D00B12647 /* BBCollectionViewLineLayout.h */,
+				DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */,
+				DD56ACBA1B67BD9D00B12647 /* BBLineCollectionView.h */,
+				DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */,
+			);
+			path = LineCollectionView;
+			sourceTree = "<group>";
+		};
+		DD56ACC31B67BEC500B12647 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACC41B67BEC500B12647 /* BBDatePickerView.h */,
+				DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */,
+				DD56ACC61B67BEC500B12647 /* BBMaskPickerView.h */,
+				DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */,
+				DD56ACC81B67BEC500B12647 /* BBPickerView.h */,
+				DD56ACC91B67BEC500B12647 /* BBPickerView.m */,
+				DD56ACCA1B67BEC500B12647 /* BBPickerViewDelegate.h */,
+				DD56ACCB1B67BEC500B12647 /* BBPickerViewWithSwitch.h */,
+				DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		DD56ACD11B67C15500B12647 /* ComponentsExamples */ = {
+			isa = PBXGroup;
+			children = (
+				DD56ACD21B67C15500B12647 /* DESComponentsViewController.h */,
+				DD56ACD31B67C15500B12647 /* DESComponentsViewController.m */,
+				DD56ACD51B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.h */,
+				DD56ACD61B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m */,
+				DD56ACD81B67CCFB00B12647 /* DECWebViewController.h */,
+				DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */,
+			);
+			path = ComponentsExamples;
+			sourceTree = "<group>";
+		};
 		DD5761041B673B6100CE800A /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,6 +622,8 @@
 				DD5761231B673B6100CE800A /* BBViewController.m */,
 				DD5761241B673B6100CE800A /* BBWebViewController.h */,
 				DD5761251B673B6100CE800A /* BBWebViewController.m */,
+				DD56ACDB1B67CF6800B12647 /* BBInteractiveWebViewController.h */,
+				DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */,
 				DD5761261B673B6100CE800A /* TabBarController */,
 			);
 			path = Controllers;
@@ -674,6 +690,7 @@
 		DD57616A1B673E4A00CE800A /* Solutions */ = {
 			isa = PBXGroup;
 			children = (
+				DD56ACAA1B67BD9D00B12647 /* Components */,
 				DD57616B1B675C5F00CE800A /* Segmented */,
 			);
 			path = Solutions;
@@ -693,12 +710,11 @@
 		DD5761841B67A36000CE800A /* SolutionsExamples */ = {
 			isa = PBXGroup;
 			children = (
+				DD56ACD11B67C15500B12647 /* ComponentsExamples */,
 				DD5761851B67A36000CE800A /* DESolutionsViewController.h */,
 				DD5761861B67A36000CE800A /* DESolutionsViewController.m */,
 				DD5761881B67A44D00CE800A /* DEBaseFifthViewController.h */,
 				DD5761891B67A44D00CE800A /* DEBaseFifthViewController.m */,
-				DD57618A1B67A44D00CE800A /* DEBaseFirstViewController.h */,
-				DD57618B1B67A44D00CE800A /* DEBaseFirstViewController.m */,
 				DD57618C1B67A44D00CE800A /* DEBaseForthViewController.h */,
 				DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */,
 				DD57618E1B67A44D00CE800A /* DEBaseSecondViewController.h */,
@@ -812,10 +828,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5761541B673B6100CE800A /* UIView+Protable.m in Sources */,
+				DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */,
 				DD57615E1B673B6100CE800A /* BBImageFileHelper.m in Sources */,
+				DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */,
 				5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */,
+				DD56ACC21B67BD9D00B12647 /* BBLineCollectionView.m in Sources */,
 				17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */,
-				5688DE7C1A067B8400F65FE9 /* BACollectionViewLineLayout.m in Sources */,
 				DD5761621B673B6100CE800A /* UINavigationItem+Protable.m in Sources */,
 				DD5761921B67A44D00CE800A /* DEBaseFifthViewController.m in Sources */,
 				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
@@ -823,28 +841,32 @@
 				DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */,
 				DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */,
 				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
-				5688DE721A067B8400F65FE9 /* BAAttributedText.m in Sources */,
+				DD56ACBD1B67BD9D00B12647 /* UIActionSheet+Blocks.m in Sources */,
 				DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */,
+				DD56ACD01B67BEC500B12647 /* BBPickerViewWithSwitch.m in Sources */,
 				DD5761661B673B6100CE800A /* BBUserConfig.m in Sources */,
+				DD56ACBC1B67BD9D00B12647 /* BAButtonItem.m in Sources */,
+				DD56ACCD1B67BEC500B12647 /* BBDatePickerView.m in Sources */,
 				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
 				DD5761871B67A36000CE800A /* DESolutionsViewController.m in Sources */,
 				DD5761501B673B6100CE800A /* UIColor+Protable.m in Sources */,
 				DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */,
 				DD57614F1B673B6100CE800A /* UIButton+Protable.m in Sources */,
+				DD56ACCE1B67BEC500B12647 /* BBMaskPickerView.m in Sources */,
 				DD57615C1B673B6100CE800A /* BBFile.m in Sources */,
+				DD56ACCF1B67BEC500B12647 /* BBPickerView.m in Sources */,
+				DD56ACD41B67C15500B12647 /* DESComponentsViewController.m in Sources */,
 				DD5761521B673B6100CE800A /* UILabel+Protable.m in Sources */,
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				DD5761561B673B6100CE800A /* BBTableViewController.m in Sources */,
-				5688DE7B1A067B8400F65FE9 /* BACollectionViewCell.m in Sources */,
+				DD56ACBF1B67BD9D00B12647 /* BBEmailSuggestTextField.m in Sources */,
 				DD57614D1B673B6100CE800A /* NSDictionary+Json.m in Sources */,
 				5688DE881A067B8400F65FE9 /* BBRightViewCell.m in Sources */,
 				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
-				5688DE801A067B8400F65FE9 /* BAMaskPickerView.m in Sources */,
 				DD57614C1B673B6100CE800A /* NSDate+Protable.m in Sources */,
 				ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */,
 				DD5761611B673B6100CE800A /* BBNaviBackButton.m in Sources */,
 				DD5761511B673B6100CE800A /* UIImage+Protable.m in Sources */,
-				DD5761931B67A44D00CE800A /* DEBaseFirstViewController.m in Sources */,
 				DD57614E1B673B6100CE800A /* NSString+Protable.m in Sources */,
 				17285F161A4752120047A25A /* DECViewViewController.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
@@ -852,33 +874,27 @@
 				DD5761671B673B6100CE800A /* BBUtility.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */,
-				5688DE731A067B8400F65FE9 /* BAAttributedTextView.m in Sources */,
 				DD5761531B673B6100CE800A /* UITableView+Protable.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
 				DD5761581B673B6100CE800A /* BBWebViewController.m in Sources */,
 				DD5761591B673B6100CE800A /* BBTabBarController.m in Sources */,
 				DD57615F1B673B6100CE800A /* BBJsonFileHelper.m in Sources */,
-				5688DE751A067B8400F65FE9 /* BAButtonItem.m in Sources */,
-				5688DE761A067B8400F65FE9 /* UIActionSheet+Blocks.m in Sources */,
 				DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */,
+				DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */,
 				DD5761551B673B6100CE800A /* UIDevice+Protable.m in Sources */,
-				5688DE821A067B8400F65FE9 /* BAPickerViewWithSwitch.m in Sources */,
+				DD56ACC01B67BD9D00B12647 /* BBCollectionViewCell.m in Sources */,
 				DD57615D1B673B6100CE800A /* BBFileDiskCache.m in Sources */,
-				5688DE741A067B8400F65FE9 /* NSAttributedString+Height.m in Sources */,
-				5688DE811A067B8400F65FE9 /* BAPickerView.m in Sources */,
 				5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */,
 				17285EFE1A474E620047A25A /* DEBaseExamplesViewController.m in Sources */,
 				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
 				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
 				DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */,
-				5688DE771A067B8400F65FE9 /* UIAlertView+Blocks.m in Sources */,
 				DD5761571B673B6100CE800A /* BBViewController.m in Sources */,
 				DD5761641B673B6100CE800A /* BBApplication.m in Sources */,
-				5688DE7F1A067B8400F65FE9 /* BADatePickerView.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
-				5688DE7E1A067B8400F65FE9 /* BAOverlayView.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
-				5688DE7D1A067B8400F65FE9 /* BALineCollectionView.m in Sources */,
+				DD56ACC11B67BD9D00B12647 /* BBCollectionViewLineLayout.m in Sources */,
+				DD56ACBE1B67BD9D00B12647 /* UIAlertView+Blocks.m in Sources */,
 				DD5761631B673B6100CE800A /* UIViewController+Navi.m in Sources */,
 				DD5761651B673B6100CE800A /* BBSkin.m in Sources */,
 				DD5761601B673B6100CE800A /* BBPlistFileManager.m in Sources */,

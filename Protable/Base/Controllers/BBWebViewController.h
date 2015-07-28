@@ -10,18 +10,9 @@
 
 @interface BBWebViewController : BBViewController <UIWebViewDelegate>
 
-- (id)initWithRequest:(NSURLRequest *)request;
-- (id)initWithURL:(NSURL *)URL;
+- (void)loadUrl:(NSString *)url;
 
-- (NSURL *)URL;
-
-- (void)openURL:(NSURL*)URL;
-- (void)openRequest:(NSURLRequest*)request;
-- (void)openHTMLString:(NSString*)htmlString baseURL:(NSURL*)baseUrl;
-
-@property (nonatomic, readwrite, assign, getter = isToolbarHidden) BOOL toolbarHidden;
-
-@property (nonatomic, readonly, strong) UIWebView* webView;
+- (void)loadHTMLString:(NSString*)htmlString baseURL:(NSURL*)baseUrl;
 
 
 @end

@@ -9,19 +9,15 @@
 #ifndef Colleague_BaseHeader_h
 #define Colleague_BaseHeader_h
 
-#import "BAAttributedTextView.h"
-#import "NSAttributedString+Height.h"
 #import "BBSwitchButton.h"
 #import "BBCheckBox.h"
 #import "BBTableViewCell.h"
 #import "BBLeftImageViewCell.h"
 #import "BBRightViewCell.h"
 #import "BASelectFlagGridCell.h"
-#import "UIActionSheet+Blocks.h"
-#import "UIAlertView+Blocks.h"
 #import "BBImageView.h"
-#import "BALineCollectionView.h"
-#import "BACollectionViewCell.h"
+#import "BBLineCollectionView.h"
+#import "BBCollectionViewCell.h"
 
 
 #endif
