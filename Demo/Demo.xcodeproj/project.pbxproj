@@ -14,15 +14,7 @@
 		17285F141A4752120047A25A /* DECFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0B1A4752120047A25A /* DECFileViewController.m */; };
 		17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */; };
 		17285F161A4752120047A25A /* DECViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17285F111A4752120047A25A /* DECViewViewController.m */; };
-		17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA1AFC1B4005F00028848D /* BBTableViewCell.m */; };
 		17CA1B051B4013290028848D /* font_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17CA1B041B4013290028848D /* font_color.plist */; };
-		17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9409C1AF633FA00853A1E /* BBImageView.m */; };
-		5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */; };
-		5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE431A067B8400F65FE9 /* BBSwitchButton.m */; };
-		5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */; };
-		5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4C1A067B8400F65FE9 /* BBLeftImageViewCell.m */; };
-		5688DE881A067B8400F65FE9 /* BBRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE4E1A067B8400F65FE9 /* BBRightViewCell.m */; };
-		5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5688DE501A067B8400F65FE9 /* BASelectFlagGridCell.m */; };
 		568A55FD1A0614C200163FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A55FC1A0614C200163FA3 /* main.m */; };
 		568A56021A0614C200163FA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568A56011A0614C200163FA3 /* Images.xcassets */; };
 		568A56051A0614C200163FA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A56031A0614C200163FA3 /* LaunchScreen.xib */; };
@@ -32,24 +24,34 @@
 		568A58031A061BE400163FA3 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FF1A061BE400163FA3 /* AppNavigator.m */; };
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
-		DD56ACBC1B67BD9D00B12647 /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */; };
-		DD56ACBD1B67BD9D00B12647 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */; };
-		DD56ACBE1B67BD9D00B12647 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */; };
-		DD56ACBF1B67BD9D00B12647 /* BBEmailSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */; };
-		DD56ACC01B67BD9D00B12647 /* BBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */; };
-		DD56ACC11B67BD9D00B12647 /* BBCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */; };
-		DD56ACC21B67BD9D00B12647 /* BBLineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */; };
-		DD56ACCD1B67BEC500B12647 /* BBDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */; };
-		DD56ACCE1B67BEC500B12647 /* BBMaskPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */; };
-		DD56ACCF1B67BEC500B12647 /* BBPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACC91B67BEC500B12647 /* BBPickerView.m */; };
-		DD56ACD01B67BEC500B12647 /* BBPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */; };
+		DD4FD9FE1B69E1F600920D0C /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E51B69E1F600920D0C /* BAButtonItem.m */; };
+		DD4FD9FF1B69E1F600920D0C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E71B69E1F600920D0C /* UIActionSheet+Blocks.m */; };
+		DD4FDA001B69E1F600920D0C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E91B69E1F600920D0C /* UIAlertView+Blocks.m */; };
+		DD4FDA011B69E1F600920D0C /* BBEmailSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9EC1B69E1F600920D0C /* BBEmailSuggestTextField.m */; };
+		DD4FDA021B69E1F600920D0C /* BBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9EF1B69E1F600920D0C /* BBCollectionViewCell.m */; };
+		DD4FDA031B69E1F600920D0C /* BBCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9F11B69E1F600920D0C /* BBCollectionViewLineLayout.m */; };
+		DD4FDA041B69E1F600920D0C /* BBLineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9F31B69E1F600920D0C /* BBLineCollectionView.m */; };
+		DD4FDA051B69E1F600920D0C /* BBDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9F61B69E1F600920D0C /* BBDatePickerView.m */; };
+		DD4FDA061B69E1F600920D0C /* BBMaskPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9F81B69E1F600920D0C /* BBMaskPickerView.m */; };
+		DD4FDA071B69E1F600920D0C /* BBPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9FA1B69E1F600920D0C /* BBPickerView.m */; };
+		DD4FDA081B69E1F600920D0C /* BBPickerViewWithSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9FD1B69E1F600920D0C /* BBPickerViewWithSwitch.m */; };
+		DD4FDA0D1B69E42000920D0C /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA0C1B69E42000920D0C /* GZIP.m */; };
+		DD4FDA111B69E46A00920D0C /* BBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA101B69E46A00920D0C /* BBLocationManager.m */; };
+		DD4FDA631B69F81D00920D0C /* BBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA501B69F81D00920D0C /* BBCheckBox.m */; };
+		DD4FDA641B69F81D00920D0C /* BBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA521B69F81D00920D0C /* BBImageView.m */; };
+		DD4FDA651B69F81D00920D0C /* BBRoundCornerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA541B69F81D00920D0C /* BBRoundCornerImageView.m */; };
+		DD4FDA661B69F81D00920D0C /* BBSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA561B69F81D00920D0C /* BBSwitchButton.m */; };
+		DD4FDA671B69F81D00920D0C /* BBImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA591B69F81D00920D0C /* BBImageGridCell.m */; };
+		DD4FDA681B69F81D00920D0C /* BBLeftImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA5B1B69F81D00920D0C /* BBLeftImageViewCell.m */; };
+		DD4FDA691B69F81D00920D0C /* BBRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA5D1B69F81D00920D0C /* BBRightViewCell.m */; };
+		DD4FDA6A1B69F81D00920D0C /* BBSelectFlagGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA5F1B69F81D00920D0C /* BBSelectFlagGridCell.m */; };
+		DD4FDA6B1B69F81D00920D0C /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA611B69F81D00920D0C /* BBTableViewCell.m */; };
+		DD4FDA741B69F94C00920D0C /* BBAppVersionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA711B69F94C00920D0C /* BBAppVersionChecker.m */; };
+		DD4FDA751B69F94C00920D0C /* BBUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FDA731B69F94C00920D0C /* BBUserConfig.m */; };
 		DD56ACD41B67C15500B12647 /* DESComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD31B67C15500B12647 /* DESComponentsViewController.m */; };
 		DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD61B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m */; };
 		DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */; };
 		DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */; };
-		DD56ACE01B67D18300B12647 /* BBRoundCornerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */; };
-		DD56ACE41B67D66000B12647 /* BBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACE31B67D66000B12647 /* BBLocationManager.m */; };
-		DD56ACE91B67D6EE00B12647 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56ACE81B67D6EE00B12647 /* GZIP.m */; };
 		DD56ACEB1B67D71B00B12647 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD56ACEA1B67D71B00B12647 /* libz.1.2.5.dylib */; };
 		DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761061B673B6100CE800A /* BBCustomize.m */; };
 		DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761091B673B6100CE800A /* NSArray+Json.m */; };
@@ -79,7 +81,6 @@
 		DD5761631B673B6100CE800A /* UIViewController+Navi.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57613E1B673B6100CE800A /* UIViewController+Navi.m */; };
 		DD5761641B673B6100CE800A /* BBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761431B673B6100CE800A /* BBApplication.m */; };
 		DD5761651B673B6100CE800A /* BBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761451B673B6100CE800A /* BBSkin.m */; };
-		DD5761661B673B6100CE800A /* BBUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761471B673B6100CE800A /* BBUserConfig.m */; };
 		DD5761671B673B6100CE800A /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761491B673B6100CE800A /* BBUtility.m */; };
 		DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57616D1B675C5F00CE800A /* BBSegmentedControl.m */; };
 		DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57616F1B675C5F00CE800A /* BBSegmentViewController.m */; };
@@ -116,24 +117,7 @@
 		17285F0E1A4752120047A25A /* DECUtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECUtilitiesViewController.m; sourceTree = "<group>"; };
 		17285F101A4752120047A25A /* DECViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECViewViewController.h; sourceTree = "<group>"; };
 		17285F111A4752120047A25A /* DECViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECViewViewController.m; sourceTree = "<group>"; };
-		17CA1AFB1B4005F00028848D /* BBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewCell.h; sourceTree = "<group>"; };
-		17CA1AFC1B4005F00028848D /* BBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewCell.m; sourceTree = "<group>"; };
 		17CA1B041B4013290028848D /* font_color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = font_color.plist; sourceTree = "<group>"; };
-		17E9409B1AF633FA00853A1E /* BBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageView.h; sourceTree = "<group>"; };
-		17E9409C1AF633FA00853A1E /* BBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageView.m; sourceTree = "<group>"; };
-		5688DE201A067B8400F65FE9 /* ProtableExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableExtensions.h; sourceTree = "<group>"; };
-		5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCheckBox.h; sourceTree = "<group>"; };
-		5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCheckBox.m; sourceTree = "<group>"; };
-		5688DE421A067B8400F65FE9 /* BBSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSwitchButton.h; sourceTree = "<group>"; };
-		5688DE431A067B8400F65FE9 /* BBSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSwitchButton.m; sourceTree = "<group>"; };
-		5688DE491A067B8400F65FE9 /* BAImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageGridCell.h; sourceTree = "<group>"; };
-		5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageGridCell.m; sourceTree = "<group>"; };
-		5688DE4B1A067B8400F65FE9 /* BBLeftImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLeftImageViewCell.h; sourceTree = "<group>"; };
-		5688DE4C1A067B8400F65FE9 /* BBLeftImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLeftImageViewCell.m; sourceTree = "<group>"; };
-		5688DE4D1A067B8400F65FE9 /* BBRightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRightViewCell.h; sourceTree = "<group>"; };
-		5688DE4E1A067B8400F65FE9 /* BBRightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRightViewCell.m; sourceTree = "<group>"; };
-		5688DE4F1A067B8400F65FE9 /* BASelectFlagGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASelectFlagGridCell.h; sourceTree = "<group>"; };
-		5688DE501A067B8400F65FE9 /* BASelectFlagGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASelectFlagGridCell.m; sourceTree = "<group>"; };
 		5688DE511A067B8400F65FE9 /* Protable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protable.h; sourceTree = "<group>"; };
 		568A55F71A0614C200163FA3 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A55FB1A0614C200163FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,29 +137,56 @@
 		568A58011A061BE400163FA3 /* AppStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStartup.m; sourceTree = "<group>"; };
 		568A58181A062FAE00163FA3 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		568A58191A062FAE00163FA3 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
-		DD56ACAC1B67BD9D00B12647 /* BAButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAButtonItem.h; sourceTree = "<group>"; };
-		DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAButtonItem.m; sourceTree = "<group>"; };
-		DD56ACAE1B67BD9D00B12647 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
-		DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
-		DD56ACB01B67BD9D00B12647 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		DD56ACB31B67BD9D00B12647 /* BBEmailSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEmailSuggestTextField.h; sourceTree = "<group>"; };
-		DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEmailSuggestTextField.m; sourceTree = "<group>"; };
-		DD56ACB61B67BD9D00B12647 /* BBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewCell.h; sourceTree = "<group>"; };
-		DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewCell.m; sourceTree = "<group>"; };
-		DD56ACB81B67BD9D00B12647 /* BBCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewLineLayout.h; sourceTree = "<group>"; };
-		DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewLineLayout.m; sourceTree = "<group>"; };
-		DD56ACBA1B67BD9D00B12647 /* BBLineCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLineCollectionView.h; sourceTree = "<group>"; };
-		DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLineCollectionView.m; sourceTree = "<group>"; };
-		DD56ACC41B67BEC500B12647 /* BBDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDatePickerView.h; sourceTree = "<group>"; };
-		DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDatePickerView.m; sourceTree = "<group>"; };
-		DD56ACC61B67BEC500B12647 /* BBMaskPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMaskPickerView.h; sourceTree = "<group>"; };
-		DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMaskPickerView.m; sourceTree = "<group>"; };
-		DD56ACC81B67BEC500B12647 /* BBPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerView.h; sourceTree = "<group>"; };
-		DD56ACC91B67BEC500B12647 /* BBPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerView.m; sourceTree = "<group>"; };
-		DD56ACCA1B67BEC500B12647 /* BBPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewDelegate.h; sourceTree = "<group>"; };
-		DD56ACCB1B67BEC500B12647 /* BBPickerViewWithSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewWithSwitch.h; sourceTree = "<group>"; };
-		DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerViewWithSwitch.m; sourceTree = "<group>"; };
+		DD4FD9E41B69E1F600920D0C /* BAButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAButtonItem.h; sourceTree = "<group>"; };
+		DD4FD9E51B69E1F600920D0C /* BAButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAButtonItem.m; sourceTree = "<group>"; };
+		DD4FD9E61B69E1F600920D0C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		DD4FD9E71B69E1F600920D0C /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		DD4FD9E81B69E1F600920D0C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		DD4FD9E91B69E1F600920D0C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		DD4FD9EB1B69E1F600920D0C /* BBEmailSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEmailSuggestTextField.h; sourceTree = "<group>"; };
+		DD4FD9EC1B69E1F600920D0C /* BBEmailSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEmailSuggestTextField.m; sourceTree = "<group>"; };
+		DD4FD9EE1B69E1F600920D0C /* BBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewCell.h; sourceTree = "<group>"; };
+		DD4FD9EF1B69E1F600920D0C /* BBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewCell.m; sourceTree = "<group>"; };
+		DD4FD9F01B69E1F600920D0C /* BBCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCollectionViewLineLayout.h; sourceTree = "<group>"; };
+		DD4FD9F11B69E1F600920D0C /* BBCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCollectionViewLineLayout.m; sourceTree = "<group>"; };
+		DD4FD9F21B69E1F600920D0C /* BBLineCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLineCollectionView.h; sourceTree = "<group>"; };
+		DD4FD9F31B69E1F600920D0C /* BBLineCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLineCollectionView.m; sourceTree = "<group>"; };
+		DD4FD9F51B69E1F600920D0C /* BBDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDatePickerView.h; sourceTree = "<group>"; };
+		DD4FD9F61B69E1F600920D0C /* BBDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDatePickerView.m; sourceTree = "<group>"; };
+		DD4FD9F71B69E1F600920D0C /* BBMaskPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMaskPickerView.h; sourceTree = "<group>"; };
+		DD4FD9F81B69E1F600920D0C /* BBMaskPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMaskPickerView.m; sourceTree = "<group>"; };
+		DD4FD9F91B69E1F600920D0C /* BBPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerView.h; sourceTree = "<group>"; };
+		DD4FD9FA1B69E1F600920D0C /* BBPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerView.m; sourceTree = "<group>"; };
+		DD4FD9FB1B69E1F600920D0C /* BBPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewDelegate.h; sourceTree = "<group>"; };
+		DD4FD9FC1B69E1F600920D0C /* BBPickerViewWithSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPickerViewWithSwitch.h; sourceTree = "<group>"; };
+		DD4FD9FD1B69E1F600920D0C /* BBPickerViewWithSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPickerViewWithSwitch.m; sourceTree = "<group>"; };
+		DD4FDA0B1B69E42000920D0C /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
+		DD4FDA0C1B69E42000920D0C /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
+		DD4FDA0F1B69E46A00920D0C /* BBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLocationManager.h; sourceTree = "<group>"; };
+		DD4FDA101B69E46A00920D0C /* BBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLocationManager.m; sourceTree = "<group>"; };
+		DD4FDA4F1B69F81D00920D0C /* BBCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCheckBox.h; sourceTree = "<group>"; };
+		DD4FDA501B69F81D00920D0C /* BBCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCheckBox.m; sourceTree = "<group>"; };
+		DD4FDA511B69F81D00920D0C /* BBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageView.h; sourceTree = "<group>"; };
+		DD4FDA521B69F81D00920D0C /* BBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageView.m; sourceTree = "<group>"; };
+		DD4FDA531B69F81D00920D0C /* BBRoundCornerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRoundCornerImageView.h; sourceTree = "<group>"; };
+		DD4FDA541B69F81D00920D0C /* BBRoundCornerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRoundCornerImageView.m; sourceTree = "<group>"; };
+		DD4FDA551B69F81D00920D0C /* BBSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSwitchButton.h; sourceTree = "<group>"; };
+		DD4FDA561B69F81D00920D0C /* BBSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSwitchButton.m; sourceTree = "<group>"; };
+		DD4FDA581B69F81D00920D0C /* BBImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageGridCell.h; sourceTree = "<group>"; };
+		DD4FDA591B69F81D00920D0C /* BBImageGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageGridCell.m; sourceTree = "<group>"; };
+		DD4FDA5A1B69F81D00920D0C /* BBLeftImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLeftImageViewCell.h; sourceTree = "<group>"; };
+		DD4FDA5B1B69F81D00920D0C /* BBLeftImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLeftImageViewCell.m; sourceTree = "<group>"; };
+		DD4FDA5C1B69F81D00920D0C /* BBRightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRightViewCell.h; sourceTree = "<group>"; };
+		DD4FDA5D1B69F81D00920D0C /* BBRightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRightViewCell.m; sourceTree = "<group>"; };
+		DD4FDA5E1B69F81D00920D0C /* BBSelectFlagGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSelectFlagGridCell.h; sourceTree = "<group>"; };
+		DD4FDA5F1B69F81D00920D0C /* BBSelectFlagGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSelectFlagGridCell.m; sourceTree = "<group>"; };
+		DD4FDA601B69F81D00920D0C /* BBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewCell.h; sourceTree = "<group>"; };
+		DD4FDA611B69F81D00920D0C /* BBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewCell.m; sourceTree = "<group>"; };
+		DD4FDA621B69F81D00920D0C /* ProtableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtableView.h; sourceTree = "<group>"; };
+		DD4FDA701B69F94C00920D0C /* BBAppVersionChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppVersionChecker.h; sourceTree = "<group>"; };
+		DD4FDA711B69F94C00920D0C /* BBAppVersionChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppVersionChecker.m; sourceTree = "<group>"; };
+		DD4FDA721B69F94C00920D0C /* BBUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserConfig.h; sourceTree = "<group>"; };
+		DD4FDA731B69F94C00920D0C /* BBUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserConfig.m; sourceTree = "<group>"; };
 		DD56ACD21B67C15500B12647 /* DESComponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESComponentsViewController.h; sourceTree = "<group>"; };
 		DD56ACD31B67C15500B12647 /* DESComponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESComponentsViewController.m; sourceTree = "<group>"; };
 		DD56ACD51B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECEmailSuggestTextFieldViewController.h; sourceTree = "<group>"; };
@@ -184,12 +195,6 @@
 		DD56ACD91B67CCFB00B12647 /* DECWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECWebViewController.m; sourceTree = "<group>"; };
 		DD56ACDB1B67CF6800B12647 /* BBInteractiveWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBInteractiveWebViewController.h; sourceTree = "<group>"; };
 		DD56ACDC1B67CF6800B12647 /* BBInteractiveWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBInteractiveWebViewController.m; sourceTree = "<group>"; };
-		DD56ACDE1B67D18300B12647 /* BBRoundCornerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRoundCornerImageView.h; sourceTree = "<group>"; };
-		DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRoundCornerImageView.m; sourceTree = "<group>"; };
-		DD56ACE21B67D66000B12647 /* BBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLocationManager.h; sourceTree = "<group>"; };
-		DD56ACE31B67D66000B12647 /* BBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLocationManager.m; sourceTree = "<group>"; };
-		DD56ACE71B67D6EE00B12647 /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
-		DD56ACE81B67D6EE00B12647 /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
 		DD56ACEA1B67D71B00B12647 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DD5761051B673B6100CE800A /* BBCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCustomize.h; sourceTree = "<group>"; };
 		DD5761061B673B6100CE800A /* BBCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCustomize.m; sourceTree = "<group>"; };
@@ -249,8 +254,6 @@
 		DD5761431B673B6100CE800A /* BBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBApplication.m; sourceTree = "<group>"; };
 		DD5761441B673B6100CE800A /* BBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSkin.h; sourceTree = "<group>"; };
 		DD5761451B673B6100CE800A /* BBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSkin.m; sourceTree = "<group>"; };
-		DD5761461B673B6100CE800A /* BBUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserConfig.h; sourceTree = "<group>"; };
-		DD5761471B673B6100CE800A /* BBUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserConfig.m; sourceTree = "<group>"; };
 		DD5761481B673B6100CE800A /* BBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUtility.h; sourceTree = "<group>"; };
 		DD5761491B673B6100CE800A /* BBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUtility.m; sourceTree = "<group>"; };
 		DD57616C1B675C5F00CE800A /* BBSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSegmentedControl.h; sourceTree = "<group>"; };
@@ -365,55 +368,10 @@
 			children = (
 				5688DE511A067B8400F65FE9 /* Protable.h */,
 				DD5761041B673B6100CE800A /* Base */,
-				5688DE181A067B8400F65FE9 /* Extensions */,
 				DD57616A1B673E4A00CE800A /* Solutions */,
 			);
 			name = Protable;
 			path = ../Protable;
-			sourceTree = "<group>";
-		};
-		5688DE181A067B8400F65FE9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE201A067B8400F65FE9 /* ProtableExtensions.h */,
-				DD56ACE51B67D6EE00B12647 /* Tools */,
-				DD56ACE11B67D66000B12647 /* Location */,
-				5688DE211A067B8400F65FE9 /* View */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		5688DE211A067B8400F65FE9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5688DE2B1A067B8400F65FE9 /* BBCheckBox.h */,
-				5688DE2C1A067B8400F65FE9 /* BBCheckBox.m */,
-				17E9409B1AF633FA00853A1E /* BBImageView.h */,
-				17E9409C1AF633FA00853A1E /* BBImageView.m */,
-				DD56ACDE1B67D18300B12647 /* BBRoundCornerImageView.h */,
-				DD56ACDF1B67D18300B12647 /* BBRoundCornerImageView.m */,
-				5688DE421A067B8400F65FE9 /* BBSwitchButton.h */,
-				5688DE431A067B8400F65FE9 /* BBSwitchButton.m */,
-				5688DE441A067B8400F65FE9 /* Cell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5688DE441A067B8400F65FE9 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				17CA1AFB1B4005F00028848D /* BBTableViewCell.h */,
-				17CA1AFC1B4005F00028848D /* BBTableViewCell.m */,
-				5688DE491A067B8400F65FE9 /* BAImageGridCell.h */,
-				5688DE4A1A067B8400F65FE9 /* BAImageGridCell.m */,
-				5688DE4B1A067B8400F65FE9 /* BBLeftImageViewCell.h */,
-				5688DE4C1A067B8400F65FE9 /* BBLeftImageViewCell.m */,
-				5688DE4D1A067B8400F65FE9 /* BBRightViewCell.h */,
-				5688DE4E1A067B8400F65FE9 /* BBRightViewCell.m */,
-				5688DE4F1A067B8400F65FE9 /* BASelectFlagGridCell.h */,
-				5688DE501A067B8400F65FE9 /* BASelectFlagGridCell.m */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		568A55EE1A0614C200163FA3 = {
@@ -502,66 +460,147 @@
 			path = ForthTab;
 			sourceTree = "<group>";
 		};
-		DD56ACAA1B67BD9D00B12647 /* Components */ = {
+		DD4FD9E21B69E1F600920D0C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD56ACC31B67BEC500B12647 /* PickerView */,
-				DD56ACAB1B67BD9D00B12647 /* AlertBlock */,
-				DD56ACB21B67BD9D00B12647 /* EmailSuggestTextField */,
-				DD56ACB51B67BD9D00B12647 /* LineCollectionView */,
+				DD4FD9E31B69E1F600920D0C /* AlertBlock */,
+				DD4FD9EA1B69E1F600920D0C /* EmailSuggestTextField */,
+				DD4FD9ED1B69E1F600920D0C /* LineCollectionView */,
+				DD4FD9F41B69E1F600920D0C /* PickerView */,
 			);
-			path = Components;
+			path = View;
 			sourceTree = "<group>";
 		};
-		DD56ACAB1B67BD9D00B12647 /* AlertBlock */ = {
+		DD4FD9E31B69E1F600920D0C /* AlertBlock */ = {
 			isa = PBXGroup;
 			children = (
-				DD56ACAC1B67BD9D00B12647 /* BAButtonItem.h */,
-				DD56ACAD1B67BD9D00B12647 /* BAButtonItem.m */,
-				DD56ACAE1B67BD9D00B12647 /* UIActionSheet+Blocks.h */,
-				DD56ACAF1B67BD9D00B12647 /* UIActionSheet+Blocks.m */,
-				DD56ACB01B67BD9D00B12647 /* UIAlertView+Blocks.h */,
-				DD56ACB11B67BD9D00B12647 /* UIAlertView+Blocks.m */,
+				DD4FD9E41B69E1F600920D0C /* BAButtonItem.h */,
+				DD4FD9E51B69E1F600920D0C /* BAButtonItem.m */,
+				DD4FD9E61B69E1F600920D0C /* UIActionSheet+Blocks.h */,
+				DD4FD9E71B69E1F600920D0C /* UIActionSheet+Blocks.m */,
+				DD4FD9E81B69E1F600920D0C /* UIAlertView+Blocks.h */,
+				DD4FD9E91B69E1F600920D0C /* UIAlertView+Blocks.m */,
 			);
 			path = AlertBlock;
 			sourceTree = "<group>";
 		};
-		DD56ACB21B67BD9D00B12647 /* EmailSuggestTextField */ = {
+		DD4FD9EA1B69E1F600920D0C /* EmailSuggestTextField */ = {
 			isa = PBXGroup;
 			children = (
-				DD56ACB31B67BD9D00B12647 /* BBEmailSuggestTextField.h */,
-				DD56ACB41B67BD9D00B12647 /* BBEmailSuggestTextField.m */,
+				DD4FD9EB1B69E1F600920D0C /* BBEmailSuggestTextField.h */,
+				DD4FD9EC1B69E1F600920D0C /* BBEmailSuggestTextField.m */,
 			);
 			path = EmailSuggestTextField;
 			sourceTree = "<group>";
 		};
-		DD56ACB51B67BD9D00B12647 /* LineCollectionView */ = {
+		DD4FD9ED1B69E1F600920D0C /* LineCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				DD56ACB61B67BD9D00B12647 /* BBCollectionViewCell.h */,
-				DD56ACB71B67BD9D00B12647 /* BBCollectionViewCell.m */,
-				DD56ACB81B67BD9D00B12647 /* BBCollectionViewLineLayout.h */,
-				DD56ACB91B67BD9D00B12647 /* BBCollectionViewLineLayout.m */,
-				DD56ACBA1B67BD9D00B12647 /* BBLineCollectionView.h */,
-				DD56ACBB1B67BD9D00B12647 /* BBLineCollectionView.m */,
+				DD4FD9EE1B69E1F600920D0C /* BBCollectionViewCell.h */,
+				DD4FD9EF1B69E1F600920D0C /* BBCollectionViewCell.m */,
+				DD4FD9F01B69E1F600920D0C /* BBCollectionViewLineLayout.h */,
+				DD4FD9F11B69E1F600920D0C /* BBCollectionViewLineLayout.m */,
+				DD4FD9F21B69E1F600920D0C /* BBLineCollectionView.h */,
+				DD4FD9F31B69E1F600920D0C /* BBLineCollectionView.m */,
 			);
 			path = LineCollectionView;
 			sourceTree = "<group>";
 		};
-		DD56ACC31B67BEC500B12647 /* PickerView */ = {
+		DD4FD9F41B69E1F600920D0C /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
-				DD56ACC41B67BEC500B12647 /* BBDatePickerView.h */,
-				DD56ACC51B67BEC500B12647 /* BBDatePickerView.m */,
-				DD56ACC61B67BEC500B12647 /* BBMaskPickerView.h */,
-				DD56ACC71B67BEC500B12647 /* BBMaskPickerView.m */,
-				DD56ACC81B67BEC500B12647 /* BBPickerView.h */,
-				DD56ACC91B67BEC500B12647 /* BBPickerView.m */,
-				DD56ACCA1B67BEC500B12647 /* BBPickerViewDelegate.h */,
-				DD56ACCB1B67BEC500B12647 /* BBPickerViewWithSwitch.h */,
-				DD56ACCC1B67BEC500B12647 /* BBPickerViewWithSwitch.m */,
+				DD4FD9F51B69E1F600920D0C /* BBDatePickerView.h */,
+				DD4FD9F61B69E1F600920D0C /* BBDatePickerView.m */,
+				DD4FD9F71B69E1F600920D0C /* BBMaskPickerView.h */,
+				DD4FD9F81B69E1F600920D0C /* BBMaskPickerView.m */,
+				DD4FD9F91B69E1F600920D0C /* BBPickerView.h */,
+				DD4FD9FA1B69E1F600920D0C /* BBPickerView.m */,
+				DD4FD9FB1B69E1F600920D0C /* BBPickerViewDelegate.h */,
+				DD4FD9FC1B69E1F600920D0C /* BBPickerViewWithSwitch.h */,
+				DD4FD9FD1B69E1F600920D0C /* BBPickerViewWithSwitch.m */,
 			);
 			path = PickerView;
+			sourceTree = "<group>";
+		};
+		DD4FDA091B69E42000920D0C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA0E1B69E46A00920D0C /* Location */,
+				DD4FDA0A1B69E42000920D0C /* GZIP */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DD4FDA0A1B69E42000920D0C /* GZIP */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA0B1B69E42000920D0C /* GZIP.h */,
+				DD4FDA0C1B69E42000920D0C /* GZIP.m */,
+			);
+			path = GZIP;
+			sourceTree = "<group>";
+		};
+		DD4FDA0E1B69E46A00920D0C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA0F1B69E46A00920D0C /* BBLocationManager.h */,
+				DD4FDA101B69E46A00920D0C /* BBLocationManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DD4FDA4E1B69F81D00920D0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA4F1B69F81D00920D0C /* BBCheckBox.h */,
+				DD4FDA501B69F81D00920D0C /* BBCheckBox.m */,
+				DD4FDA511B69F81D00920D0C /* BBImageView.h */,
+				DD4FDA521B69F81D00920D0C /* BBImageView.m */,
+				DD4FDA531B69F81D00920D0C /* BBRoundCornerImageView.h */,
+				DD4FDA541B69F81D00920D0C /* BBRoundCornerImageView.m */,
+				DD4FDA551B69F81D00920D0C /* BBSwitchButton.h */,
+				DD4FDA561B69F81D00920D0C /* BBSwitchButton.m */,
+				DD4FDA571B69F81D00920D0C /* Cell */,
+				DD4FDA621B69F81D00920D0C /* ProtableView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD4FDA571B69F81D00920D0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA581B69F81D00920D0C /* BBImageGridCell.h */,
+				DD4FDA591B69F81D00920D0C /* BBImageGridCell.m */,
+				DD4FDA5A1B69F81D00920D0C /* BBLeftImageViewCell.h */,
+				DD4FDA5B1B69F81D00920D0C /* BBLeftImageViewCell.m */,
+				DD4FDA5C1B69F81D00920D0C /* BBRightViewCell.h */,
+				DD4FDA5D1B69F81D00920D0C /* BBRightViewCell.m */,
+				DD4FDA5E1B69F81D00920D0C /* BBSelectFlagGridCell.h */,
+				DD4FDA5F1B69F81D00920D0C /* BBSelectFlagGridCell.m */,
+				DD4FDA601B69F81D00920D0C /* BBTableViewCell.h */,
+				DD4FDA611B69F81D00920D0C /* BBTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD4FDA6F1B69F94C00920D0C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA701B69F94C00920D0C /* BBAppVersionChecker.h */,
+				DD4FDA711B69F94C00920D0C /* BBAppVersionChecker.m */,
+				DD4FDA721B69F94C00920D0C /* BBUserConfig.h */,
+				DD4FDA731B69F94C00920D0C /* BBUserConfig.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD56ACAA1B67BD9D00B12647 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD4FDA091B69E42000920D0C /* Tools */,
+				DD4FD9E21B69E1F600920D0C /* View */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		DD56ACD11B67C15500B12647 /* ComponentsExamples */ = {
@@ -577,32 +616,6 @@
 			path = ComponentsExamples;
 			sourceTree = "<group>";
 		};
-		DD56ACE11B67D66000B12647 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				DD56ACE21B67D66000B12647 /* BBLocationManager.h */,
-				DD56ACE31B67D66000B12647 /* BBLocationManager.m */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
-		DD56ACE51B67D6EE00B12647 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				DD56ACE61B67D6EE00B12647 /* GZIP */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		DD56ACE61B67D6EE00B12647 /* GZIP */ = {
-			isa = PBXGroup;
-			children = (
-				DD56ACE71B67D6EE00B12647 /* GZIP.h */,
-				DD56ACE81B67D6EE00B12647 /* GZIP.m */,
-			);
-			path = GZIP;
-			sourceTree = "<group>";
-		};
 		DD5761041B673B6100CE800A /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +628,7 @@
 				DD57613F1B673B6100CE800A /* ProtableCore.h */,
 				DD5761401B673B6100CE800A /* ProtableDefines.h */,
 				DD5761411B673B6100CE800A /* Utilities */,
+				DD4FDA4E1B69F81D00920D0C /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -722,8 +736,6 @@
 				DD5761431B673B6100CE800A /* BBApplication.m */,
 				DD5761441B673B6100CE800A /* BBSkin.h */,
 				DD5761451B673B6100CE800A /* BBSkin.m */,
-				DD5761461B673B6100CE800A /* BBUserConfig.h */,
-				DD5761471B673B6100CE800A /* BBUserConfig.m */,
 				DD5761481B673B6100CE800A /* BBUtility.h */,
 				DD5761491B673B6100CE800A /* BBUtility.m */,
 			);
@@ -733,6 +745,7 @@
 		DD57616A1B673E4A00CE800A /* Solutions */ = {
 			isa = PBXGroup;
 			children = (
+				DD4FDA6F1B69F94C00920D0C /* App */,
 				DD56ACAA1B67BD9D00B12647 /* Components */,
 				DD57616B1B675C5F00CE800A /* Segmented */,
 			);
@@ -872,76 +885,77 @@
 			files = (
 				DD5761541B673B6100CE800A /* UIView+Protable.m in Sources */,
 				DD56ACDD1B67CF6800B12647 /* BBInteractiveWebViewController.m in Sources */,
-				DD56ACE01B67D18300B12647 /* BBRoundCornerImageView.m in Sources */,
 				DD57615E1B673B6100CE800A /* BBImageFileHelper.m in Sources */,
 				DD56ACDA1B67CCFB00B12647 /* DECWebViewController.m in Sources */,
-				5688DE791A067B8400F65FE9 /* BBCheckBox.m in Sources */,
-				DD56ACC21B67BD9D00B12647 /* BBLineCollectionView.m in Sources */,
-				17E9409D1AF633FA00853A1E /* BBImageView.m in Sources */,
+				DD4FD9FE1B69E1F600920D0C /* BAButtonItem.m in Sources */,
 				DD5761621B673B6100CE800A /* UINavigationItem+Protable.m in Sources */,
 				DD5761921B67A44D00CE800A /* DEBaseFifthViewController.m in Sources */,
-				17CA1AFD1B4005F00028848D /* BBTableViewCell.m in Sources */,
+				DD4FDA641B69F81D00920D0C /* BBImageView.m in Sources */,
+				DD4FDA011B69E1F600920D0C /* BBEmailSuggestTextField.m in Sources */,
+				DD4FDA031B69E1F600920D0C /* BBCollectionViewLineLayout.m in Sources */,
+				DD4FDA681B69F81D00920D0C /* BBLeftImageViewCell.m in Sources */,
 				DD57615B1B673B6100CE800A /* BBDiskCache.m in Sources */,
+				DD4FDA661B69F81D00920D0C /* BBSwitchButton.m in Sources */,
 				DD5761701B675C5F00CE800A /* BBSegmentedControl.m in Sources */,
-				DD56ACE41B67D66000B12647 /* BBLocationManager.m in Sources */,
+				DD4FDA041B69E1F600920D0C /* BBLineCollectionView.m in Sources */,
 				DD5761711B675C5F00CE800A /* BBSegmentViewController.m in Sources */,
-				5688DE871A067B8400F65FE9 /* BBLeftImageViewCell.m in Sources */,
-				DD56ACBD1B67BD9D00B12647 /* UIActionSheet+Blocks.m in Sources */,
+				DD4FDA631B69F81D00920D0C /* BBCheckBox.m in Sources */,
 				DD57614B1B673B6100CE800A /* NSArray+Json.m in Sources */,
-				DD56ACD01B67BEC500B12647 /* BBPickerViewWithSwitch.m in Sources */,
-				DD5761661B673B6100CE800A /* BBUserConfig.m in Sources */,
-				DD56ACBC1B67BD9D00B12647 /* BAButtonItem.m in Sources */,
-				DD56ACCD1B67BEC500B12647 /* BBDatePickerView.m in Sources */,
-				5688DE861A067B8400F65FE9 /* BAImageGridCell.m in Sources */,
+				DD4FDA051B69E1F600920D0C /* BBDatePickerView.m in Sources */,
+				DD4FDA061B69E1F600920D0C /* BBMaskPickerView.m in Sources */,
 				DD5761871B67A36000CE800A /* DESolutionsViewController.m in Sources */,
 				DD5761501B673B6100CE800A /* UIColor+Protable.m in Sources */,
 				DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */,
+				DD4FDA691B69F81D00920D0C /* BBRightViewCell.m in Sources */,
 				DD57614F1B673B6100CE800A /* UIButton+Protable.m in Sources */,
-				DD56ACCE1B67BEC500B12647 /* BBMaskPickerView.m in Sources */,
 				DD57615C1B673B6100CE800A /* BBFile.m in Sources */,
-				DD56ACCF1B67BEC500B12647 /* BBPickerView.m in Sources */,
 				DD56ACD41B67C15500B12647 /* DESComponentsViewController.m in Sources */,
 				DD5761521B673B6100CE800A /* UILabel+Protable.m in Sources */,
+				DD4FDA6A1B69F81D00920D0C /* BBSelectFlagGridCell.m in Sources */,
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				DD5761561B673B6100CE800A /* BBTableViewController.m in Sources */,
-				DD56ACBF1B67BD9D00B12647 /* BBEmailSuggestTextField.m in Sources */,
 				DD57614D1B673B6100CE800A /* NSDictionary+Json.m in Sources */,
-				5688DE881A067B8400F65FE9 /* BBRightViewCell.m in Sources */,
-				5688DE891A067B8400F65FE9 /* BASelectFlagGridCell.m in Sources */,
+				DD4FDA6B1B69F81D00920D0C /* BBTableViewCell.m in Sources */,
 				DD57614C1B673B6100CE800A /* NSDate+Protable.m in Sources */,
 				ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */,
 				DD5761611B673B6100CE800A /* BBNaviBackButton.m in Sources */,
 				DD5761511B673B6100CE800A /* UIImage+Protable.m in Sources */,
+				DD4FD9FF1B69E1F600920D0C /* UIActionSheet+Blocks.m in Sources */,
 				DD57614E1B673B6100CE800A /* NSString+Protable.m in Sources */,
 				17285F161A4752120047A25A /* DECViewViewController.m in Sources */,
+				DD4FDA741B69F94C00920D0C /* BBAppVersionChecker.m in Sources */,
+				DD4FDA081B69E1F600920D0C /* BBPickerViewWithSwitch.m in Sources */,
 				17285F141A4752120047A25A /* DECFileViewController.m in Sources */,
+				DD4FDA651B69F81D00920D0C /* BBRoundCornerImageView.m in Sources */,
 				568A58041A061BE400163FA3 /* AppStartup.m in Sources */,
 				DD5761671B673B6100CE800A /* BBUtility.m in Sources */,
 				568A58021A061BE400163FA3 /* AppDelegate.m in Sources */,
 				DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */,
+				DD4FDA021B69E1F600920D0C /* BBCollectionViewCell.m in Sources */,
 				DD5761531B673B6100CE800A /* UITableView+Protable.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
+				DD4FDA671B69F81D00920D0C /* BBImageGridCell.m in Sources */,
 				DD5761581B673B6100CE800A /* BBWebViewController.m in Sources */,
 				DD5761591B673B6100CE800A /* BBTabBarController.m in Sources */,
 				DD57615F1B673B6100CE800A /* BBJsonFileHelper.m in Sources */,
+				DD4FDA0D1B69E42000920D0C /* GZIP.m in Sources */,
 				DD57614A1B673B6100CE800A /* BBCustomize.m in Sources */,
-				DD56ACE91B67D6EE00B12647 /* GZIP.m in Sources */,
 				DD56ACD71B67C19B00B12647 /* DECEmailSuggestTextFieldViewController.m in Sources */,
 				DD5761551B673B6100CE800A /* UIDevice+Protable.m in Sources */,
-				DD56ACC01B67BD9D00B12647 /* BBCollectionViewCell.m in Sources */,
 				DD57615D1B673B6100CE800A /* BBFileDiskCache.m in Sources */,
-				5688DE831A067B8400F65FE9 /* BBSwitchButton.m in Sources */,
 				17285EFE1A474E620047A25A /* DEBaseExamplesViewController.m in Sources */,
 				17285EFF1A474E620047A25A /* DEExtensionsExamplesViewController.m in Sources */,
 				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
 				DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */,
 				DD5761571B673B6100CE800A /* BBViewController.m in Sources */,
+				DD4FDA001B69E1F600920D0C /* UIAlertView+Blocks.m in Sources */,
 				DD5761641B673B6100CE800A /* BBApplication.m in Sources */,
+				DD4FDA751B69F94C00920D0C /* BBUserConfig.m in Sources */,
 				568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */,
 				17285F131A4752120047A25A /* DECControllersViewController.m in Sources */,
-				DD56ACC11B67BD9D00B12647 /* BBCollectionViewLineLayout.m in Sources */,
-				DD56ACBE1B67BD9D00B12647 /* UIAlertView+Blocks.m in Sources */,
+				DD4FDA071B69E1F600920D0C /* BBPickerView.m in Sources */,
 				DD5761631B673B6100CE800A /* UIViewController+Navi.m in Sources */,
+				DD4FDA111B69E46A00920D0C /* BBLocationManager.m in Sources */,
 				DD5761651B673B6100CE800A /* BBSkin.m in Sources */,
 				DD5761601B673B6100CE800A /* BBPlistFileManager.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,

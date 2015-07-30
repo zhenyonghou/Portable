@@ -8,5 +8,5 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
     #import "ProtableCore.h"
-    #import "ProtableExtensions.h"
+    #import "ProtableView.h"
 #endif

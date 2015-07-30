@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BAImageGridCell : UICollectionViewCell {
+@interface BBImageGridCell : UICollectionViewCell {
     UIImageView *_imageView;
 }
 

@@ -46,7 +46,6 @@
 // Utilities
 #import "BBUtility.h"
 #import "BBApplication.h"
-#import "BBUserConfig.h"
 
 #import "BBSkin.h"
 

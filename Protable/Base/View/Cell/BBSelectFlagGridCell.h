@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BBSwitchButton.h"
 
-@protocol BASelectFlagGridCellDelegate;
+@protocol BBSelectFlagGridCellDelegate;
 
-@interface BASelectFlagGridCell : UICollectionViewCell
+@interface BBSelectFlagGridCell : UICollectionViewCell
 {
     CGSize _iconSize;
     UIImageView *_imageView;
@@ -22,7 +22,7 @@
 @property (nonatomic, assign) CGFloat iconRightMargin;
 @property (nonatomic, assign) CGFloat iconTopMargin;
 
-@property (nonatomic, weak) id<BASelectFlagGridCellDelegate> delegate;
+@property (nonatomic, weak) id<BBSelectFlagGridCellDelegate> delegate;
 
 - (void)setUnselectedIcon:(UIImage *)unselectedIcon selectedIcon:(UIImage*)selectedIcon;
 
@@ -30,11 +30,11 @@
 
 @end
 
-@protocol BASelectFlagGridCellDelegate <NSObject>
+@protocol BBSelectFlagGridCellDelegate <NSObject>
 
 @optional
 
-- (void)selectFlagGridCell:(BASelectFlagGridCell*)selectFlagCell stateChanged:(BOOL)select;
+- (void)selectFlagGridCell:(BBSelectFlagGridCell*)selectFlagCell stateChanged:(BOOL)select;
 
 @end
 

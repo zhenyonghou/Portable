@@ -10,6 +10,7 @@
 //#import "COApplicationService.h"
 #import "UIViewController+Navi.h"
 //#import "BATabBarController.h"
+#import "BBUserConfig.h"
 #import "AppNavigator.h"
 
 @implementation AppStartup

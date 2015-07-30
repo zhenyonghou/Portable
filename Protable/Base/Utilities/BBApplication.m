@@ -51,7 +51,7 @@
 
 + (void)gotoItunesForDownloadApp:(NSString *)appId
 {
-    NSString *downloadUrl = [NSString stringWithFormat:@"http://itunes.apple.com/app/id%@?mt=8", appId];
+    NSString *downloadUrl = [NSString stringWithFormat:@"https://itunes.apple.com/app/id%@?mt=8", appId];
     @try {
         [[UIApplication sharedApplication] openURL:[[NSURL alloc] initWithString:downloadUrl]];
     }
@@ -61,7 +61,7 @@
 }
 
 + (void)checkVersionWithAppId:(NSString*)appId complete:(void (^)(NSString *serverVersion))completeBlock {
-    NSString *appURL = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@", appId];
+    NSString *appURL = [NSString stringWithFormat:@"https://itunes.apple.com/cn/lookup?id=%@", appId];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:appURL]];
     [request setHTTPMethod:@"POST"];

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 houzhenyong. All rights reserved.
 //
 
-#import "BASelectFlagGridCell.h"
+#import "BBSelectFlagGridCell.h"
 
-@interface BASelectFlagGridCell()
+@interface BBSelectFlagGridCell()
 
 @end
 
-@implementation BASelectFlagGridCell
+@implementation BBSelectFlagGridCell
 
 - (id)initWithFrame:(CGRect)frame
 {

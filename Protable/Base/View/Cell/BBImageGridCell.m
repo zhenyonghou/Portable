@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hou zhenyong. All rights reserved.
 //
 
-#import "BAImageGridCell.h"
+#import "BBImageGridCell.h"
 
-@implementation BAImageGridCell
+@implementation BBImageGridCell
 
 - (id)initWithFrame:(CGRect)frame
 {
