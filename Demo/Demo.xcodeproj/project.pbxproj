@@ -89,6 +89,7 @@
 		DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */; };
 		DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */; };
 		DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */; };
+		DD87D1B61B6CC71B0087F4A5 /* BBUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */; };
 		ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -270,6 +271,8 @@
 		DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseSecondViewController.m; sourceTree = "<group>"; };
 		DD5761901B67A44D00CE800A /* DEBaseThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseThirdViewController.h; sourceTree = "<group>"; };
 		DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseThirdViewController.m; sourceTree = "<group>"; };
+		DD87D1B41B6CC71B0087F4A5 /* BBUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserDefaults.h; sourceTree = "<group>"; };
+		DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserDefaults.m; sourceTree = "<group>"; };
 		ED943E091A89A041006A5C73 /* DECTestLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECTestLabelViewController.h; sourceTree = "<group>"; };
 		ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECTestLabelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -732,6 +735,7 @@
 		DD5761411B673B6100CE800A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DD87D1B31B6CC71B0087F4A5 /* BBUserDefaults */,
 				DD5761421B673B6100CE800A /* BBApplication.h */,
 				DD5761431B673B6100CE800A /* BBApplication.m */,
 				DD5761441B673B6100CE800A /* BBSkin.h */,
@@ -779,6 +783,15 @@
 				DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */,
 			);
 			path = SolutionsExamples;
+			sourceTree = "<group>";
+		};
+		DD87D1B31B6CC71B0087F4A5 /* BBUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				DD87D1B41B6CC71B0087F4A5 /* BBUserDefaults.h */,
+				DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */,
+			);
+			path = BBUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -911,6 +924,7 @@
 				DD57615C1B673B6100CE800A /* BBFile.m in Sources */,
 				DD56ACD41B67C15500B12647 /* DESComponentsViewController.m in Sources */,
 				DD5761521B673B6100CE800A /* UILabel+Protable.m in Sources */,
+				DD87D1B61B6CC71B0087F4A5 /* BBUserDefaults.m in Sources */,
 				DD4FDA6A1B69F81D00920D0C /* BBSelectFlagGridCell.m in Sources */,
 				17285F151A4752120047A25A /* DECUtilitiesViewController.m in Sources */,
 				DD5761561B673B6100CE800A /* BBTableViewController.m in Sources */,
