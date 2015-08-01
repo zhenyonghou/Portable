@@ -50,8 +50,13 @@
 {
     BBSwitchButton *button = sender;
 
-    if (self.delegate && [self.delegate respondsToSelector:@selector(selectFlagGridCell:stateChanged:)]) {
-        [self.delegate selectFlagGridCell:self stateChanged:button.isSelected];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(touchedFlagGridCell:shouldChangeState:)]) {
+        if (![self.delegate touchedFlagGridCell:self shouldChangeState:button.switchState]) {
+
+            BBSwitchButtonState newState = (button.switchState == BBSwitchButtonStateOn) ? BBSwitchButtonStateOff : BBSwitchButtonStateOn;
+            button.switchState = newState;
+            
+        }
     }
 }
 

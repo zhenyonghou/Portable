@@ -20,7 +20,7 @@
     if (self = [super initWithFrame:frame]) {
 //        _bounceAnimate = NO;
         _manualSwitch = NO;
-        _switchState = BASwitchButtonStateOff;
+        _switchState = BBSwitchButtonStateOff;
         _ignoreTouch = NO;
     }
     return self;
@@ -56,7 +56,7 @@
     }
 }
 
-//- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated
+//- (void)setSwitchState:(BBSwitchButtonState)switchState animated:(BOOL)animated
 //{
 //    [self setSwitchState:switchState];
 //    
@@ -67,10 +67,10 @@
 //    }
 //}
 
-- (void)setSwitchState:(BASwitchButtonState)switchState
+- (void)setSwitchState:(BBSwitchButtonState)switchState
 {
     _switchState = switchState;
-    if (BASwitchButtonStateOff == _switchState) {
+    if (BBSwitchButtonStateOff == _switchState) {
         [self setImage:_offImage forState:UIControlStateNormal];
         [self setImage:_offImage forState:UIControlStateHighlighted];
     } else {

@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.model = @[@"EmailSuggestTextField", @"Web"];
+    self.model = @[@"EmailSuggestTextField", @"Web", @"Assets"];
     
     self.tableView.contentInset = UIEdgeInsetsZero;
     [self.tableView reloadData];

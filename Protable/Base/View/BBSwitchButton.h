@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, BASwitchButtonState) {
-    BASwitchButtonStateOff  = 0,
-    BASwitchButtonStateOn
+typedef NS_ENUM(NSInteger, BBSwitchButtonState) {
+    BBSwitchButtonStateOff  = 0,
+    BBSwitchButtonStateOn
 };
 
 @interface BBSwitchButton : UIButton {
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, BASwitchButtonState) {
 
 @property (nonatomic, assign) BOOL ignoreTouch;
 
-@property (nonatomic, assign) BASwitchButtonState switchState;
+@property (nonatomic, assign) BBSwitchButtonState switchState;
 
 
 - (id)initWithFrame:(CGRect)frame offImage:(UIImage*)offImage onImage:(UIImage*)onImage;
@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, BASwitchButtonState) {
 /*
  * 手动选择时候调用，可以设置是否动画
  */
-//- (void)setSwitchState:(BASwitchButtonState)switchState animated:(BOOL)animated;
+//- (void)setSwitchState:(BBSwitchButtonState)switchState animated:(BOOL)animated;
 
 
 @end

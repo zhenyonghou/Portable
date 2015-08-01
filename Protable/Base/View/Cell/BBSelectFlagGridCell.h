@@ -34,7 +34,7 @@
 
 @optional
 
-- (void)selectFlagGridCell:(BBSelectFlagGridCell*)selectFlagCell stateChanged:(BOOL)select;
+- (BOOL)touchedFlagGridCell:(BBSelectFlagGridCell*)selectFlagCell shouldChangeState:(BBSwitchButtonState)select;
 
 @end
 

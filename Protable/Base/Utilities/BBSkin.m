@@ -53,7 +53,11 @@ static BBSkin *instance;
 
 - (UIImage *)imageForKey:(NSString*)key
 {
-    return [UIImage imageNamed:key];
+    UIImage *image = [UIImage imageNamed:key];
+    if (!image) {
+        NSLog(@"warning: 图片找不到：%@", key);
+    }
+    return image;
 }
 
 - (UIColor *)colorForKey:(NSString *)key
