@@ -44,8 +44,6 @@ static NSString* kCellID = @"cell_lalzkzkausd8f";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.view.backgroundColor = SKIN_COLOR(@"page_view_background");
     self.navigationItem.title = @"全部照片";
     
     UIBarButtonItem * cancelButton = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(onCancel)];
