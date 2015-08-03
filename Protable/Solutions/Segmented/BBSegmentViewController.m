@@ -7,14 +7,16 @@
 #import <CoreText/CoreText.h>
 #import "BBSegmentViewController.h"
 
-static NSInteger kNaviBarZoomOutHeight      = 20;
+//static NSInteger kNaviBarZoomOutHeight      = 20;
 static NSInteger kSegmentControlHeight      = 40;
 
 @interface BBSegmentViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong, readwrite) UIViewController *currentController;
 
-@property (nonatomic, assign) CGPoint lastContentOffset;
+@property (nonatomic, assign) NSInteger lastPageIndex;
+
+@property (nonatomic, assign) BOOL isScrollingReasonForDragging;
 
 @end
 
@@ -59,7 +61,7 @@ static NSInteger kSegmentControlHeight      = 40;
                                                                                                     kSegmentControlHeight)];
         segmentedControl.backgroundColor = [UIColor whiteColor];
         [segmentedControl addTarget:self action:@selector(onSegmentedSelectedChanged:) forControlEvents:UIControlEventValueChanged];
-        segmentedControl.selectedSegmentIndex = 0;
+        [segmentedControl setSelectedSegmentIndex:0 animated:NO notify:NO];
         segmentedControl.sectionTitles = pageTitles;
         self.segmentedControl = segmentedControl;
 
@@ -80,13 +82,7 @@ static NSInteger kSegmentControlHeight      = 40;
 - (void)setupContentViewWithPageCount:(NSInteger)pageCount
 {
     if (!self.contentView) {
-//        const CGFloat kNaviBarHeight = 44;
-//        const CGFloat kStatusBarHeight = 20;
         const CGFloat kTabBarHeight = 49;
-//        CGFloat scrollViewHeight = self.view.bounds.size.height - kSegmentControlHeight - kTabBarHeight;
-//        CGRect scrollFrame = CGRectMake(0, kSegmentControlHeight, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
-//        CGFloat scrollViewHeight = [UIScreen mainScreen].bounds.size.height - kNaviBarHeight - kStatusBarHeight - kSegmentControlHeight - kTabBarHeight;
-
         CGFloat scrollViewOriginY = 64 + kSegmentControlHeight;
         CGFloat scrollViewHeight = [UIScreen mainScreen].bounds.size.height - scrollViewOriginY - kTabBarHeight;
 
@@ -149,61 +145,42 @@ static NSInteger kSegmentControlHeight      = 40;
 
 #pragma mark - UIScrollViewDelegate
 
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
 //    NSLog(@"--------offset=%f, %d, %d", scrollView.contentOffset.x, scrollView.isDragging, scrollView.isDecelerating);
-//    
-//    if (scrollView.decelerating) {
-//        if (self.lastContentOffset.x < scrollView.contentOffset.x) {
-//            CGFloat pageWidth = scrollView.frame.size.width;
-//            NSInteger page = scrollView.contentOffset.x / pageWidth + 1;
-//            NSLog(@"page++  %d", page);
-//        } else {
-//            CGFloat pageWidth = scrollView.frame.size.width;
-//            NSInteger page = scrollView.contentOffset.x / pageWidth;
-//            NSLog(@"page-- %d", page);
-//        }
-//    }
-//    self.lastContentOffset = scrollView.contentOffset;
-//}
-//
-//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-//{
-//    NSLog(@"%s", __func__);
-//}
-//
-//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
-//{
-//    NSLog(@"%s", __func__);
-////    CGFloat pageWidth = scrollView.frame.size.width;
-////    NSInteger page = scrollView.contentOffset.x / pageWidth;
-////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
-//}
-//
-//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-//{
-//    NSLog(@"%s", __func__);
-////    CGFloat pageWidth = scrollView.frame.size.width;
-////    NSInteger page = scrollView.contentOffset.x / pageWidth;
-////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
-//}
-//
-//- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
-//{
-//    NSLog(@"%s", __func__);
-////    CGFloat pageWidth = scrollView.frame.size.width;
-////    NSInteger page = scrollView.contentOffset.x / pageWidth;
-////    NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
-//}
+
+    if (self.isScrollingReasonForDragging) {
+        CGFloat pageWidth = scrollView.frame.size.width;
+        CGFloat currentPage = scrollView.contentOffset.x / pageWidth;
+        
+        NSInteger nextPage = (NSInteger)currentPage;
+        
+        float onePageOffset = fmod(currentPage, 1);
+        
+        if (onePageOffset <= 0.5) {
+            
+        } else if (onePageOffset > 0.5) {
+            nextPage ++;
+        }
+        
+        if (self.lastPageIndex != nextPage) {
+            // change page
+            [self.segmentedControl setSelectedSegmentIndex:nextPage animated:YES notify:NO];
+            
+            self.lastPageIndex = nextPage;
+        }
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    self.isScrollingReasonForDragging = YES;
+}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if ([scrollView isEqual:self.contentView]) {
-        CGFloat pageWidth = scrollView.frame.size.width;
-        NSInteger page = scrollView.contentOffset.x / pageWidth;
-//        NSLog(@"offset=%f, page=%d", scrollView.contentOffset.x, page);
-        
-        [self.segmentedControl setSelectedSegmentIndex:page animated:YES];
-        
+        self.isScrollingReasonForDragging = NO;
+        self.lastPageIndex = (NSInteger)(scrollView.contentOffset.x / scrollView.frame.size.width);
         [self onSegmentedSelectedChanged:self.segmentedControl];
     }
 }

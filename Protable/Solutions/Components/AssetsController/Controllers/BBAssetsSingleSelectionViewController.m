@@ -48,11 +48,7 @@ static NSString* kCellID = @"cell_lalzkzkausd8f";
     
     UIBarButtonItem * cancelButton = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(onCancel)];
     self.navigationItem.leftBarButtonItem = cancelButton;
-    
-//    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
-//        self.automaticallyAdjustsScrollViewInsets = NO;
-//    }
-    
+
     [self loadSavedPhotos];
 }
 

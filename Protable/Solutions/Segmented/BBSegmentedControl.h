@@ -18,7 +18,7 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 @property (nonatomic, strong) NSArray *sectionTitles;
 
 
-@property (nonatomic, assign) NSInteger selectedSegmentIndex;
+@property (nonatomic, assign, readonly) NSInteger selectedSegmentIndex;
 
 @property (nonatomic, strong) UIColor *backgroundColor;
 
@@ -26,6 +26,9 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 
 @property (nonatomic, strong) NSDictionary *selectedTitleTextAttributes;
 
+/**
+ * 每个title的最合适大小向外延伸的范围，默认UIEdgeInsetsMake(0, 5, 0, 5)
+ */
 @property (nonatomic, readwrite) UIEdgeInsets segmentEdgeInset;
 
 // bottom line
@@ -41,6 +44,6 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 
 - (void)registerObserverForScrollView:(UIScrollView *)scrollView;
 
-- (void)setSelectedSegmentIndex:(NSUInteger)index animated:(BOOL)animated;
+- (void)setSelectedSegmentIndex:(NSUInteger)index animated:(BOOL)animated notify:(BOOL)notify;
 
 @end
