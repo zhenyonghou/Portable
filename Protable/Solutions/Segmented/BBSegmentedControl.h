@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  BBSegmentedControlScrollStyle
+ *  两种不同的样式：一种灵感来自于QQ音乐，一种灵感来自于美拍
+ */
+//#define BBSegmentedControlScrollStyle  1
+
 typedef void (^IndexChangeBlock)(NSInteger index);
 
 @interface BBSegmentedControl : UIControl

@@ -312,14 +312,15 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-//    if ([object isEqual:self.registerScrollView] && [keyPath isEqualToString:@"contentOffset"]) {
-////        NSLog(@"x = %f", self.registerScrollView.contentOffset.x);
-////        NSLog(@"width = %f", self.registerScrollView.contentSize.width);
-//        
-//        CGFloat indicatorOffsetX = (self.registerScrollView.contentOffset.x / self.registerScrollView.contentSize.width) * [self totalSegmentedControlWidth];
-//        CGFloat indicatorOffsetY = self.bounds.size.height - self.selectionIndicatorHeight;
-//        self.selectionIndicatorStripLayer.frame = CGRectMake(indicatorOffsetX, indicatorOffsetY, self.segmentWidth, self.selectionIndicatorHeight);
-//    }
+    
+#ifdef BBSegmentedControlScrollStyle
+    if ([object isEqual:self.registerScrollView] && [keyPath isEqualToString:@"contentOffset"]) {
+        CGFloat indicatorOffsetX = (self.registerScrollView.contentOffset.x / self.registerScrollView.contentSize.width) * [self totalSegmentedControlWidth];
+        CGFloat indicatorOffsetY = self.bounds.size.height - self.selectionIndicatorHeight;
+        self.selectionIndicatorStripLayer.frame = CGRectMake(indicatorOffsetX, indicatorOffsetY, self.segmentWidth, self.selectionIndicatorHeight);
+    }
+#endif
+    
 }
 
 @end
