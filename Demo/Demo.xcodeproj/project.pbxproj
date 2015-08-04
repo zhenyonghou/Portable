@@ -887,6 +887,7 @@
 				568A55F31A0614C200163FA3 /* Sources */,
 				568A55F41A0614C200163FA3 /* Frameworks */,
 				568A55F51A0614C200163FA3 /* Resources */,
+				DD4E260D1B706F2200228A84 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -973,6 +974,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD4E260D1B706F2200228A84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./xcode-build-bump.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		568A55F31A0614C200163FA3 /* Sources */ = {
