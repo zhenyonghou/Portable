@@ -7,7 +7,7 @@
 //
 
 #import "DEBaseExamplesViewController.h"
-
+#import "BBDeviceID.h"
 
 @interface DEBaseExamplesViewController ()
 
@@ -32,6 +32,11 @@
     self.model = @[@"Categories", @"View", @"Controllers", @"File", @"Utilities", @"Location"];
 
     [self.tableView reloadData];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 #pragma mark- UITableViewDataSource
