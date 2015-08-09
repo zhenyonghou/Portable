@@ -5,6 +5,7 @@ Portable类库是从APP开发实践中抽象出来的，与具体业务无关的
 它可以：
 
 * 快速启动一个项目
+
 > 免去：
 
 > 搭建基础框架，对项目各种设置。
@@ -23,7 +24,7 @@ Portable类库是从APP开发实践中抽象出来的，与具体业务无关的
 
 
 ###Portable简介
-Portable分为：Base，Solutions
+Portable的思想是便捷、复用，它分为：Base，Solutions
 
 * Base
 
@@ -39,6 +40,7 @@ App中常用的组件、解决方案。可认为是Base的扩展，项目中极�
 
 
 ###使用
+
 使用Portable库的时候，建议使用纯代码写App的UI，推荐纯代码+Masonry。文档与示例不多，从代码入手吧，可能会由少量第三方开源代码。
 
 依赖的库文件：
