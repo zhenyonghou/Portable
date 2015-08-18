@@ -89,6 +89,7 @@
 		DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */; };
 		DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */; };
 		DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */; };
+		DD85088D1B8333390027747A /* BBStarsScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85088C1B8333390027747A /* BBStarsScoreView.m */; };
 		DD87D1B61B6CC71B0087F4A5 /* BBUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */; };
 		DD87D1C91B6CC9A30087F4A5 /* BBStandardCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1BA1B6CC9A30087F4A5 /* BBStandardCameraManager.m */; };
 		DD87D1CA1B6CC9A30087F4A5 /* BBAssetsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1BE1B6CC9A30087F4A5 /* BBAssetsHelper.m */; };
@@ -279,6 +280,8 @@
 		DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseSecondViewController.m; sourceTree = "<group>"; };
 		DD5761901B67A44D00CE800A /* DEBaseThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseThirdViewController.h; sourceTree = "<group>"; };
 		DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseThirdViewController.m; sourceTree = "<group>"; };
+		DD85088B1B8333390027747A /* BBStarsScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBStarsScoreView.h; sourceTree = "<group>"; };
+		DD85088C1B8333390027747A /* BBStarsScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBStarsScoreView.m; sourceTree = "<group>"; };
 		DD87D1B41B6CC71B0087F4A5 /* BBUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserDefaults.h; sourceTree = "<group>"; };
 		DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserDefaults.m; sourceTree = "<group>"; };
 		DD87D1B91B6CC9A30087F4A5 /* BBStandardCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBStandardCameraManager.h; sourceTree = "<group>"; };
@@ -490,6 +493,7 @@
 		DD4FD9E21B69E1F600920D0C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD85088A1B8333390027747A /* StarsScoreView */,
 				DD4FD9E31B69E1F600920D0C /* AlertBlock */,
 				DD4FD9EA1B69E1F600920D0C /* EmailSuggestTextField */,
 				DD4FD9ED1B69E1F600920D0C /* LineCollectionView */,
@@ -814,6 +818,15 @@
 			path = SolutionsExamples;
 			sourceTree = "<group>";
 		};
+		DD85088A1B8333390027747A /* StarsScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				DD85088B1B8333390027747A /* BBStarsScoreView.h */,
+				DD85088C1B8333390027747A /* BBStarsScoreView.m */,
+			);
+			path = StarsScoreView;
+			sourceTree = "<group>";
+		};
 		DD87D1B31B6CC71B0087F4A5 /* BBUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -1071,6 +1084,7 @@
 				17285F121A4752120047A25A /* DECCategoriesViewController.m in Sources */,
 				DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */,
 				DD5761571B673B6100CE800A /* BBViewController.m in Sources */,
+				DD85088D1B8333390027747A /* BBStarsScoreView.m in Sources */,
 				DD4FDA001B69E1F600920D0C /* UIAlertView+Blocks.m in Sources */,
 				DD5761641B673B6100CE800A /* BBApplication.m in Sources */,
 				DD4FDA751B69F94C00920D0C /* BBUserConfig.m in Sources */,
