@@ -21,6 +21,9 @@
 
 + (NSString*)cachesPath;
 
++ (BOOL)isEnableRemoteNotification;
+
++ (void)gotoSystemSetting;
 
 /**
  跳转到应用在APP STORE上的下载页面

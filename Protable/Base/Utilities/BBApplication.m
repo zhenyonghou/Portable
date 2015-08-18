@@ -49,6 +49,33 @@
     return [paths objectAtIndex:0];
 }
 
++ (BOOL)isEnableRemoteNotification
+{
+    BOOL isEnable = YES;
+    
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+        UIUserNotificationSettings *settings = [UIApplication sharedApplication].currentUserNotificationSettings;
+        if (settings.types == UIUserNotificationTypeNone) {
+            isEnable = NO;
+        }
+    } else {
+        if (UIRemoteNotificationTypeNone == [UIApplication sharedApplication].enabledRemoteNotificationTypes) {
+            isEnable = NO;
+        }
+    }
+    
+    return isEnable;
+}
+
++ (void)gotoSystemSetting {
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=NOTIFICATIONS_ID"]];       // 设置URL Types :prefs
+    }
+}
+
+
 + (void)gotoItunesForDownloadApp:(NSString *)appId
 {
     NSString *downloadUrl = [NSString stringWithFormat:@"https://itunes.apple.com/app/id%@?mt=8", appId];
