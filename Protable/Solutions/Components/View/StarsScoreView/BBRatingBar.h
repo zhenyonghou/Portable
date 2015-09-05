@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BBStarsScoreView : UIView
+@interface BBRatingBar : UIView
 
-@property (nonatomic, assign) NSInteger starsCount; // 默认5
+@property (nonatomic, assign) NSInteger numberOfStars; // 默认5
 
 /**
  *  以下是3种状态的star image.
