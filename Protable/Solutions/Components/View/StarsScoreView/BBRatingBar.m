@@ -1,20 +1,21 @@
 //
-//  BBScoreView.m
-//  LxJSCore
+//  BBRatingBar.m
 //
 //  Created by mumuhou on 15/8/17.
 //  Copyright (c) 2015年 mumuhou. All rights reserved.
 //
 
-#import "BBStarsScoreView.h"
+#import "BBRatingBar.h"
 
-@interface BBStarsScoreView ()
+static NSInteger kDefaultNumberOfStars     = 5;
+
+@interface BBRatingBar ()
 
 @property (nonatomic, strong) NSMutableArray *imageViewArray;
 
 @end
 
-@implementation BBStarsScoreView
+@implementation BBRatingBar
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -41,21 +42,20 @@
     _starFillHalfImage = [UIImage imageNamed:@"star_fill_half"];
     _starEmptyImage = [UIImage imageNamed:@"star_empty"];
 
-    [self setStarsCount:5];
+    [self setNumberOfStars:kDefaultNumberOfStars];
 }
 
-- (void)setStarsCount:(NSInteger)starsCount
+- (void)setNumberOfStars:(NSInteger)numberOfStars
 {
-    _starsCount = starsCount;
-    
+    _numberOfStars = numberOfStars;
     for (UIImageView *imageView in _imageViewArray) {
         [imageView removeFromSuperview];
     }
-    
-    _imageViewArray = [[NSMutableArray alloc] initWithCapacity:_starsCount];
-    
-    for (int k = 0; k < _starsCount; ++k) {
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"star_unscore"]];
+
+    _imageViewArray = [[NSMutableArray alloc] initWithCapacity:_numberOfStars];
+
+    for (int k = 0; k < _numberOfStars; ++k) {
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"star_empty"]];
         [_imageViewArray addObject:imageView];
         [self addSubview:imageView];
     }
@@ -69,7 +69,7 @@
 
 - (void)refreshScore
 {
-    for (int k = 0; k < _starsCount; ++k) {
+    for (int k = 0; k < _numberOfStars; ++k) {
         UIImageView *imageView = _imageViewArray[k];
         if (_score - k >= 1.0) {
             imageView.image = _starFillImage;
@@ -87,7 +87,6 @@
 - (void)setStarSize:(CGSize)starSize
 {
     _starSize = starSize;
-    
     [self setNeedsLayout];
 }
 
@@ -99,7 +98,7 @@
         _starSize = firstImageView.image.size;
     }
 
-    CGFloat interitemSpacing = (self.frame.size.width - _starSize.width *_starsCount)  / (_starsCount - 1);
+    CGFloat interitemSpacing = (self.frame.size.width - _starSize.width *_numberOfStars)  / (_numberOfStars - 1);
 
     for (int k = 0; k < _imageViewArray.count; ++k) {
         UIImageView *imageView = _imageViewArray[k];
