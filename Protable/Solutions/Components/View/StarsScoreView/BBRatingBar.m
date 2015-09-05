@@ -1,6 +1,5 @@
 //
-//  BBScoreView.m
-//  LxJSCore
+//  BBRatingBar.m
 //
 //  Created by mumuhou on 15/8/17.
 //  Copyright (c) 2015年 mumuhou. All rights reserved.
