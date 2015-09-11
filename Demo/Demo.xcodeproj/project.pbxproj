@@ -24,6 +24,7 @@
 		568A58031A061BE400163FA3 /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A57FF1A061BE400163FA3 /* AppNavigator.m */; };
 		568A58041A061BE400163FA3 /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58011A061BE400163FA3 /* AppStartup.m */; };
 		568A58211A062FAE00163FA3 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A58191A062FAE00163FA3 /* ForthViewController.m */; };
+		DD3571141BA288F30068D723 /* BBMiniButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3571131BA288F30068D723 /* BBMiniButton.m */; };
 		DD4FD9FE1B69E1F600920D0C /* BAButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E51B69E1F600920D0C /* BAButtonItem.m */; };
 		DD4FD9FF1B69E1F600920D0C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E71B69E1F600920D0C /* UIActionSheet+Blocks.m */; };
 		DD4FDA001B69E1F600920D0C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD9E91B69E1F600920D0C /* UIAlertView+Blocks.m */; };
@@ -147,6 +148,8 @@
 		568A58011A061BE400163FA3 /* AppStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStartup.m; sourceTree = "<group>"; };
 		568A58181A062FAE00163FA3 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		568A58191A062FAE00163FA3 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		DD3571121BA288F30068D723 /* BBMiniButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMiniButton.h; sourceTree = "<group>"; };
+		DD3571131BA288F30068D723 /* BBMiniButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMiniButton.m; sourceTree = "<group>"; };
 		DD4FD9E41B69E1F600920D0C /* BAButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAButtonItem.h; sourceTree = "<group>"; };
 		DD4FD9E51B69E1F600920D0C /* BAButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAButtonItem.m; sourceTree = "<group>"; };
 		DD4FD9E61B69E1F600920D0C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
@@ -591,6 +594,8 @@
 				DD4FDA541B69F81D00920D0C /* BBRoundCornerImageView.m */,
 				DD4FDA551B69F81D00920D0C /* BBSwitchButton.h */,
 				DD4FDA561B69F81D00920D0C /* BBSwitchButton.m */,
+				DD3571121BA288F30068D723 /* BBMiniButton.h */,
+				DD3571131BA288F30068D723 /* BBMiniButton.m */,
 				DD4FDA571B69F81D00920D0C /* Cell */,
 				DD4FDA621B69F81D00920D0C /* ProtableView.h */,
 			);
@@ -1068,6 +1073,7 @@
 				DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */,
 				DD4FDA021B69E1F600920D0C /* BBCollectionViewCell.m in Sources */,
 				DD5761531B673B6100CE800A /* UITableView+Protable.m in Sources */,
+				DD3571141BA288F30068D723 /* BBMiniButton.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
 				DD4FDA671B69F81D00920D0C /* BBImageGridCell.m in Sources */,
 				DD5761581B673B6100CE800A /* BBWebViewController.m in Sources */,
