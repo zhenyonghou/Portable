@@ -90,6 +90,7 @@
 		DD5761941B67A44D00CE800A /* DEBaseForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618D1B67A44D00CE800A /* DEBaseForthViewController.m */; };
 		DD5761951B67A44D00CE800A /* DEBaseSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */; };
 		DD5761961B67A44D00CE800A /* DEBaseThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */; };
+		DD6FC6CC1BA6801400C2D603 /* BBDeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6FC6CB1BA6801400C2D603 /* BBDeviceID.m */; };
 		DD85088D1B8333390027747A /* BBRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85088C1B8333390027747A /* BBRatingBar.m */; };
 		DD87D1B61B6CC71B0087F4A5 /* BBUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1B51B6CC71B0087F4A5 /* BBUserDefaults.m */; };
 		DD87D1C91B6CC9A30087F4A5 /* BBStandardCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1BA1B6CC9A30087F4A5 /* BBStandardCameraManager.m */; };
@@ -99,7 +100,6 @@
 		DD87D1CD1B6CC9A30087F4A5 /* ALAsset+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1C51B6CC9A30087F4A5 /* ALAsset+Compare.m */; };
 		DD87D1CE1B6CC9A30087F4A5 /* BBImageEnableSelectGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1C81B6CC9A30087F4A5 /* BBImageEnableSelectGridCell.m */; };
 		DD87D1D11B6CCFAD0087F4A5 /* DECAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87D1D01B6CCFAD0087F4A5 /* DECAssetsViewController.m */; };
-		DD905B321B75E40400C79A60 /* BBDeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = DD905B311B75E40400C79A60 /* BBDeviceID.m */; };
 		ED943E0B1A89A041006A5C73 /* DECTestLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -283,6 +283,8 @@
 		DD57618F1B67A44D00CE800A /* DEBaseSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseSecondViewController.m; sourceTree = "<group>"; };
 		DD5761901B67A44D00CE800A /* DEBaseThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBaseThirdViewController.h; sourceTree = "<group>"; };
 		DD5761911B67A44D00CE800A /* DEBaseThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEBaseThirdViewController.m; sourceTree = "<group>"; };
+		DD6FC6CA1BA6801400C2D603 /* BBDeviceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDeviceID.h; sourceTree = "<group>"; };
+		DD6FC6CB1BA6801400C2D603 /* BBDeviceID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDeviceID.m; sourceTree = "<group>"; };
 		DD85088B1B8333390027747A /* BBRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRatingBar.h; sourceTree = "<group>"; };
 		DD85088C1B8333390027747A /* BBRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRatingBar.m; sourceTree = "<group>"; };
 		DD87D1B41B6CC71B0087F4A5 /* BBUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserDefaults.h; sourceTree = "<group>"; };
@@ -301,8 +303,6 @@
 		DD87D1C81B6CC9A30087F4A5 /* BBImageEnableSelectGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageEnableSelectGridCell.m; sourceTree = "<group>"; };
 		DD87D1CF1B6CCFAD0087F4A5 /* DECAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECAssetsViewController.h; sourceTree = "<group>"; };
 		DD87D1D01B6CCFAD0087F4A5 /* DECAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECAssetsViewController.m; sourceTree = "<group>"; };
-		DD905B301B75E40400C79A60 /* BBDeviceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDeviceID.h; sourceTree = "<group>"; };
-		DD905B311B75E40400C79A60 /* BBDeviceID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDeviceID.m; sourceTree = "<group>"; };
 		ED943E091A89A041006A5C73 /* DECTestLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECTestLabelViewController.h; sourceTree = "<group>"; };
 		ED943E0A1A89A041006A5C73 /* DECTestLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECTestLabelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -778,8 +778,8 @@
 				DD5761451B673B6100CE800A /* BBSkin.m */,
 				DD5761481B673B6100CE800A /* BBUtility.h */,
 				DD5761491B673B6100CE800A /* BBUtility.m */,
-				DD905B301B75E40400C79A60 /* BBDeviceID.h */,
-				DD905B311B75E40400C79A60 /* BBDeviceID.m */,
+				DD6FC6CA1BA6801400C2D603 /* BBDeviceID.h */,
+				DD6FC6CB1BA6801400C2D603 /* BBDeviceID.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1075,6 +1075,7 @@
 				DD5761531B673B6100CE800A /* UITableView+Protable.m in Sources */,
 				DD3571141BA288F30068D723 /* BBMiniButton.m in Sources */,
 				568A58031A061BE400163FA3 /* AppNavigator.m in Sources */,
+				DD6FC6CC1BA6801400C2D603 /* BBDeviceID.m in Sources */,
 				DD4FDA671B69F81D00920D0C /* BBImageGridCell.m in Sources */,
 				DD5761581B673B6100CE800A /* BBWebViewController.m in Sources */,
 				DD5761591B673B6100CE800A /* BBTabBarController.m in Sources */,
@@ -1101,7 +1102,6 @@
 				DD5761631B673B6100CE800A /* UIViewController+Navi.m in Sources */,
 				DD4FDA111B69E46A00920D0C /* BBLocationManager.m in Sources */,
 				DD5761651B673B6100CE800A /* BBSkin.m in Sources */,
-				DD905B321B75E40400C79A60 /* BBDeviceID.m in Sources */,
 				DD87D1CD1B6CC9A30087F4A5 /* ALAsset+Compare.m in Sources */,
 				DD5761601B673B6100CE800A /* BBPlistFileManager.m in Sources */,
 				568A55FD1A0614C200163FA3 /* main.m in Sources */,

@@ -1,72 +1,71 @@
 //
-//  BBDeviceID.m
-//  Demo
+//  HGDeviceID.m
 //
-//  Created by mumuhou on 15/8/8.
-//  Copyright (c) 2015年 hou zhenyong. All rights reserved.
+//  Created by mumuhou on 15/9/14.
+//  Copyright (c) 2015年 mumuhou. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <AdSupport/AdSupport.h>
 #import "BBDeviceID.h"
 
-@interface BBDeviceID ()
-
-@property(nonatomic, strong, readonly) NSString *uidKey;
-@property(nonatomic, strong, readonly) NSString *uid;
-
-@end
-
-
-@implementation BBDeviceID
-
-@synthesize uid = _uid;
-
-+ (NSString *)uniqueId {
-    return [[[BBDeviceID alloc] initWithKey:@"deviceUID"] uniqueId];
+@implementation BBDeviceID {
+    NSString *_deviceIdKey;
 }
+
++ (NSString *)uniqueId
+{
+    return [[[BBDeviceID alloc] initWithKey:@"MMUDeviceID"] deviceId];
+}
+
+#pragma mark- inner methods
 
 - (id)initWithKey:(NSString *)key {
     self = [super init];
     if (self) {
-        _uidKey = key;
-        _uid = nil;
+        _deviceIdKey = key;
     }
     return self;
 }
 
-/*! Returns the Device UID.
- The UID is obtained in a chain of fallbacks:
- - Keychain
- - NSUserDefaults
- - Apple IFV (Identifier for Vendor)
- - Generate a random UUID if everything else is unavailable
- At last, the UID is persisted if needed to.
- */
-- (NSString *)uniqueId {
-    if (!_uid) _uid = [[self class] valueForKeychainKey:_uidKey service:_uidKey];
-    if (!_uid) _uid = [[self class] valueForUserDefaultsKey:_uidKey];
-    if (!_uid) _uid = [[self class] appleIFV];
-    if (!_uid) _uid = [[self class] randomUUID];
-    [self save];
-    return _uid;
+- (NSString *)deviceId
+{
+    NSString *deviceId;
+    BOOL needSave = NO;
+    
+    deviceId = [[self class] valueForKeychainKey:_deviceIdKey service:_deviceIdKey];
+    if (!deviceId) {
+        deviceId = [[self class] valueForUserDefaultsKey:_deviceIdKey];
+        needSave = YES;
+    }
+    
+    if (!deviceId) {
+        deviceId = [[self class] IDFA];
+    }
+    
+    if (!deviceId) {
+        deviceId = [[self class] randomUUID];
+    }
+
+    if (needSave) {
+        [self saveDeviceId:deviceId];
+    }
+    return deviceId;
 }
 
-/*! Persist UID to NSUserDefaults and Keychain, if not yet saved
- */
-- (void)save {
-    if (![BBDeviceID valueForUserDefaultsKey:_uidKey]) {
-        [BBDeviceID setValue:_uid forUserDefaultsKey:_uidKey];
+- (void)saveDeviceId:(NSString *)deviceId
+{
+    if (![[self class] valueForUserDefaultsKey:_deviceIdKey]) {
+        [[self class] setValue:deviceId forUserDefaultsKey:_deviceIdKey];
     }
-    if (![BBDeviceID valueForKeychainKey:_uidKey service:_uidKey]) {
-        [BBDeviceID setValue:_uid forKeychainKey:_uidKey inService:_uidKey];
+    if (![[self class] valueForKeychainKey:_deviceIdKey service:_deviceIdKey]) {
+        [[self class] setValue:deviceId forKeychainKey:_deviceIdKey inService:_deviceIdKey];
     }
 }
 
-#pragma mark - Keychain methods
+#pragma mark- keychain methods
 
-/*! Create as generic NSDictionary to be used to query and update Keychain items.
- *  param1
- *  param2
- */
 + (NSMutableDictionary *)keychainItemForKey:(NSString *)key service:(NSString *)service {
     NSMutableDictionary *keychainItem = [[NSMutableDictionary alloc] init];
     keychainItem[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
@@ -76,10 +75,6 @@
     return keychainItem;
 }
 
-/*! Sets
- *  param1
- *  param2
- */
 + (OSStatus)setValue:(NSString *)value forKeychainKey:(NSString *)key inService:(NSString *)service {
     NSMutableDictionary *keychainItem = [[self class] keychainItemForKey:key service:service];
     keychainItem[(__bridge id)kSecValueData] = [value dataUsingEncoding:NSUTF8StringEncoding];
@@ -115,23 +110,14 @@
     return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
 
-#pragma mark - UID Generation methods
-//
-//+ (NSString *)appleIFA {
-//    NSString *ifa = nil;
-//    Class ASIdentifierManagerClass = NSClassFromString(@"ASIdentifierManager");
-//    if (ASIdentifierManagerClass) { // a dynamic way of checking if AdSupport.framework is available
-//        SEL sharedManagerSelector = NSSelectorFromString(@"sharedManager");
-//        id sharedManager = ((id (*)(id, SEL))[ASIdentifierManagerClass methodForSelector:sharedManagerSelector])(ASIdentifierManagerClass, sharedManagerSelector);
-//        SEL advertisingIdentifierSelector = NSSelectorFromString(@"advertisingIdentifier");
-//        NSUUID *advertisingIdentifier = ((NSUUID* (*)(id, SEL))[sharedManager methodForSelector:advertisingIdentifierSelector])(sharedManager, advertisingIdentifierSelector);
-//        ifa = [advertisingIdentifier UUIDString];
-//    }
-//    return ifa;
-//}
+#pragma mark-
 
-+ (NSString *)appleIFV {
++ (NSString *)IDFV {
     return [[UIDevice currentDevice].identifierForVendor UUIDString];
+}
+
++ (NSString *)IDFA {
+    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
 }
 
 + (NSString *)randomUUID {
