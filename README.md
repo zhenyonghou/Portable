@@ -1,4 +1,4 @@
-#Protable
+#Portable
 
 Portable是与具体业务无关的纯净、便捷的类库。
 
